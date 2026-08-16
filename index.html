@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Interactive Sport Experiences — A guy with a scarf</title>
+<meta name="description" content="Interactive sport data experiences produced with passion by A guy with a scarf (Carlo De Marchis): the World Cup 2026 bracket, the ATP &amp; WTA tennis season, and the Formula 1 year — told through data and design.">
+<link rel="canonical" href="https://dataviz.aguywithascarf.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A guy with a scarf">
+<meta property="og:title" content="Interactive Sport Experiences">
+<meta property="og:description" content="The World Cup 2026 bracket, the ATP &amp; WTA tennis season and the Formula 1 year — told through data and design. Produced with passion by A guy with a scarf.">
+<meta property="og:url" content="https://dataviz.aguywithascarf.com/">
+<meta property="og:image" content="https://dataviz.aguywithascarf.com/img/og.png?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Interactive Sport Experiences by A guy with a scarf">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Interactive Sport Experiences">
+<meta name="twitter:description" content="The World Cup 2026 bracket, the ATP &amp; WTA tennis season and the Formula 1 year — told through data and design.">
+<meta name="twitter:image" content="https://dataviz.aguywithascarf.com/img/og.png?v=1">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#070910">
+
+<style>
+:root{
+  --bg:#070910; --ink:#eef1f8; --muted:#98a2ba; --muted-2:#606a82;
+  --line:rgba(150,166,205,.14); --line-2:rgba(150,166,205,.09);
+  --panel-a:rgba(255,255,255,.055); --panel-b:rgba(255,255,255,.014);
+  --gold:#f2c14e; --teal:#00d7b6; --green:#2f9e57;
+  --sans:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+  --pad:clamp(20px,5vw,64px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans);
+  font-weight:300; line-height:1.6; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::before{
+  content:''; position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:
+    radial-gradient(70% 55% at 12% -8%, rgba(242,193,78,.13) 0%, transparent 62%),
+    radial-gradient(60% 50% at 88% 4%, rgba(0,215,182,.11) 0%, transparent 60%),
+    radial-gradient(75% 60% at 50% 100%, rgba(47,158,87,.09) 0%, transparent 65%);
+}
+a{color:inherit}
+img{max-width:100%; display:block}
+
+.wrap{max-width:1240px; margin:0 auto; padding:0 var(--pad)}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(64px,13vh,132px) 0 clamp(52px,8vh,84px)}
+.eyebrow{
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:12px; font-weight:700; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 clamp(20px,4vh,34px);
+}
+.eyebrow .dots{display:inline-flex; gap:4px}
+.eyebrow .dots i{width:6px; height:6px; border-radius:50%; display:block}
+.eyebrow .dots i:nth-child(1){background:var(--green)}
+.eyebrow .dots i:nth-child(2){background:var(--gold)}
+.eyebrow .dots i:nth-child(3){background:var(--teal)}
+
+h1{
+  margin:0; font-weight:300; letter-spacing:-.025em; line-height:1.02;
+  font-size:clamp(40px,8.2vw,104px);
+}
+h1 b{font-weight:700}
+.lede{
+  margin:clamp(22px,3.5vh,32px) 0 0; max-width:62ch;
+  font-size:clamp(16px,1.9vw,21px); color:var(--muted); line-height:1.62;
+}
+.lede strong{color:var(--ink); font-weight:400}
+.herometa{
+  margin-top:clamp(26px,4vh,38px); display:flex; flex-wrap:wrap; gap:10px 26px;
+  font-size:13px; letter-spacing:.03em; color:var(--muted-2);
+}
+.herometa span{display:inline-flex; align-items:center; gap:8px}
+.herometa span::before{content:''; width:5px; height:5px; border-radius:50%; background:currentColor; opacity:.55}
+
+/* ---------- section head ---------- */
+.shead{
+  display:flex; align-items:baseline; gap:16px; flex-wrap:wrap;
+  padding-top:clamp(56px,9vh,96px); border-top:1px solid var(--line-2);
+}
+.shead h2{
+  margin:0; font-size:clamp(22px,3vw,32px); font-weight:300; letter-spacing:-.015em;
+}
+.shead h2 b{font-weight:700}
+.shead p{margin:0; color:var(--muted-2); font-size:14px}
+
+/* ---------- feature rows ---------- */
+.features{display:flex; flex-direction:column; gap:clamp(56px,9vh,104px); padding:clamp(48px,7vh,80px) 0 0}
+/* Full-bleed screenshot, then the copy in two columns beneath it:
+   title block left, description + tags right, actions on the closing line. */
+.feat{display:block}
+
+.shot{
+  position:relative; border-radius:20px; overflow:hidden;
+  border:1px solid var(--line);
+  background:linear-gradient(160deg,var(--panel-a),var(--panel-b));
+  box-shadow:0 24px 60px -28px rgba(0,0,0,.9);
+  transition:transform .45s cubic-bezier(.2,.7,.3,1), border-color .45s, box-shadow .45s;
+}
+.shot::after{
+  content:''; position:absolute; inset:0; pointer-events:none; border-radius:inherit;
+  background:linear-gradient(180deg,transparent 62%,rgba(7,9,16,.34) 100%);
+}
+/* height:auto is load-bearing — the width/height HTML attributes are presentational
+   hints that would otherwise pin the height and make aspect-ratio a no-op. */
+.shot img{width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; object-position:50% 50%}
+.feat a.shot:hover, .feat a.shot:focus-visible{
+  transform:translateY(-5px);
+  border-color:color-mix(in srgb, var(--acc) 46%, transparent);
+  box-shadow:0 34px 74px -30px rgba(0,0,0,.95), 0 0 0 1px color-mix(in srgb, var(--acc) 18%, transparent);
+}
+a.shot{display:block; outline:none}
+
+.copy{
+  display:grid; grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+  column-gap:clamp(32px,5vw,76px); align-items:start;
+  margin-top:clamp(26px,3.6vh,38px);
+}
+.copy .kicker{
+  grid-column:1; grid-row:1;
+  display:inline-flex; align-items:center; gap:9px;
+  font-size:11.5px; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--acc); margin:0 0 14px;
+}
+.copy .kicker::before{content:''; width:22px; height:2px; background:var(--acc); border-radius:2px}
+.copy h3{
+  grid-column:1; grid-row:2; align-self:start;
+  margin:0; font-size:clamp(26px,3.9vw,44px); font-weight:300;
+  letter-spacing:-.022em; line-height:1.08;
+}
+.copy h3 b{font-weight:700}
+.copy .desc{
+  grid-column:2; grid-row:1/span 2; margin:0;
+  color:var(--muted); font-size:clamp(15px,1.32vw,17px); line-height:1.68;
+}
+
+.tags{
+  grid-column:2; grid-row:3; align-self:start;
+  display:flex; flex-wrap:wrap; gap:7px; margin:22px 0 0; padding:0; list-style:none;
+}
+.tags li{
+  font-size:11.5px; letter-spacing:.055em; color:var(--muted-2); text-transform:uppercase;
+  border:1px solid var(--line); border-radius:999px; padding:5px 11px;
+  background:rgba(255,255,255,.022);
+}
+
+.links{
+  grid-column:1; grid-row:3; align-self:start;
+  display:flex; flex-wrap:wrap; align-items:center; gap:10px 20px; margin:26px 0 0;
+}
+.go{
+  display:inline-flex; align-items:center; gap:9px; text-decoration:none;
+  font-size:14.5px; font-weight:700; letter-spacing:.01em; color:var(--bg);
+  background:var(--acc); border-radius:999px; padding:11px 20px;
+  transition:transform .2s, filter .2s;
+}
+.go:hover,.go:focus-visible{transform:translateY(-2px); filter:brightness(1.08)}
+.go svg{width:13px; height:13px; flex:none}
+.sub{
+  display:inline-flex; align-items:center; gap:7px; text-decoration:none;
+  font-size:13.5px; color:var(--muted); border-bottom:1px solid transparent;
+  transition:color .2s, border-color .2s;
+}
+.sub:hover,.sub:focus-visible{color:var(--ink); border-color:color-mix(in srgb, var(--acc) 60%, transparent)}
+.sub svg{width:11px; height:11px; opacity:.6; flex:none}
+
+/* ---------- work in progress ---------- */
+.wip{padding:clamp(72px,11vh,120px) 0 0}
+.wipgrid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:clamp(16px,2.2vw,24px); margin:clamp(34px,5vh,48px) 0 0;
+}
+.card{
+  position:relative; display:block; text-decoration:none;
+  border:1px solid var(--line); border-radius:18px; padding:26px 24px 24px;
+  background:linear-gradient(160deg,var(--panel-a),var(--panel-b));
+  transition:transform .35s cubic-bezier(.2,.7,.3,1), border-color .35s, background .35s;
+}
+.card::before{
+  content:''; position:absolute; left:24px; right:24px; top:0; height:2px; border-radius:0 0 2px 2px;
+  background:var(--acc); opacity:.85;
+}
+a.card:hover, a.card:focus-visible{transform:translateY(-4px); border-color:color-mix(in srgb, var(--acc) 40%, transparent)}
+.card .status{
+  display:inline-flex; align-items:center; gap:7px; font-size:10.5px; font-weight:700;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--acc); margin:0 0 12px;
+}
+.card .status i{width:6px; height:6px; border-radius:50%; background:currentColor; display:block}
+.card .status.soon{color:var(--muted-2)}
+.card .status.soon i{background:none; border:1.5px solid currentColor; width:7px; height:7px}
+.card h3{margin:0 0 9px; font-size:19px; font-weight:700; letter-spacing:-.01em; line-height:1.25}
+.card p{margin:0; color:var(--muted); font-size:14px; line-height:1.62}
+.card .open{
+  display:inline-flex; align-items:center; gap:7px; margin-top:16px;
+  font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--acc); font-weight:700;
+}
+.card .open svg{width:11px; height:11px}
+
+.more{
+  margin:clamp(28px,4vh,40px) 0 0; color:var(--muted-2); font-size:14.5px; max-width:64ch;
+}
+
+/* ---------- footer ---------- */
+footer{
+  margin-top:clamp(80px,12vh,130px); padding:clamp(34px,5vh,44px) 0 clamp(44px,7vh,64px);
+  border-top:1px solid var(--line-2);
+}
+.foot{display:flex; flex-wrap:wrap; gap:14px 34px; align-items:baseline; justify-content:space-between}
+.foot p{margin:0; color:var(--muted-2); font-size:13.5px; max-width:58ch; line-height:1.6}
+.foot a{color:var(--muted); text-decoration:none; border-bottom:1px solid var(--line)}
+.foot a:hover{color:var(--ink); border-color:var(--muted-2)}
+.note{margin-top:18px !important; font-size:12.5px !important; opacity:.8}
+
+@media (max-width:860px){
+  /* single column: the two-column copy grid collapses back to normal flow order */
+  .copy{display:block}
+  .copy h3{margin-bottom:14px}
+  .copy .desc,.tags,.links{margin-top:0}
+  .tags{display:flex; margin-top:20px}
+  .links{display:flex; margin-top:24px}
+  .lede{font-size:16.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow"><span class="dots"><i></i><i></i><i></i></span> A guy with a scarf</p>
+    <h1>Interactive<br>Sport <b>Experiences</b></h1>
+    <p class="lede">
+      Sport is data, and data can be beautiful. These are independent fan projects, built with
+      passion from official feeds and a lot of late evenings — <strong>a World Cup you can walk
+      through match by match, a tennis season told one player at a time, a Formula&nbsp;1 year read
+      lap by lap.</strong>
+    </p>
+    <p class="herometa">
+      <span>Three experiences live</span>
+      <span>Best in landscape on laptop &amp; iPad — great on a phone too</span>
+      <span>By Carlo De Marchis</span>
+    </p>
+  </header>
+
+  <section class="features" aria-label="Live experiences">
+
+    <!-- ============ F1 ============ -->
+    <article class="feat" style="--acc:#00d7b6">
+      <a class="shot" href="https://f1.aguywithascarf.com/" aria-label="Open F1viz, the Formula 1 season film">
+        <img src="img/f1.jpg" width="1600" height="900"
+             alt="Nine screens from F1viz: driver cards, lap-time and gap charts, the drivers' standings, leading laps, a constructor card, race results, the lap-evolution tower and the season map.">
+      </a>
+      <div class="copy">
+        <p class="kicker">Formula 1 · F1viz</p>
+        <h3>A season read <b>lap by lap</b></h3>
+        <p class="desc">
+          The 2026 championship in three films — Drivers, Constructors and Races. Every Grand Prix
+          opens into a deep dive: the position trace with its pit windows and safety cars, lap-time
+          pace, gap to the leader, gap to the car ahead — and a self-playing timing tower where all
+          twenty-two cars re-sort themselves on every lap.
+        </p>
+        <ul class="tags">
+          <li>Three films</li><li>Lap evolution</li><li>Race deep-dives</li><li>Season map</li>
+        </ul>
+        <p class="links">
+          <a class="go" href="https://f1.aguywithascarf.com/">
+            Open F1viz
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg>
+          </a>
+          <a class="sub" href="https://f1.aguywithascarf.com/help/">
+            How it works
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg>
+          </a>
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ TENNIS ============ -->
+    <article class="feat" style="--acc:#f2c14e">
+      <a class="shot" href="https://tennis.aguywithascarf.com/" aria-label="Open the ATP and WTA player film">
+        <img src="img/tennis.png" width="1200" height="630"
+             alt="An ATP player card showing Jannik Sinner, his 2026 tournaments, points, matches, sets and prize money.">
+      </a>
+      <div class="copy">
+        <p class="kicker">Tennis · ATP &amp; WTA</p>
+        <h3>The season, one <b>player</b> at a time</h3>
+        <p class="desc">
+          Two hundred cards in ranking order — the ATP Top 100 and the WTA Top 100, each on their
+          own full-screen page. Every tournament played, every set score, head-to-heads against
+          the rivals who actually mattered, and the money charts at the end. Then step across to
+          the draws, where a finished tournament unfolds as a fan of matches.
+        </p>
+        <ul class="tags">
+          <li>ATP Top 100</li><li>WTA Top 100</li><li>Tournament draws</li><li>Prize money</li>
+        </ul>
+        <p class="links">
+          <a class="go" href="https://tennis.aguywithascarf.com/">
+            Open ATP
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg>
+          </a>
+          <a class="sub" href="https://tennis.aguywithascarf.com/wta.html">
+            WTA
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg>
+          </a>
+          <a class="sub" href="https://tennis.aguywithascarf.com/draws.html">
+            The draws
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg>
+          </a>
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ WORLD CUP ============ -->
+    <article class="feat" style="--acc:#3fbe72">
+      <a class="shot" href="https://worldcupbracket.aguywithascarf.com/" aria-label="Open the World Cup 2026 bracket">
+        <img src="img/worldcup.png" width="1500" height="787"
+             alt="The World Cup 2026 knockout bracket drawn as a radial diagram, with all 48 nations and the top scorer and power ranking cards.">
+      </a>
+      <div class="copy">
+        <p class="kicker">World Cup 2026</p>
+        <h3>Road to the <b>Final</b></h3>
+        <p class="desc">
+          The entire knockout tournament as a single radial bracket — every nation, every score,
+          every penalty shoot-out in one picture. Tap a match for goals, cards, line-ups and
+          possession, or press <b>▶ Film</b> and let the tournament replay itself beat by beat.
+          You can also follow one nation from their first group game to the final whistle, and
+          dig into the Controversy Tracker for the calls that decided it.
+        </p>
+        <ul class="tags">
+          <li>Radial bracket</li><li>Story film</li><li>Live FIFA data</li><li>Controversy tracker</li>
+        </ul>
+        <p class="links">
+          <a class="go" href="https://worldcupbracket.aguywithascarf.com/">
+            Open the bracket
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg>
+          </a>
+          <a class="sub" href="https://worldcupbracket.aguywithascarf.com/?film=0">
+            Watch the film
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg>
+          </a>
+        </p>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="wip">
+    <div class="shead">
+      <h2>In the <b>workshop</b></h2>
+      <p>Built, being polished, or still on the bench.</p>
+    </div>
+
+    <div class="wipgrid">
+
+      <a class="card" style="--acc:#13b3a6" href="https://carlodemarchis-stack.github.io/nfl-season-tower/">
+        <p class="status"><i></i> Live</p>
+        <h3>NFL Season Tower</h3>
+        <p>
+          All thirty-two teams as towers on a shared baseline: wins stack upwards, losses hang
+          below, and the games still to come drop from the ceiling. Scrub through the season and
+          watch the standings re-order themselves. A Season Film gives every franchise its own card.
+        </p>
+        <span class="open">
+          Open
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg>
+        </span>
+      </a>
+
+      <div class="card" style="--acc:#7f8aa6">
+        <p class="status soon"><i></i> Coming soon</p>
+        <h3>Season Tower — Europe's top five</h3>
+        <p>
+          The same ledger applied to football, for Serie A, the Premier League, La Liga, Ligue 1
+          and the Bundesliga. Every point won is drawn above the line, every point dropped below
+          it — so a season becomes a shape you can read at a glance.
+        </p>
+      </div>
+
+      <div class="card" style="--acc:#7f8aa6">
+        <p class="status soon"><i></i> Coming soon</p>
+        <h3>Serie A Season Film</h3>
+        <p>
+          One card per club in the colours of the crest, the whole fixture list laid out twice —
+          matches won and matches lost — in the same film idiom as the tennis and Formula 1
+          experiences.
+        </p>
+      </div>
+
+    </div>
+
+    <p class="more">
+      There is more on the bench — a swipeable World Cup for phones, and whatever the next season
+      makes me curious about. If you want to know when something lands, it usually shows up first
+      on <a class="sub" href="https://aguywithascarf.substack.com/">the newsletter</a>.
+    </p>
+  </section>
+
+  <footer>
+    <div class="foot">
+      <p>
+        Produced with passion by <a href="https://aguywithascarf.substack.com/">A guy with a scarf</a>
+        (Carlo De Marchis).
+      </p>
+      <p>
+        <a href="https://worldcupbracket.aguywithascarf.com/">World Cup</a> &nbsp;·&nbsp;
+        <a href="https://tennis.aguywithascarf.com/">Tennis</a> &nbsp;·&nbsp;
+        <a href="https://f1.aguywithascarf.com/">Formula 1</a>
+      </p>
+    </div>
+    <p class="note">
+      Independent, non-commercial fan projects, made for the love of sport, data and interactive
+      storytelling. Not affiliated with FIFA, the ATP, the WTA, Formula 1 or the NFL; all data and
+      imagery belong to their respective owners.
+    </p>
+  </footer>
+
+</div>
+
+</body>
+</html>
