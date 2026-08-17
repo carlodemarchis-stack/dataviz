@@ -266,6 +266,34 @@ a.card:hover, a.card:focus-visible{transform:translateY(-4px); border-color:colo
   margin:clamp(28px,4vh,40px) 0 0; color:var(--muted-2); font-size:14.5px; max-width:64ch;
 }
 
+/* ---------- closing newsletter call to action ---------- */
+.sub-cta{
+  margin-top:clamp(70px,10vh,112px); text-align:center;
+  border:1px solid var(--line); border-radius:24px;
+  padding:clamp(34px,6vh,56px) clamp(24px,5vw,56px);
+  background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015));
+}
+.sub-cta .dots{margin-bottom:18px}
+.sub-cta h2{
+  margin:0 0 14px; font-weight:300; letter-spacing:-.022em; line-height:1.1;
+  font-size:clamp(26px,3.6vw,40px);
+}
+.sub-cta h2 b{font-weight:700}
+.sub-cta p{margin:0 auto; max-width:56ch; color:var(--muted); font-size:15.5px; line-height:1.62}
+.sub-btns{display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:28px}
+.go-sub,.go-alt{
+  display:inline-flex; align-items:center; gap:10px; text-decoration:none;
+  font-size:14.5px; font-weight:700; border-radius:999px; padding:12px 22px;
+  transition:transform .2s, filter .2s, border-color .2s, background .2s;
+}
+.go-sub{color:var(--bg); background:var(--ink)}
+.go-sub:hover,.go-sub:focus-visible{transform:translateY(-2px); filter:brightness(.92)}
+.go-alt{color:var(--ink); border:1px solid var(--line); background:rgba(255,255,255,.03)}
+.go-alt:hover,.go-alt:focus-visible{
+  transform:translateY(-2px); border-color:var(--muted-2); background:rgba(255,255,255,.07);
+}
+.go-sub svg,.go-alt svg{width:16px; height:16px; flex:none}
+
 /* ---------- footer ---------- */
 footer{
   margin-top:clamp(80px,12vh,130px); padding:clamp(34px,5vh,44px) 0 clamp(44px,7vh,64px);
@@ -485,9 +513,27 @@ footer{
 
     <p class="more">
       There is more on the bench — a swipeable World Cup for phones, and whatever the next season
-      makes me curious about. If you want to know when something lands, it usually shows up first
-      on <a class="sub" href="https://aguywithascarf.substack.com/">the newsletter</a>.
+      makes me curious about.
     </p>
+  </section>
+
+  <section class="sub-cta" aria-labelledby="nl">
+    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <h2 id="nl">A guy with a <b>scarf</b></h2>
+    <p>
+      The newsletter: new experiences as they land, how they get built, and what the numbers
+      turn out to say once you draw them properly. Follow along on either.
+    </p>
+    <div class="sub-btns">
+      <a class="go-sub" href="https://aguywithascarf.substack.com/" rel="noopener" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2.5 3h19v2.6h-19zM2.5 7.7h19v2.6h-19zM2.5 12.4h19V21L12 15.9 2.5 21z"/></svg>
+        Subscribe on Substack
+      </a>
+      <a class="go-alt" href="https://www.linkedin.com/in/carlodemarchis/" rel="me noopener" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4z"/></svg>
+        Follow on LinkedIn
+      </a>
+    </div>
   </section>
 
   <footer>
