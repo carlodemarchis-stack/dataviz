@@ -40,7 +40,7 @@ html{-webkit-text-size-adjust:100%}
 body{
   margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans);
   font-weight:300; line-height:1.6; -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
+  overflow-x:clip;   /* not hidden — hidden makes a scroll container and kills .topbar sticky */
 }
 body::before{
   content:''; position:fixed; inset:0; z-index:-1; pointer-events:none;
@@ -54,18 +54,56 @@ img{max-width:100%; display:block}
 
 .wrap{max-width:1240px; margin:0 auto; padding:0 var(--pad)}
 
+/* ---------- sticky top bar (slides in once the intro scrolls away) ---------- */
+.topbar{
+  position:sticky; top:0; z-index:60;
+  margin-top:clamp(18px,2.5vh,30px);
+  background:rgba(7,9,16,.86);
+  border-top:1px solid var(--line-2); border-bottom:1px solid var(--line-2);
+  -webkit-backdrop-filter:blur(16px) saturate(140%); backdrop-filter:blur(16px) saturate(140%);
+}
+.tb-in{
+  max-width:1240px; margin:0 auto; padding:10px var(--pad);
+  display:flex; align-items:center; gap:20px;
+}
+.tb-brand{
+  display:inline-flex; align-items:center; gap:9px; text-decoration:none; white-space:nowrap;
+  font-size:11px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--muted);
+}
+.tb-brand:hover{color:var(--ink)}
+.tb-title{
+  font-size:14.5px; font-weight:300; letter-spacing:-.01em; color:var(--ink);
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  padding-left:20px; border-left:1px solid var(--line);
+}
+.tb-title b{font-weight:700}
+.tb-in .tb-gap{flex:1 1 auto}
+.tb-cta{
+  display:inline-flex; align-items:center; gap:8px; flex:none; text-decoration:none; white-space:nowrap;
+  font-size:13px; font-weight:700; color:var(--bg); background:var(--ink);
+  border-radius:999px; padding:8px 16px; transition:transform .2s, filter .2s;
+}
+.tb-cta:hover,.tb-cta:focus-visible{transform:translateY(-1px); filter:brightness(.92)}
+.tb-cta svg{width:14px; height:14px; flex:none}
+.tb-cta .short{display:none}
+@media (max-width:760px){
+  .tb-title{display:none}
+  .tb-cta .full{display:none}
+  .tb-cta .short{display:inline}
+}
+
 /* ---------- hero ---------- */
-.hero{padding:clamp(64px,13vh,132px) 0 clamp(52px,8vh,84px)}
+.hero{padding:clamp(60px,12vh,120px) 0 clamp(24px,3.5vh,40px)}
 .eyebrow{
   display:inline-flex; align-items:center; gap:10px;
   font-size:12px; font-weight:700; letter-spacing:.22em; text-transform:uppercase;
   color:var(--muted); margin:0 0 clamp(20px,4vh,34px);
 }
-.eyebrow .dots{display:inline-flex; gap:4px}
-.eyebrow .dots i{width:6px; height:6px; border-radius:50%; display:block}
-.eyebrow .dots i:nth-child(1){background:var(--green)}
-.eyebrow .dots i:nth-child(2){background:var(--gold)}
-.eyebrow .dots i:nth-child(3){background:var(--teal)}
+.dots{display:inline-flex; gap:4px}
+.dots i{width:6px; height:6px; border-radius:50%; display:block}
+.dots i:nth-child(1){background:var(--green)}
+.dots i:nth-child(2){background:var(--gold)}
+.dots i:nth-child(3){background:var(--teal)}
 
 h1{
   margin:0; font-weight:300; letter-spacing:-.025em; line-height:1.02;
@@ -113,7 +151,7 @@ h1 b{font-weight:700}
 .shead p{margin:0; color:var(--muted-2); font-size:14px}
 
 /* ---------- feature rows ---------- */
-.features{display:flex; flex-direction:column; gap:clamp(56px,9vh,104px); padding:clamp(48px,7vh,80px) 0 0}
+.features{display:flex; flex-direction:column; gap:clamp(52px,7.5vh,86px); padding:clamp(24px,3.5vh,40px) 0 0}
 /* Full-bleed screenshot, then the copy in two columns beneath it:
    title block left, description + tags right, actions on the closing line. */
 .feat{display:block}
@@ -255,7 +293,8 @@ footer{
 </head>
 <body>
 
-<div class="wrap">
+
+<div class="wrap" id="top">
 
   <header class="hero">
     <p class="eyebrow"><span class="dots"><i></i><i></i><i></i></span> A guy with a scarf</p>
@@ -283,6 +322,24 @@ footer{
       </a>
     </div>
   </header>
+
+</div>
+
+<header class="topbar" id="topbar">
+  <div class="tb-in">
+    <a class="tb-brand" href="#top">
+      <span class="dots"><i></i><i></i><i></i></span> A guy with a scarf
+    </a>
+    <span class="tb-title">Interactive Sport <b>Experiences</b></span>
+    <span class="tb-gap"></span>
+    <a class="tb-cta" href="https://www.linkedin.com/in/carlodemarchis/" rel="me noopener" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4z"/></svg>
+      <span class="full">Contact me on LinkedIn</span><span class="short">LinkedIn</span>
+    </a>
+  </div>
+</header>
+
+<div class="wrap">
 
   <section class="features" aria-label="Live experiences">
 
@@ -453,6 +510,7 @@ footer{
   </footer>
 
 </div>
+
 
 </body>
 </html>
