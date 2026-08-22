@@ -266,6 +266,32 @@ a.card:hover, a.card:focus-visible{transform:translateY(-4px); border-color:colo
   margin:clamp(28px,4vh,40px) 0 0; color:var(--muted-2); font-size:14.5px; max-width:64ch;
 }
 
+/* Secondary entry: image beside the copy rather than full-bleed, uncropped at its
+   native aspect, quieter button. Reads as "and also this one". */
+.feat-sm{
+  display:grid; grid-template-columns:minmax(0,1.06fr) minmax(0,1fr);
+  gap:clamp(26px,3.6vw,48px); align-items:center;
+  padding-top:clamp(38px,5.5vh,60px); border-top:1px solid var(--line-2);
+}
+.feat-sm .shot{border-radius:16px; box-shadow:0 18px 44px -26px rgba(0,0,0,.85)}
+.feat-sm .shot img{aspect-ratio:auto; object-fit:fill}
+.feat-sm .shot::after{background:none}
+.feat-sm .copy{display:block; margin-top:0}
+.feat-sm .copy h3{font-size:clamp(24px,2.7vw,32px); margin-bottom:14px}
+.feat-sm .copy .desc{font-size:14.5px; line-height:1.66}
+.feat-sm .tags{margin-top:18px}
+.feat-sm .links{margin-top:22px}
+.go.quiet{
+  color:var(--ink); background:none; border:1px solid color-mix(in srgb, var(--acc) 55%, transparent);
+  font-size:13.5px; padding:9px 17px;
+}
+.go.quiet:hover,.go.quiet:focus-visible{
+  filter:none; background:color-mix(in srgb, var(--acc) 14%, transparent); border-color:var(--acc);
+}
+@media (max-width:860px){
+  .feat-sm{grid-template-columns:1fr; gap:22px}
+}
+
 /* ---------- closing newsletter call to action ---------- */
 .sub-cta{
   margin-top:clamp(70px,10vh,112px); text-align:center;
@@ -471,6 +497,40 @@ footer{
       </div>
     </article>
 
+
+    <!-- ============ TOP 5 LEAGUES (secondary) ============ -->
+    <article class="feat feat-sm" style="--acc:#7f97c4">
+      <a class="shot" href="https://top5.aguywithascarf.com/" aria-label="Open the Season Tower for Europe's top five leagues">
+        <img src="img/top5.jpg" width="1900" height="1234"
+             alt="La Liga in the Season Tower: twenty clubs as rows, points kept extending to the right of each club and points dropped to the left.">
+      </a>
+      <div class="copy">
+        <p class="kicker">Football · Europe's top five</p>
+        <h3>Season <b>Tower</b></h3>
+        <p class="desc">
+          A team starts the season already owning every point it can win — thirty-eight games,
+          three apiece. From there you don't earn points, you try not to drop them: a defeat costs
+          three, and a draw still quietly costs two. So each club becomes a tower, what it kept
+          stacking up and what it let slip hanging below. Two teams level on points stop looking
+          alike. Serie A, the Premier League, La Liga, Ligue 1 and the Bundesliga, updated daily.
+          The idea is my son Miles', aged eleven.
+        </p>
+        <ul class="tags">
+          <li>Five leagues</li><li>Towers &amp; rows</li><li>Updated daily</li>
+        </ul>
+        <p class="links">
+          <a class="go quiet" href="https://top5.aguywithascarf.com/">
+            Open Season Tower
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg>
+          </a>
+          <a class="sub" href="https://aguywithascarf.substack.com/p/top-5-football-leagues-an-alternative" rel="noopener" target="_blank">
+            The story behind it
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg>
+          </a>
+        </p>
+      </div>
+    </article>
+
   </section>
 
   <section class="wip">
@@ -488,16 +548,6 @@ footer{
           All thirty-two teams as towers on a shared baseline: wins stack upwards, losses hang
           below, and the games still to come drop from the ceiling. Scrub through the season and
           watch the standings re-order themselves. A Season Film gives every franchise its own card.
-        </p>
-      </div>
-
-      <div class="card" style="--acc:#7f8aa6">
-        <p class="status soon"><i></i> Coming soon</p>
-        <h3>Season Tower — Europe's top five</h3>
-        <p>
-          The same ledger applied to football, for Serie A, the Premier League, La Liga, Ligue 1
-          and the Bundesliga. Every point won is drawn above the line, every point dropped below
-          it — so a season becomes a shape you can read at a glance.
         </p>
       </div>
 
