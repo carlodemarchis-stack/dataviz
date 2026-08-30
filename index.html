@@ -292,6 +292,13 @@ a.card:hover, a.card:focus-visible{transform:translateY(-4px); border-color:colo
   .feat-sm{grid-template-columns:1fr; gap:22px}
 }
 
+/* ---------- other apps ---------- */
+.apps{padding:clamp(70px,10vh,110px) 0 0}
+.appgrid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:clamp(16px,2.2vw,24px); margin:clamp(34px,5vh,48px) 0 0; max-width:680px;
+}
+
 /* ---------- closing newsletter call to action ---------- */
 .sub-cta{
   margin-top:clamp(70px,10vh,112px); text-align:center;
@@ -567,6 +574,30 @@ footer{
       There is more on the bench — a swipeable World Cup for phones, and whatever the next season
       makes me curious about.
     </p>
+  </section>
+
+
+  <section class="apps">
+    <div class="shead">
+      <h2>Other sports tech <b>apps</b></h2>
+      <p>Not data visualisation — but built with the same curiosity.</p>
+    </div>
+
+    <div class="appgrid">
+      <a class="card" style="--acc:#e0503a" href="https://ytft.aguywithascarf.com/">
+        <p class="status"><i></i> Live</p>
+        <h3>YouTube Football Tracker</h3>
+        <p>
+          How football clubs actually perform on YouTube: over a hundred of them across Europe's
+          top five leagues, tracked daily. Recaps of the day's most-watched videos, season trends,
+          all-time leaderboards, and a cohort following the road to the World Cup.
+        </p>
+        <span class="open">
+          Open
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M4 2.5h5.5V8"/></svg>
+        </span>
+      </a>
+    </div>
   </section>
 
   <section class="sub-cta" aria-labelledby="nl">
