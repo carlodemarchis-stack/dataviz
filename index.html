@@ -275,6 +275,8 @@ a.card:hover, a.card:focus-visible{transform:translateY(-4px); border-color:colo
 }
 .feat-sm .shot{border-radius:16px; box-shadow:0 18px 44px -26px rgba(0,0,0,.85)}
 .feat-sm .shot img{aspect-ratio:auto; object-fit:fill}
+/* a feature whose screenshot must not be cropped at all */
+.feat.natural .shot img{aspect-ratio:auto; object-fit:fill}
 .feat-sm .shot::after{background:none}
 .feat-sm .copy{display:block; margin-top:0}
 .feat-sm .copy h3{font-size:clamp(24px,2.7vw,32px); margin-bottom:14px}
@@ -473,10 +475,10 @@ footer{
     </article>
 
     <!-- ============ NFL ============ -->
-    <article class="feat" style="--acc:#4d94e0">
+    <article class="feat natural" style="--acc:#4d94e0">
       <a class="shot" href="https://nfl.aguywithascarf.com/" aria-label="Open the NFL Season Tower">
-        <img src="img/nfl.jpg" width="2000" height="1125"
-             alt="The NFL Season Tower: all thirty-two teams grouped by division, each a tower of games with wins above the baseline and losses below.">
+        <img src="img/nfl.jpg" width="2000" height="1275"
+             alt="The NFL Season Tower showing a completed season: all thirty-two teams grouped by division, each a tower of games with wins stacked above the baseline and losses hanging below it.">
       </a>
       <div class="copy">
         <p class="kicker">NFL · Season Tower</p>
