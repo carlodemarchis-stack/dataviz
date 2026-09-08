@@ -151,7 +151,16 @@ h1 b{font-weight:700}
 .shead p{margin:0; color:var(--muted-2); font-size:14px}
 
 /* ---------- feature rows ---------- */
-.features{display:flex; flex-direction:column; gap:clamp(52px,7.5vh,86px); padding:clamp(24px,3.5vh,40px) 0 0}
+.features{display:flex; flex-direction:column; gap:clamp(36px,5vh,50px); padding:clamp(24px,3.5vh,40px) 0 0}
+/* three-dot separator between experiences, echoing the hero eyebrow */
+.feat + .feat::before{
+  content:''; display:block; width:44px; height:7px; margin:0 auto clamp(36px,5vh,50px);
+  background-image:
+    radial-gradient(circle at 3.5px 3.5px, var(--green) 3px, transparent 3.5px),
+    radial-gradient(circle at 3.5px 3.5px, var(--gold) 3px, transparent 3.5px),
+    radial-gradient(circle at 3.5px 3.5px, var(--teal) 3px, transparent 3.5px);
+  background-size:7px 7px; background-position:0 0, 18.5px 0, 37px 0; background-repeat:no-repeat;
+}
 /* Full-bleed screenshot, then the copy in two columns beneath it:
    title block left, description + tags right, actions on the closing line. */
 .feat{display:block}
@@ -271,7 +280,6 @@ a.card:hover, a.card:focus-visible{transform:translateY(-4px); border-color:colo
 .feat-sm{
   display:grid; grid-template-columns:minmax(0,1.06fr) minmax(0,1fr);
   gap:clamp(26px,3.6vw,48px); align-items:center;
-  padding-top:clamp(38px,5.5vh,60px); border-top:1px solid var(--line-2);
 }
 .feat-sm .shot{border-radius:16px; box-shadow:0 18px 44px -26px rgba(0,0,0,.85)}
 .feat-sm .shot img{aspect-ratio:auto; object-fit:fill}
