@@ -281,6 +281,8 @@ a.card:hover, a.card:focus-visible{transform:translateY(-4px); border-color:colo
   display:grid; grid-template-columns:minmax(0,1.06fr) minmax(0,1fr);
   gap:clamp(26px,3.6vw,48px); align-items:center;
 }
+/* the separator is a grid item here — make it span the row instead of taking a cell */
+.feat-sm::before{grid-column:1 / -1; margin-bottom:0}
 .feat-sm .shot{border-radius:16px; box-shadow:0 18px 44px -26px rgba(0,0,0,.85)}
 .feat-sm .shot img{aspect-ratio:auto; object-fit:fill}
 /* a feature whose screenshot must not be cropped at all */
