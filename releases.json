@@ -1,0 +1,542 @@
+{
+  "updated": "2026-09-25",
+  "apps": [
+    {
+      "id": "f1",
+      "name": "Formula 1",
+      "kicker": "A season read lap by lap",
+      "color": "#00d7b6",
+      "url": "https://f1.aguywithascarf.com/",
+      "releases": [
+        {
+          "version": "1.9.0",
+          "date": "2026-09-25",
+          "notes": [
+            "A Stewards tab on every race deep-dive: every FIA ruling of the weekend",
+            "The starting grid explains itself, showing the penalties that moved drivers back",
+            "Session results link straight through to each driver's card"
+          ]
+        },
+        {
+          "version": "1.8.0",
+          "date": "2026-09-20",
+          "notes": [
+            "Schedule cards for every round still to come, and a closing card looking ahead to 2027",
+            "The winner stands on every race already run on the season map"
+          ]
+        },
+        {
+          "version": "1.7.0",
+          "date": "2026-09-10",
+          "notes": [
+            "Tyre strategy on the race deep-dive, every stint drawn as a bar above the chart",
+            "On-track overtakes, plus the weather: track temperature and rain, lap by lap"
+          ]
+        },
+        {
+          "version": "1.6.0",
+          "date": "2026-09-06",
+          "notes": [
+            "A weekend module for every round: practice, qualifying and the real starting grid",
+            "Qualifying gaps drawn as cars on a track, spaced by their real gap to pole",
+            "Each driver's 2026 helmet on their card"
+          ]
+        },
+        {
+          "version": "1.5.0",
+          "date": "2026-08-29",
+          "notes": [
+            "The Drivers' Standings Film: the championship replayed race by race, with an animated podium for every round"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "date": "2026-08-24",
+          "notes": [
+            "The Wall: a lap-by-lap position grid for every race, following up to five drivers through it",
+            "Click a finished race on the season map to open it"
+          ]
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-08-15",
+          "notes": [
+            "Spoken race recaps, narrated by an AI voice",
+            "Team radio on the charts, captioned, and a Radio tab listing every clip of a Grand Prix by lap",
+            "The season map shows every upcoming circuit and flags the next race"
+          ]
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-08-11",
+          "notes": [
+            "Compare two drivers on any race deep-dive: position, lap times and gap to the leader, kept in the link"
+          ]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-08-04",
+          "notes": [
+            "Race deep-dives gain Lap times, Gap to leader and Gap to car ahead",
+            "Safety cars, virtual safety cars and red flags marked on every chart",
+            "A Leading Laps card: who led every lap of the season",
+            "Swipe between cards on a phone, and an illustrated guide at /help"
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-08-03",
+          "notes": [
+            "F1viz launches: the 2026 season as three films, Drivers, Constructors and Races",
+            "A card for every driver and team, and a self-playing timing tower for every race"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tennis",
+      "name": "Tennis",
+      "kicker": "The season, one player at a time",
+      "color": "#f2c14e",
+      "url": "https://tennis.aguywithascarf.com/",
+      "releases": [
+        {
+          "version": "1.8.0",
+          "date": "2026-09-14",
+          "notes": [
+            "A Rivalries card after Prize Money, each player linking to their own card"
+          ]
+        },
+        {
+          "version": "1.7.0",
+          "date": "2026-09-11",
+          "notes": [
+            "Live scores in the draws: a match in progress shows its sets, the game score and a pulsing dot",
+            "A showdown card for every match, with standing cut-outs and a proper scoreboard",
+            "Draws are shareable: tour, tournament, player and match all live in the link"
+          ]
+        },
+        {
+          "version": "1.6.0",
+          "date": "2026-09-02",
+          "notes": [
+            "Live draws: the US Open followed round by round, with upcoming match times on every tie",
+            "A tournament stats panel: dominance, seeds and upsets, the spread of scorelines",
+            "Highlight the seeds, or everyone else"
+          ]
+        },
+        {
+          "version": "1.5.0",
+          "date": "2026-08-30",
+          "notes": [
+            "Search for any player, with autocomplete, on both tours",
+            "Filter the cards by country",
+            "The draws on both tours, with player photos, flags and seedings"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "date": "2026-08-16",
+          "notes": [
+            "The Draws: every finished tournament drawn as a radial fan bracket",
+            "A Sets tab showing the spread of each player's set scores, and games won and lost"
+          ]
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-08-03",
+          "notes": [
+            "The WTA Top 100, with an ATP | WTA switch in the top bar"
+          ]
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-08-02",
+          "notes": [
+            "Three season-calendar cards, with each tournament's final four"
+          ]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-07-30",
+          "notes": [
+            "Expanded to the ATP Top 100",
+            "A Prize Money leaderboard and a Race to Turin chart",
+            "Every tournament opens into its matches, round by round, with the prize money won",
+            "A reload lands on the same card, and phones get swipe navigation"
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-07-29",
+          "notes": [
+            "The ATP player film: one full-screen card per player, in ranking order, with every tournament of the season"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "football",
+      "name": "Football",
+      "kicker": "Season towers, top 5 leagues",
+      "color": "#2f9e58",
+      "url": "https://top5.aguywithascarf.com/",
+      "releases": [
+        {
+          "version": "1.6.0",
+          "date": "2026-09-21",
+          "notes": [
+            "Rows view: points become the headline, with the rank in a strip to the left",
+            "The overview shows each league's win percentage and how many games ended 0-0",
+            "UEFA team boxes gain a country flag and goal difference"
+          ]
+        },
+        {
+          "version": "1.5.0",
+          "date": "2026-09-06",
+          "notes": [
+            "Positions come from the official league table, including Serie A and La Liga's head-to-head tiebreaks",
+            "Goal difference in every team box",
+            "Today's fixtures pulse, in every league and both layouts"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "date": "2026-08-31",
+          "notes": [
+            "The 2026/27 Champions League, Europa League and Conference League",
+            "A 3 UEFA cups overview alongside the five leagues"
+          ]
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-08-28",
+          "notes": [
+            "The Champions League arrives",
+            "Qualification and relegation zones drawn behind every league",
+            "Each club's position, matchday by matchday, on its club card; step between clubs with the arrows",
+            "Kickoff dates and times on upcoming fixtures"
+          ]
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-08-26",
+          "notes": [
+            "Official match highlights, in English and Italian, side by side",
+            "Left and right switch league; up and down step through the matchweeks"
+          ]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-08-23",
+          "notes": [
+            "An All 5 leagues overview: every table on one screen",
+            "Club crests throughout, and a club card listing every fixture"
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-08-21",
+          "notes": [
+            "Season Tower for Serie A, the Premier League, La Liga, Ligue 1 and the Bundesliga: every point won above the line, every point dropped below it",
+            "Results update automatically as matches finish"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nfl",
+      "name": "NFL",
+      "kicker": "Wins up, losses down",
+      "color": "#4d94e0",
+      "url": "https://nfl.aguywithascarf.com/",
+      "releases": [
+        {
+          "version": "1.4.0",
+          "date": "2026-09-24",
+          "notes": [
+            "The Season Film returns: a card for every team, with player cards and game-by-game charts",
+            "Season leaders by position group"
+          ]
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-09-18",
+          "notes": [
+            "Results update automatically after every game window",
+            "Each team's card traces its season path, week by week"
+          ]
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-09-08",
+          "notes": [
+            "On a phone the towers keep their shape and scroll sideways",
+            "Every season, grouping and ranking has its own link, and the live season opens on the latest week played"
+          ]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-09-05",
+          "notes": [
+            "The 2026 season, live: real results filling in week by week, with 2024 and 2025 complete alongside"
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-08-05",
+          "notes": [
+            "All 32 teams as towers on one shared baseline: wins stack up, losses hang below, games still to come hang from the ceiling",
+            "Step through the weeks with the arrows or the keyboard"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nba",
+      "name": "NBA",
+      "kicker": "Season film and towers",
+      "color": "#e0453f",
+      "url": "https://nba.aguywithascarf.com/",
+      "releases": [
+        {
+          "version": "1.3.0",
+          "date": "2026-09-24",
+          "notes": [
+            "New chart cards: assists, rebounding, double-doubles, and the scoring race as ten columns",
+            "A playoff bracket, as the season's second view",
+            "Every player outside the top 100 now has a card too"
+          ]
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-09-23",
+          "notes": [
+            "Each team card shows its roster as a squad of eighteen, and a season arc naming every opponent",
+            "Double- and triple-doubles marked on the game chart"
+          ]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-09-22",
+          "notes": [
+            "Player cards set playoff stats against the regular season, and draw the whole calendar on the game chart",
+            "Every game bar is topped with a W or an L",
+            "Every team and player name links to its card"
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-09-21",
+          "notes": [
+            "The NBA Season Film and Season Towers: 2025-26 complete, 2026-27 ready",
+            "Shot charts on every player card, and the season's biggest scoring nights"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "worldcup",
+      "name": "World Cup",
+      "kicker": "Road to the Final",
+      "color": "#3fbe72",
+      "url": "https://worldcupbracket.aguywithascarf.com/",
+      "releases": [
+        {
+          "version": "1.9.1",
+          "date": "2026-08-16",
+          "notes": [
+            "Fullscreen from every screen, not just the films"
+          ]
+        },
+        {
+          "version": "1.9.0",
+          "date": "2026-07-29",
+          "notes": [
+            "A Fast speed for the films: each card moves on as soon as its photos have loaded",
+            "Fullscreen on every film, with Esc leaving fullscreen rather than the film"
+          ]
+        },
+        {
+          "version": "1.8.0",
+          "date": "2026-07-28",
+          "notes": [
+            "By the Numbers: a film of all 205 of FIFA's tournament statistics, host city by host city",
+            "The Players: all 1,248 players by position, with their numbers and every match they played"
+          ]
+        },
+        {
+          "version": "1.7.0",
+          "date": "2026-07-20",
+          "notes": [
+            "The Tactical view: every team's line-ups across the tournament, as pitches, as a matrix of minutes and as a squad",
+            "The champions' screen shows the winner's whole run"
+          ]
+        },
+        {
+          "version": "1.6.0",
+          "date": "2026-07-17",
+          "notes": [
+            "The Controversy Tracker: the knockout decisions that shaped the tournament, fact-checked, with the role VAR played and how the press reacted",
+            "Golden Glove and Shots on Goal boards, from FIFA's official data",
+            "Possession and team stats on every match, plus a link to FIFA's official match report",
+            "The films remember where you left off"
+          ]
+        },
+        {
+          "version": "1.5.0",
+          "date": "2026-07-14",
+          "notes": [
+            "The Film: the whole tournament replayed as a story, with goals, cards, shoot-outs and the bracket after every knockout match",
+            "Follow a single nation from its first group game to its last"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "date": "2026-07-08",
+          "notes": [
+            "The Top Cards board: top scorers, assists, power rankings and fantasy picks",
+            "Referees and FIFA Power Rankings tabs"
+          ]
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-07-05",
+          "notes": [
+            "Tactical line-ups for every match, drawn on a pitch",
+            "FIFA Fantasy data, and a confederation spotlight",
+            "Show scores and Show eliminated switches"
+          ]
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-07-03",
+          "notes": [
+            "Goals, assists and top scorers surface around the bracket while it idles"
+          ]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-07-02",
+          "notes": [
+            "A stats panel: goals, assists, cards, VAR, matches, attendance, and full squads with photos"
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-07-01",
+          "notes": [
+            "The knockout bracket as one radial picture, updating as results come in",
+            "Tap any team or match for scorers, line-ups, referee and attendance, with kickoff times in your own time zone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "golf",
+      "name": "PGA TOUR",
+      "kicker": "Season Film",
+      "color": "#57a34a",
+      "url": "https://golf.aguywithascarf.com/",
+      "releases": [
+        {
+          "version": "1.2.1",
+          "date": "2026-09-09",
+          "notes": [
+            "A + button linking the other sports experiences",
+            "Fixed mobile Safari closing the tab"
+          ]
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-09-05",
+          "notes": [
+            "A rounds-by-score histogram on every player card",
+            "Season and all-time records broken down into won, top 10, top 25, made the cut and missed it",
+            "Round totals coloured by their score to par"
+          ]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-09-03",
+          "notes": [
+            "Tournament cards show every round at once as a heat map, and who scored what on each hole",
+            "Hole-by-hole scorecards for the whole field, not just the FedExCup top 70",
+            "A Stats tab with strokes gained"
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-09-02",
+          "notes": [
+            "The PGA TOUR Season Film: a card for each of the FedExCup top 70, and one for every tournament",
+            "Hole-by-hole scorecards for every round"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "athletics",
+      "name": "Athletics",
+      "kicker": "World Record Film",
+      "color": "#d98a3d",
+      "url": "https://athletics.aguywithascarf.com/",
+      "releases": [
+        {
+          "version": "1.5.1",
+          "date": "2026-09-23",
+          "notes": [
+            "Phones read the record cards and the top lists as a page again"
+          ]
+        },
+        {
+          "version": "1.5.0",
+          "date": "2026-09-15",
+          "notes": [
+            "Who Sets Them: every nation, by records set, beaten and equalled",
+            "One tab row crosses between World Records and Top Lists"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "date": "2026-09-14",
+          "notes": [
+            "Top Lists: the fifty best marks ever in every event, read as performances or as performers, with the world records marked"
+          ]
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-09-12",
+          "notes": [
+            "The Ultimate Championship, Budapest 2026: a card for every event as results land; races run from the line, throws land on their mark, jumps get the pit",
+            "Podium portraits, and a closing card with every champion"
+          ]
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-09-11",
+          "notes": [
+            "An illustrated guide at /help"
+          ]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-09-08",
+          "notes": [
+            "Every jump, throw and combined event",
+            "The whole-sport cards: The Longest Wait, One Ranking, Records Per Year, Records Per Day, Where Records Fall, Biggest Meetings",
+            "Each event's own quirks, such as timing and rule changes, explained behind a ?"
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-09-07",
+          "notes": [
+            "The World Record Film: every world record progression as a card, men's and women's",
+            "The staircase of marks, and the ghost race that runs every record holder at once"
+          ]
+        }
+      ]
+    }
+  ]
+}
