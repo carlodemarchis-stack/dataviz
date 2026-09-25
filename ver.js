@@ -22,7 +22,10 @@
     '.agwas-ver{font:inherit;color:inherit;opacity:.72;text-decoration:none;white-space:nowrap;' +
     'font-variant-numeric:tabular-nums}' +
     '.agwas-ver:hover{opacity:1;text-decoration:underline}' +
-    '.agwas-ver:not(:empty)::before{content:"\\00b7\\00a0";opacity:.7}' +
+    /* credit lines butt the badge straight against "Credits", so it brings its own spaces;
+       the help line already has a space before it, so there it only needs the one after */
+    '.agwas-ver:not(:empty)::before{content:"\\00a0\\00b7\\00a0";opacity:.7}' +
+    '.agwas-rel .agwas-ver:not(:empty)::before{content:"\\00b7\\00a0"}' +
     '.agwas-ver.bare::before{content:none}' +
     /* the "Release notes · v1.4.0" line added to the foot of each app's help panel */
     '.agwas-rel{margin:14px 0 0;font-size:.92em;opacity:.78}' +
