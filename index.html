@@ -122,6 +122,21 @@ h1 b{font-weight:700}
 .herometa span{display:inline-flex; align-items:center; gap:8px}
 .herometa span::before{content:''; width:5px; height:5px; border-radius:50%; background:currentColor; opacity:.55}
 
+/* ---------- quick links: straight to each app, version filled by ver.js ---------- */
+.quick{display:flex; flex-wrap:wrap; gap:8px; margin:clamp(22px,3.4vh,30px) 0 0; padding:0; list-style:none; max-width:900px}
+.quick a{
+  display:inline-flex; align-items:center; gap:8px; text-decoration:none; white-space:nowrap;
+  font-size:13.5px; color:var(--ink); border:1px solid var(--line); border-radius:999px;
+  padding:7px 13px 7px 11px; background:rgba(255,255,255,.025);
+  transition:border-color .2s, background .2s, transform .2s;
+}
+.quick a:hover,.quick a:focus-visible{
+  border-color:color-mix(in srgb, var(--c) 55%, transparent); background:rgba(255,255,255,.05); transform:translateY(-1px);
+}
+.quick i{width:8px; height:8px; border-radius:50%; background:var(--c); display:block; flex:none}
+.quick small{color:var(--muted-2); font-size:12px; letter-spacing:.02em; font-variant-numeric:tabular-nums}
+.quick small:empty{display:none}
+
 /* ---------- hero call to action ---------- */
 .cta{
   margin-top:clamp(30px,4.5vh,42px); max-width:800px;
@@ -366,6 +381,7 @@ footer{
 
 <!-- Umami --><script defer src="https://m.aguywithascarf.com/k.js" data-website-id="eebb8dd0-e538-4533-ab76-d8d90eaa084e"></script><!-- End Umami -->
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ee0c675f2c4e40018d6a3f32d4e3ab3e"}'></script><!-- End Cloudflare Web Analytics -->
+<script defer src="ver.js"></script>
 </head>
 <body>
 
@@ -381,8 +397,20 @@ footer{
       through match by match, a tennis season told one player at a time, a Formula&nbsp;1 year read
       lap by lap.</strong>
     </p>
+
+    <ul class="quick" aria-label="Go straight to an experience">
+      <li><a href="https://f1.aguywithascarf.com/" style="--c:#00d7b6"><i></i>Formula 1 <small data-agwas-ver="f1"></small></a></li>
+      <li><a href="https://tennis.aguywithascarf.com/" style="--c:#f2c14e"><i></i>Tennis <small data-agwas-ver="tennis"></small></a></li>
+      <li><a href="https://top5.aguywithascarf.com/" style="--c:#2f9e58"><i></i>Football <small data-agwas-ver="football"></small></a></li>
+      <li><a href="https://nfl.aguywithascarf.com/" style="--c:#4d94e0"><i></i>NFL <small data-agwas-ver="nfl"></small></a></li>
+      <li><a href="https://nba.aguywithascarf.com/" style="--c:#e0453f"><i></i>NBA <small data-agwas-ver="nba"></small></a></li>
+      <li><a href="https://worldcupbracket.aguywithascarf.com/" style="--c:#3fbe72"><i></i>World Cup <small data-agwas-ver="worldcup"></small></a></li>
+      <li><a href="https://golf.aguywithascarf.com/" style="--c:#57a34a"><i></i>PGA TOUR <small data-agwas-ver="golf"></small></a></li>
+      <li><a href="https://athletics.aguywithascarf.com/" style="--c:#d98a3d"><i></i>Athletics <small data-agwas-ver="athletics"></small></a></li>
+    </ul>
+
     <p class="herometa">
-      <span>Seven experiences live</span>
+      <span>Eight experiences live</span>
       <span>Best in landscape on laptop &amp; iPad — great on a phone too</span>
       <span>By Carlo De Marchis</span>
     </p>
