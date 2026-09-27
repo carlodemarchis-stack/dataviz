@@ -303,7 +303,7 @@
           "version": "1.3.1",
           "date": "2026-09-27",
           "notes": [
-            "Season towers: Group, Order and the legend move to a strip below the top bar",
+            "Season towers: always ranked by record, with Group and the legend in a strip below the top bar",
             "A shared towers link opens on the towers, and a reload keeps your grouping and order"
           ]
         },
