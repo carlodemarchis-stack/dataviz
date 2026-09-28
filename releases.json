@@ -252,6 +252,15 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.6.0",
+          "date": "2026-09-28",
+          "notes": [
+            "Game cards show who's favoured for every game still to play, from the two teams' ESPN ratings",
+            "Team strength and schedule difficulty now look different: a centre-line bar for how good a team is, a green-to-red bar for how hard its games are",
+            "Team cards rate each remaining opponent in words, from very hard to easy"
+          ]
+        },
+        {
           "version": "1.5.3",
           "date": "2026-09-28",
           "notes": [
