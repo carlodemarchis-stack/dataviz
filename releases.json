@@ -252,6 +252,14 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.5.0",
+          "date": "2026-09-28",
+          "notes": [
+            "Rank teams by remaining schedule: the average ESPN power rating of the opponents still to play",
+            "Every upcoming game shows how strong the opponent is, and each team's card says how hard its run-in is"
+          ]
+        },
+        {
           "version": "1.4.0",
           "date": "2026-09-24",
           "notes": [
