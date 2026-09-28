@@ -252,6 +252,15 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.5.1",
+          "date": "2026-09-28",
+          "notes": [
+            "Each team's box shows a bar for how hard its remaining schedule is",
+            "Team cards open on the schedule, with every upcoming opponent's strength",
+            "Game cards show both teams' ESPN power rating"
+          ]
+        },
+        {
           "version": "1.5.0",
           "date": "2026-09-28",
           "notes": [
