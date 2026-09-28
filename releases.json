@@ -252,6 +252,13 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.5.3",
+          "date": "2026-09-28",
+          "notes": [
+            "Team and game cards colour each team's strength the same way: red is tough to face, green is not"
+          ]
+        },
+        {
           "version": "1.5.2",
           "date": "2026-09-28",
           "notes": [
