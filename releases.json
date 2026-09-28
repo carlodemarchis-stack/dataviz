@@ -252,6 +252,13 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.5.2",
+          "date": "2026-09-28",
+          "notes": [
+            "The schedule bar on each team's box is coloured green to red by how tough the remaining games are"
+          ]
+        },
+        {
           "version": "1.5.1",
           "date": "2026-09-28",
           "notes": [
