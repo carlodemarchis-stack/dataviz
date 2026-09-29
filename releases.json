@@ -252,6 +252,15 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.7.0",
+          "date": "2026-09-29",
+          "notes": [
+            "Expected vs result, from week 4: each week's expectations are frozen before kickoff — ESPN's predictor, the market line and our own favourite",
+            "Played games show how each expectation did and flag the upsets; a strip above the tower keeps the week's score",
+            "Games already played no longer show today's ratings"
+          ]
+        },
+        {
           "version": "1.6.0",
           "date": "2026-09-28",
           "notes": [
