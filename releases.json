@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.7.1",
+          "date": "2026-09-30",
+          "notes": [
+            "Season barcode: each row now opens with the club's own team box, and every cell names the opponent"
+          ]
+        },
+        {
           "version": "1.7.0",
           "date": "2026-09-30",
           "notes": [
