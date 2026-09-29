@@ -400,6 +400,14 @@
       "url": "https://nhl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.1.0",
+          "date": "2026-09-29",
+          "notes": [
+            "New Team stats card, the season barcode: every game of every team as one cell, rows in standings order",
+            "Wins, overtime losses and regulation losses in their own colours, a dot on wins settled in overtime or a shootout, and each game on hover"
+          ]
+        },
+        {
           "version": "1.0.0",
           "date": "2026-09-29",
           "notes": [
