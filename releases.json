@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25",
+  "updated": "2026-09-29",
   "apps": [
     {
       "id": "f1",
@@ -388,6 +388,25 @@
           "notes": [
             "The NBA Season Film and Season Towers: 2025-26 complete, 2026-27 ready",
             "Shot charts on every player card, and the season's biggest scoring nights"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhl",
+      "name": "NHL",
+      "kicker": "Season film and towers",
+      "color": "#2a9fd8",
+      "url": "https://nhl.aguywithascarf.com/",
+      "releases": [
+        {
+          "version": "1.0.0",
+          "date": "2026-09-29",
+          "notes": [
+            "First release on opening night of 2026-27: the 2025-26 season complete, and 2026-27's 84-game schedule filling in nightly",
+            "A card for the 100 leading scorers with every shot on a rink, and for the 15 goalies with the most wins with every shot they faced",
+            "All 32 teams with roster, goalies, playoff run and season arc; scoring, goal, assist and goalie races, the biggest nights and shot volume",
+            "Season towers where an overtime loss earns its half, and the Stanley Cup playoff bracket"
           ]
         }
       ]
