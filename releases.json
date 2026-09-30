@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.4",
+          "date": "2026-09-30",
+          "notes": [
+            "League comparison uses stacked bars so the five leagues line up for comparison, with every figure labelled and no scrolling"
+          ]
+        },
+        {
           "version": "1.9.3",
           "date": "2026-09-30",
           "notes": [
