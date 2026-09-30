@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.7.5",
+          "date": "2026-09-30",
+          "notes": [
+            "Season barcode: the away arrow sits above the opponent, so every code lines up"
+          ]
+        },
+        {
           "version": "1.7.4",
           "date": "2026-09-30",
           "notes": [
