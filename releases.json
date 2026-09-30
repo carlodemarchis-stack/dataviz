@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "apps": [
     {
       "id": "f1",
@@ -441,6 +441,14 @@
       "color": "#2a9fd8",
       "url": "https://nhl.aguywithascarf.com/",
       "releases": [
+        {
+          "version": "1.1.1",
+          "date": "2026-09-30",
+          "notes": [
+            "During the season, teams are no longer marked as having missed the playoffs: that waits for the last game, or for the league's own clinched and eliminated marks",
+            "A team's biggest win and heaviest defeat are always a win and a defeat"
+          ]
+        },
         {
           "version": "1.1.0",
           "date": "2026-09-29",
