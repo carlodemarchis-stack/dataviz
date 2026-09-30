@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.3",
+          "date": "2026-09-30",
+          "notes": [
+            "League comparison redrawn as donuts and bars, one column per league: how matches were won, goals per match home and away, and matches by total goals — every figure labelled"
+          ]
+        },
+        {
           "version": "1.9.2",
           "date": "2026-09-30",
           "notes": [
