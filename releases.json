@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.8.0",
+          "date": "2026-09-30",
+          "notes": [
+            "The five-league overview gains a results view: every club's wins, draws and losses stacked from the bottom up, beside the points bars"
+          ]
+        },
+        {
           "version": "1.7.5",
           "date": "2026-09-30",
           "notes": [
