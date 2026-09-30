@@ -458,6 +458,13 @@
       "url": "https://nhl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.2.1",
+          "date": "2026-09-30",
+          "notes": [
+            "Playoff race: each team's points are written into its bar, with the most it can still reach at the far end, and its W-L-OTL record alongside"
+          ]
+        },
+        {
           "version": "1.2.0",
           "date": "2026-09-30",
           "notes": [
