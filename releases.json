@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.0",
+          "date": "2026-09-30",
+          "notes": [
+            "A Stats button on the five-league overview opens league comparison charts: every match by result from the home side — wins and losses by margin, draws and 0-0s — as counts and as shares"
+          ]
+        },
+        {
           "version": "1.8.2",
           "date": "2026-09-30",
           "notes": [
