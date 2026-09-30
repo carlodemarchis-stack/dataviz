@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.8.2",
+          "date": "2026-09-30",
+          "notes": [
+            "The overview's results view shades each result by margin — big and narrow wins and losses, score draws and 0-0s — with a legend"
+          ]
+        },
+        {
           "version": "1.8.1",
           "date": "2026-09-30",
           "notes": [
