@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.7.3",
+          "date": "2026-09-30",
+          "notes": [
+            "Season barcode shows the score under each opponent"
+          ]
+        },
+        {
           "version": "1.7.2",
           "date": "2026-09-30",
           "notes": [
