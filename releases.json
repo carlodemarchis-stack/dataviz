@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.1",
+          "date": "2026-09-30",
+          "notes": [
+            "League comparison adds goals: home and away goals per match, and how many goals each match produced"
+          ]
+        },
+        {
           "version": "1.9.0",
           "date": "2026-09-30",
           "notes": [
