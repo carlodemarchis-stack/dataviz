@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.2",
+          "date": "2026-09-30",
+          "notes": [
+            "League comparison shows home and away sides as separate bars, in the same win / draw / loss colours as the rest of the page, and fits on one screen"
+          ]
+        },
+        {
           "version": "1.9.1",
           "date": "2026-09-30",
           "notes": [
