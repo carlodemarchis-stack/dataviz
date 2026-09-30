@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.8.1",
+          "date": "2026-09-30",
+          "notes": [
+            "Overview hover cards: a club's full run of results on the points bars, the single match on the results view",
+            "Clicking a league card opens it in the matching view — the tower chart from the bars, the season barcode from the results view",
+            "Opening a league from the overview now keeps its link, so a reload stays put"
+          ]
+        },
+        {
           "version": "1.8.0",
           "date": "2026-09-30",
           "notes": [
