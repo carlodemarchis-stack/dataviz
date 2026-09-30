@@ -458,6 +458,14 @@
       "url": "https://nhl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.3.0",
+          "date": "2026-09-30",
+          "notes": [
+            "The Season page is now the playoff race and the bracket; the towers are retired, and old towers links open the race at the same game",
+            "Race labels no longer overlap late in the season: points and maximum share one chip when the stripes get short"
+          ]
+        },
+        {
           "version": "1.2.1",
           "date": "2026-09-30",
           "notes": [
