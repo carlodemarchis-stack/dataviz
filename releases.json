@@ -458,6 +458,14 @@
       "url": "https://nhl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.4.0",
+          "date": "2026-09-30",
+          "notes": [
+            "The playoff race gets the NHL's four standings layouts as tabs: Wild card (the default, as nhl.com shows it), Division, Conference and League",
+            "In Wild card the line sits under the second wild card; in Division it sits under each division's top three"
+          ]
+        },
+        {
           "version": "1.3.0",
           "date": "2026-09-30",
           "notes": [
