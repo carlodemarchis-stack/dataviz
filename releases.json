@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.5",
+          "date": "2026-10-01",
+          "notes": [
+            "League comparison has its own shareable link (…/#ALL/2026-27/stats)"
+          ]
+        },
+        {
           "version": "1.9.4",
           "date": "2026-09-30",
           "notes": [
