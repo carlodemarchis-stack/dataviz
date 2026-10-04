@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30",
+  "updated": "2026-10-04",
   "apps": [
     {
       "id": "f1",
@@ -506,6 +506,14 @@
       "color": "#2a9fd8",
       "url": "https://nhl.aguywithascarf.com/",
       "releases": [
+        {
+          "version": "1.4.1",
+          "date": "2026-10-04",
+          "notes": [
+            "Player cards agree with their own game charts the same night: games, goals, points and goalie numbers now come from the box scores rather than the league's overnight totals",
+            "Save percentage uses the box score's saves, matching the league's figure exactly"
+          ]
+        },
         {
           "version": "1.4.0",
           "date": "2026-09-30",
