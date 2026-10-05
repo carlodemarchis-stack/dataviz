@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.6",
+          "date": "2026-10-05",
+          "notes": [
+            "The overview's Stats button and chart toggle sit first in the toolbar"
+          ]
+        },
+        {
           "version": "1.9.5",
           "date": "2026-10-01",
           "notes": [
