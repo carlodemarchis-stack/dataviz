@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.9",
+          "date": "2026-10-05",
+          "notes": [
+            "Results use the same six shades everywhere — the league barcode, hover cards and the team chart — with darker text on the lighter shades"
+          ]
+        },
+        {
           "version": "1.9.8",
           "date": "2026-10-05",
           "notes": [
