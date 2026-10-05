@@ -477,6 +477,14 @@
       "url": "https://nba.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.5.1",
+          "date": "2026-10-05",
+          "notes": [
+            "Games view: each team's name opens its card in the film",
+            "Bigger team names and records, slimmer game boxes, and the larger of wins or losses in white"
+          ]
+        },
+        {
           "version": "1.5.0",
           "date": "2026-10-05",
           "notes": [
