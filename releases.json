@@ -186,7 +186,7 @@
           "version": "1.9.6",
           "date": "2026-10-05",
           "notes": [
-            "The overview's Stats button and chart toggle sit first in the toolbar"
+            "The view toggles (and the overview's Stats button) sit first in the toolbar, ahead of + ? and fullscreen"
           ]
         },
         {
