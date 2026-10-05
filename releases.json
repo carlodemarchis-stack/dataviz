@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "apps": [
     {
       "id": "f1",
@@ -536,6 +536,13 @@
       "color": "#2a9fd8",
       "url": "https://nhl.aguywithascarf.com/",
       "releases": [
+        {
+          "version": "1.4.2",
+          "date": "2026-10-05",
+          "notes": [
+            "Team rosters: player portraits sit higher in their tiles, so faces are no longer covered by the stat pills"
+          ]
+        },
         {
           "version": "1.4.1",
           "date": "2026-10-04",
