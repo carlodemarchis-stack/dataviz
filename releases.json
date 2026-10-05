@@ -480,7 +480,7 @@
           "version": "1.5.0",
           "date": "2026-10-05",
           "notes": [
-            "Season page: a Reg. season view — every team on one row, every game a win or a loss with the opponent in its colours, like the axis on a team card",
+            "Season page: a Games view — every team on one row, every game a green or red box with the opponent's letters inside",
             "Follows the slider and the race's order; on 2026-27 it reads as the full schedule"
           ]
         },
