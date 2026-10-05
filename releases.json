@@ -477,6 +477,15 @@
       "url": "https://nba.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.4.0",
+          "date": "2026-10-05",
+          "notes": [
+            "The Season page is now a playoff race: every team's wins against the playoff and play-in lines, with the most it can still reach",
+            "Conference, Division and League tabs; teams fade once they cannot make the play-in, and tags fill in once a place is clinched",
+            "The towers are retired — old links open the race on the same grouping"
+          ]
+        },
+        {
           "version": "1.3.1",
           "date": "2026-09-27",
           "notes": [
