@@ -183,10 +183,17 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.7",
+          "date": "2026-10-05",
+          "notes": [
+            "The league pages' view toggle sits first in the toolbar too, ahead of + ? and fullscreen"
+          ]
+        },
+        {
           "version": "1.9.6",
           "date": "2026-10-05",
           "notes": [
-            "The view toggles (and the overview's Stats button) sit first in the toolbar, ahead of + ? and fullscreen"
+            "The overview's Stats button and chart toggle sit first in the toolbar"
           ]
         },
         {
