@@ -387,6 +387,15 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.8.0",
+          "date": "2026-10-05",
+          "notes": [
+            "The Season Film moves to 2026: player leaders, club towers and rosters for the season so far",
+            "The film follows the season by itself — after each slate its leaders, game logs and rosters refresh with the results",
+            "Washington players now carry their club's colours and schedule on their cards"
+          ]
+        },
+        {
           "version": "1.7.0",
           "date": "2026-09-29",
           "notes": [
