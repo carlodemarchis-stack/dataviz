@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.8",
+          "date": "2026-10-05",
+          "notes": [
+            "The five-league overview shows its total match count in the toolbar, like each league page"
+          ]
+        },
+        {
           "version": "1.9.7",
           "date": "2026-10-05",
           "notes": [
