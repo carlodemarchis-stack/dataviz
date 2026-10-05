@@ -560,6 +560,14 @@
       "url": "https://nhl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.5.0",
+          "date": "2026-10-05",
+          "notes": [
+            "New Games view on the Season page: every game of every team in standings order, coloured win, overtime loss or loss, with the opponent in each box",
+            "Point at a team to isolate its season; its code opens the team's card in the film"
+          ]
+        },
+        {
           "version": "1.4.3",
           "date": "2026-10-05",
           "notes": [
