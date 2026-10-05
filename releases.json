@@ -537,6 +537,13 @@
       "url": "https://nhl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.4.3",
+          "date": "2026-10-05",
+          "notes": [
+            "Players who changed teams over the summer appear in their new team's kit on 2026-27 cards, and keep their old kit on 2025-26 ones"
+          ]
+        },
+        {
           "version": "1.4.2",
           "date": "2026-10-05",
           "notes": [
