@@ -477,6 +477,14 @@
       "url": "https://nba.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.5.0",
+          "date": "2026-10-05",
+          "notes": [
+            "Season page: a Reg. season view — every team on one row, every game a win or a loss with the opponent in its colours, like the axis on a team card",
+            "Follows the slider and the race's order; on 2026-27 it reads as the full schedule"
+          ]
+        },
+        {
           "version": "1.4.0",
           "date": "2026-10-05",
           "notes": [
