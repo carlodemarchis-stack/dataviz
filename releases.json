@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.3",
+          "date": "2026-10-06",
+          "notes": [
+            "The Scorers button is now gold with a football icon, so the Top Scorers film is easy to spot in the toolbar"
+          ]
+        },
+        {
           "version": "1.10.2",
           "date": "2026-10-06",
           "notes": [
