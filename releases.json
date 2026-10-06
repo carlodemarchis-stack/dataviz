@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.12.2",
+          "date": "2026-10-06",
+          "notes": [
+            "Top Scorers cards: “When he scores” now also counts goals scored off the bench, and its key sits on the title line to save space"
+          ]
+        },
+        {
           "version": "1.12.1",
           "date": "2026-10-06",
           "notes": [
