@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.12.1",
+          "date": "2026-10-06",
+          "notes": [
+            "Top Scorers cards: when a player comes off the bench, his minutes fill the match box from the top — the end of the game — so starts and sub appearances read apart at a glance"
+          ]
+        },
+        {
           "version": "1.12.0",
           "date": "2026-10-06",
           "notes": [
