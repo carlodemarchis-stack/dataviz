@@ -569,6 +569,13 @@
       "url": "https://nhl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.5.3",
+          "date": "2026-10-06",
+          "notes": [
+            "Reloading or returning to the Season page always shows the latest game, even from a link that names an earlier one"
+          ]
+        },
+        {
           "version": "1.5.2",
           "date": "2026-10-06",
           "notes": [
