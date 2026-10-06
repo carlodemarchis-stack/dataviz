@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.11.0",
+          "date": "2026-10-06",
+          "notes": [
+            "Top Scorers cards show the whole season in two rows — every fixture, played or still to come — with minutes played as each box's fill and goals / assists stacked above",
+            "New “When he scores” line puts every goal on a 0–90' axis; hover or tap any match or goal for its details, and the goal list stays below"
+          ]
+        },
+        {
           "version": "1.10.4",
           "date": "2026-10-06",
           "notes": [
