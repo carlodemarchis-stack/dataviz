@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.0",
+          "date": "2026-10-06",
+          "notes": [
+            "New: Top Scorers film — one card per player for the top 25 goalscorers across the five leagues (ties included), with official photos, every goal match by match, and the club's result each matchday",
+            "Open it from the new Scorers button in the five-league overview or any league; it updates itself as results come in"
+          ]
+        },
+        {
           "version": "1.9.9",
           "date": "2026-10-05",
           "notes": [
