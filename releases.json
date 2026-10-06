@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.11.3",
+          "date": "2026-10-06",
+          "notes": [
+            "Top Scorers cards: a slimmer season strip — no matchday numbers under the boxes (they're in each box's tooltip)"
+          ]
+        },
+        {
           "version": "1.11.2",
           "date": "2026-10-06",
           "notes": [
