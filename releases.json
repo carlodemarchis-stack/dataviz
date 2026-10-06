@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.4",
+          "date": "2026-10-06",
+          "notes": [
+            "Top Scorers cards open with the player's name — the league is shown by its logo in the top bar"
+          ]
+        },
+        {
           "version": "1.10.3",
           "date": "2026-10-06",
           "notes": [
