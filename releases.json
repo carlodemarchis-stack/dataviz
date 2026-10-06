@@ -569,6 +569,14 @@
       "url": "https://nhl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.5.2",
+          "date": "2026-10-06",
+          "notes": [
+            "The Season page always reopens at the latest game played, so the race and the Games view are never a night behind the standings",
+            "Teams level on points are ordered as on nhl.com: fewer games played first, then regulation wins"
+          ]
+        },
+        {
           "version": "1.5.1",
           "date": "2026-10-06",
           "notes": [
