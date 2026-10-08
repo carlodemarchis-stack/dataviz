@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.15.1",
+          "date": "2026-10-08",
+          "notes": [
+            "Team cards: the squad runs as one continuous deck of player cards — no gaps between positions; each position is tagged on its first card"
+          ]
+        },
+        {
           "version": "1.15.0",
           "date": "2026-10-08",
           "notes": [
