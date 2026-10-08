@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.14.0",
+          "date": "2026-10-08",
+          "notes": [
+            "Every league now has its own Top Scorers film — its top 25, ties included — and the Scorers button on a league page opens it",
+            "In the film, the top bar switches between Top 5 (the top 50 across all five leagues) and each league, with how many players each one has"
+          ]
+        },
+        {
           "version": "1.13.0",
           "date": "2026-10-06",
           "notes": [
