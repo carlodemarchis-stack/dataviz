@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.15.4",
+          "date": "2026-10-08",
+          "notes": [
+            "Team cards: the position chart colours each matchday by its result (win, draw, 0-0, loss shades) and uses all the height available"
+          ]
+        },
+        {
           "version": "1.15.3",
           "date": "2026-10-08",
           "notes": [
