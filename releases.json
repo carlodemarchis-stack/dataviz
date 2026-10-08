@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.15.0",
+          "date": "2026-10-08",
+          "notes": [
+            "New: Team cards — every club in the five leagues, one card per team in table order, with its three top scorers, results and possession match by match, goals scored and conceded by minute, and its table position over the season",
+            "A Squad tab shows the whole squad as player cards with minutes, goals and assists, injuries and bookings; players with a Top Scorers card link straight to it",
+            "Open it from the new green Teams button, next to Scorers"
+          ]
+        },
+        {
           "version": "1.14.1",
           "date": "2026-10-08",
           "notes": [
