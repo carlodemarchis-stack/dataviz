@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.15.3",
+          "date": "2026-10-08",
+          "notes": [
+            "Team cards always show three players in the photo panel: the top scorers, then the assist leaders, then the players with most minutes"
+          ]
+        },
+        {
           "version": "1.15.2",
           "date": "2026-10-08",
           "notes": [
