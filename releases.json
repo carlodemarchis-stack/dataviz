@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.14.1",
+          "date": "2026-10-08",
+          "notes": [
+            "Top Scorers: the five-league film is now labelled “All Leagues” in the top bar"
+          ]
+        },
+        {
           "version": "1.14.0",
           "date": "2026-10-08",
           "notes": [
