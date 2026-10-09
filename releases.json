@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.6",
+          "date": "2026-10-10",
+          "notes": [
+            "Team cards: the shots number now says it is a per-game average (On target / shots a game); hover it for the season totals"
+          ]
+        },
+        {
           "version": "1.17.5",
           "date": "2026-10-10",
           "notes": [
