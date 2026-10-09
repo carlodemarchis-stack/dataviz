@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.16.0",
+          "date": "2026-10-09",
+          "notes": [
+            "Team cards: new All Leagues film, all 96 clubs of the five leagues in one ranking by points per game, so leagues with fewer games compare fairly",
+            "The tower's Teams button on the all-leagues overview now opens that film, and the team cards' top bar has an All Leagues switch",
+            "Team cards: the 'when they score' line no longer grows taller when goals pile up, so every card fits on smaller screens"
+          ]
+        },
+        {
           "version": "1.15.7",
           "date": "2026-10-09",
           "notes": [
