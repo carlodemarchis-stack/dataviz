@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.4",
+          "date": "2026-10-10",
+          "notes": [
+            "Team cards, Squad tab: one line under the tiles explains the four numbers, for outfield players and for goalkeepers"
+          ]
+        },
+        {
           "version": "1.17.3",
           "date": "2026-10-10",
           "notes": [
