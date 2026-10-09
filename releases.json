@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.16.3",
+          "date": "2026-10-09",
+          "notes": [
+            "Team cards: on the Squad tab the photo panel steps aside and the player tiles use the whole card"
+          ]
+        },
+        {
           "version": "1.16.2",
           "date": "2026-10-09",
           "notes": [
