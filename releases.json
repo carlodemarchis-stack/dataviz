@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.15.5",
+          "date": "2026-10-09",
+          "notes": [
+            "Team cards: the position chart's latest dot loses its club-colour ring",
+            "Team cards: a player who assisted before his first goal now keeps that assist in his count"
+          ]
+        },
+        {
           "version": "1.15.4",
           "date": "2026-10-08",
           "notes": [
