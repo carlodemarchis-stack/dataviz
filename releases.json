@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.16.5",
+          "date": "2026-10-09",
+          "notes": [
+            "Team cards, Squad tab: player tiles are the same size for every club, sized so the biggest squad fills the whole space; text grows with the tiles on big screens"
+          ]
+        },
+        {
           "version": "1.16.4",
           "date": "2026-10-09",
           "notes": [
