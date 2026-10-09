@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.16.6",
+          "date": "2026-10-09",
+          "notes": [
+            "Team cards, Squad tab: tiles stretch a little taller or wider so the biggest squad fills both the width and the height on more screen sizes"
+          ]
+        },
+        {
           "version": "1.16.5",
           "date": "2026-10-09",
           "notes": [
