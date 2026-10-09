@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.0",
+          "date": "2026-10-10",
+          "notes": [
+            "Team cards, Squad tab: an Order by switch on the tab line: by role (default), minutes played or age; click again to reverse, and the choice is remembered"
+          ]
+        },
+        {
           "version": "1.16.6",
           "date": "2026-10-09",
           "notes": [
