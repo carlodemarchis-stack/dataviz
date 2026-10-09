@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.16.4",
+          "date": "2026-10-09",
+          "notes": [
+            "Team cards, Squad tab: the panel keeps the rank and big number down to where the squad starts; the player tiles run the full width below it"
+          ]
+        },
+        {
           "version": "1.16.3",
           "date": "2026-10-09",
           "notes": [
