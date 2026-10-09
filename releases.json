@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.1",
+          "date": "2026-10-10",
+          "notes": [
+            "Team cards, Squad tab: every player carries his role and age in the club colour, in every order",
+            "The three numbers on each tile lose their repeated labels; one key on the tab line reads min · goals · assists (saves and goals conceded for goalkeepers)"
+          ]
+        },
+        {
           "version": "1.17.0",
           "date": "2026-10-10",
           "notes": [
