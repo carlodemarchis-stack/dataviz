@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.15.7",
+          "date": "2026-10-09",
+          "notes": [
+            "Team cards: the position chart writes the club's current place beside its latest dot",
+            "Team cards on phones: the position chart and scorers no longer squash together"
+          ]
+        },
+        {
           "version": "1.15.6",
           "date": "2026-10-09",
           "notes": [
