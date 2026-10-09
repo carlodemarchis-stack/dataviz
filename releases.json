@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.16.1",
+          "date": "2026-10-09",
+          "notes": [
+            "Team cards, All Leagues: clubs level on points per game are split by fewer defeats, then goal difference, then goals scored"
+          ]
+        },
+        {
           "version": "1.16.0",
           "date": "2026-10-09",
           "notes": [
