@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.3",
+          "date": "2026-10-10",
+          "notes": [
+            "Top Scorers: a match the player missed keeps its result colour, just lighter, instead of a blank box",
+            "Team cards, Squad tab: the age number sits on the club colour"
+          ]
+        },
+        {
           "version": "1.17.2",
           "date": "2026-10-10",
           "notes": [
