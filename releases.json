@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.16.2",
+          "date": "2026-10-09",
+          "notes": [
+            "Team cards: hovering or tapping a match also lights up its goalscorers in the Scorers list"
+          ]
+        },
+        {
           "version": "1.16.1",
           "date": "2026-10-09",
           "notes": [
