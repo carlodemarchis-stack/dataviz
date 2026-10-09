@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.2",
+          "date": "2026-10-10",
+          "notes": [
+            "Team cards, Squad tab: age is now the first of four numbers on each tile (age · min · goals · assists); the club-colour label shows the role only",
+            "Player names fit the tile: the full name when it fits, else 'C. Pulisic', else the surname alone"
+          ]
+        },
+        {
           "version": "1.17.1",
           "date": "2026-10-10",
           "notes": [
