@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.15.6",
+          "date": "2026-10-09",
+          "notes": [
+            "Team cards: the position chart only plots matchdays the club has played, so a round still under way no longer adds an empty dot"
+          ]
+        },
+        {
           "version": "1.15.5",
           "date": "2026-10-09",
           "notes": [
