@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.18.0",
+          "date": "2026-10-10",
+          "notes": [
+            "Team cards: hovering or tapping a match (a season box or a position dot) opens a match card: both crests, the score in the result colour, every goal with scorer, assist and type, possession, shots, passing, corners and cards",
+            "Matches still to play show the date and kick-off (CET)"
+          ]
+        },
+        {
           "version": "1.17.6",
           "date": "2026-10-10",
           "notes": [
