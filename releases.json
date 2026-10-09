@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.5",
+          "date": "2026-10-10",
+          "notes": [
+            "Team cards, Squad tab: a 0′ players switch before Order by shows or hides the players with no league minutes yet (remembered); the tiles resize to fill the space either way"
+          ]
+        },
+        {
           "version": "1.17.4",
           "date": "2026-10-10",
           "notes": [
