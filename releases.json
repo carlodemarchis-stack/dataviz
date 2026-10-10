@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.20.3",
+          "date": "2026-10-10",
+          "notes": [
+            "Team cards, match card: the club's own goals in its colour too; when the two clubs' colours are alike, the opponent's goals go grey so the sides stay apart"
+          ]
+        },
+        {
           "version": "1.20.2",
           "date": "2026-10-10",
           "notes": [
