@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.20.6",
+          "date": "2026-10-11",
+          "notes": [
+            "Top Scorers keep updating on match days: when ESPN's season totals trail the latest match reports, the cards follow the reports instead of waiting"
+          ]
+        },
+        {
           "version": "1.20.5",
           "date": "2026-10-10",
           "notes": [
