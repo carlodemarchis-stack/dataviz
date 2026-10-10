@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.20.4",
+          "date": "2026-10-10",
+          "notes": [
+            "Team cards: the club's win-draw-loss record sits under the rank on the panel"
+          ]
+        },
+        {
           "version": "1.20.3",
           "date": "2026-10-10",
           "notes": [
