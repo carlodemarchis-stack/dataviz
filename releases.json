@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.19.1",
+          "date": "2026-10-10",
+          "notes": [
+            "All Leagues table: club names in the club colour; points per game shaded from green (3.00) through amber (1.50) to red (0.00)"
+          ]
+        },
+        {
           "version": "1.19.0",
           "date": "2026-10-10",
           "notes": [
