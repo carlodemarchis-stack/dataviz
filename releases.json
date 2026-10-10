@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.20.1",
+          "date": "2026-10-10",
+          "notes": [
+            "Top Scorers: hovering or tapping a match box opens a match card: both crests, the score in the result colour, whether he started or came off the bench and his minutes, his goals (type and assist), assists, shots and cards; missed games say so, games to play show the date"
+          ]
+        },
+        {
           "version": "1.20.0",
           "date": "2026-10-10",
           "notes": [
