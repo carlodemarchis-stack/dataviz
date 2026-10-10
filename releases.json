@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.20.2",
+          "date": "2026-10-10",
+          "notes": [
+            "Team cards, match card: goals conceded are written in the opponent's colour, not a red that could read as the club's own"
+          ]
+        },
+        {
           "version": "1.20.1",
           "date": "2026-10-10",
           "notes": [
