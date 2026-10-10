@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.19.0",
+          "date": "2026-10-10",
+          "notes": [
+            "Team cards, All Leagues: a closing card with all 96 clubs on one screen, four columns read down: rank, league, points per game in the club colour, club, then league place and points; click a row to jump to that club"
+          ]
+        },
+        {
           "version": "1.18.0",
           "date": "2026-10-10",
           "notes": [
