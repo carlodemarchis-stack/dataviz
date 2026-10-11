@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.24.1",
+          "date": "2026-10-11",
+          "notes": [
+            "Match cards: near misses (\"close, but misses the top left corner\") are drawn just outside that corner instead of inside the goal, and blocked shots no longer appear on the goal chart (76 shots corrected)"
+          ]
+        },
+        {
           "version": "1.24.0",
           "date": "2026-10-11",
           "notes": [
