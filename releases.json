@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.25.3",
+          "date": "2026-10-11",
+          "notes": [
+            "Match cards: each goal chart is captioned with the keeper(s) who stood in that goal (\"García / Szczesny\" when one came on) instead of the shooting team"
+          ]
+        },
+        {
           "version": "1.25.2",
           "date": "2026-10-11",
           "notes": [
