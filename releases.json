@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.21.0",
+          "date": "2026-10-11",
+          "notes": [
+            "New: Match cards (Serie A first) — one card per match, one film per matchday, every column split at the halfway line: home on top, away below",
+            "Left: both line-ups on one pitch with every goal, assist, card and substitution on the player, and the score big; middle: every attempt where it was taken from, and the flow of the match across halfway; right: where the attempts went on goal, the scorers, and the numbers",
+            "Built nightly from ESPN match reports, each checked against our results"
+          ]
+        },
+        {
           "version": "1.20.6",
           "date": "2026-10-11",
           "notes": [
