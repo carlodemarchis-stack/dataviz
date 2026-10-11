@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.21.1",
+          "date": "2026-10-11",
+          "notes": [
+            "Season Tower: a dark Matches button next to Teams and Scorers opens the match cards (overview and Serie A for now)"
+          ]
+        },
+        {
           "version": "1.21.0",
           "date": "2026-10-11",
           "notes": [
