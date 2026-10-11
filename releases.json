@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.26.1",
+          "date": "2026-10-12",
+          "notes": [
+            "Match cards: a key above the flow chart — the line wears the colour of whoever was leading (grey when level), the bars show each side's attacking push every 5 minutes"
+          ]
+        },
+        {
           "version": "1.26.0",
           "date": "2026-10-11",
           "notes": [
