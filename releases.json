@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.23.0",
+          "date": "2026-10-11",
+          "notes": [
+            "New: Goalkeeper cards — every regular keeper of the five leagues, ranked by saves: All Leagues (top 25) and one film per league",
+            "Each card: saves, conceded, save %, clean sheets, penalties; the season match by match (his saves in the box, the goals against him above it); every shot on target he faced on one goal, zone by zone; the goals against him",
+            "A blue Keepers button in the Season Tower; built nightly from the match cards"
+          ]
+        },
+        {
           "version": "1.22.0",
           "date": "2026-10-11",
           "notes": [
