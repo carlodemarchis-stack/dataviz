@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.25.0",
+          "date": "2026-10-11",
+          "notes": [
+            "Match cards: hover (or tap) any trace of a goal — the scorer's chip on the pitch, the assist, the shot on the map, the flow label, the dot in the goal frame or the scorer below — and all the others light up while the rest of the goals step back; a scorer's chip lights all of his goals"
+          ]
+        },
+        {
           "version": "1.24.1",
           "date": "2026-10-11",
           "notes": [
