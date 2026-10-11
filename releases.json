@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.23.2",
+          "date": "2026-10-11",
+          "notes": [
+            "Premier League new signings whose official portrait isn't out yet (Emiliano Martínez at Chelsea and 23 more) now show the league's earlier cutout instead of initials, until the new one is published"
+          ]
+        },
+        {
           "version": "1.23.1",
           "date": "2026-10-11",
           "notes": [
