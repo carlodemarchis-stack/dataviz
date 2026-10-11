@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.25.2",
+          "date": "2026-10-11",
+          "notes": [
+            "Match cards: each scorer's chip names the assist provider in small type below (○ Noslin), when the goal had one"
+          ]
+        },
+        {
           "version": "1.25.1",
           "date": "2026-10-11",
           "notes": [
