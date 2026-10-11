@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.24.0",
+          "date": "2026-10-11",
+          "notes": [
+            "Match cards: each half of the pitch carries its club's name as big as it fits (two lines for the long ones), the formation and table move on the right, and the club crest as a watermark",
+            "Match cards: the stat bars all share one width and carry their value inside, at the base by the label line"
+          ]
+        },
+        {
           "version": "1.23.2",
           "date": "2026-10-11",
           "notes": [
