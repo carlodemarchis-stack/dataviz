@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.22.0",
+          "date": "2026-10-11",
+          "notes": [
+            "Match cards for all five leagues: Serie A, Premier League, LaLiga, Ligue 1 and Bundesliga — every match played so far (276), each checked against our results",
+            "The tower's Matches button opens each league's match cards; seven more formations laid out on the pitch, and formations with five or six lines get more room"
+          ]
+        },
+        {
           "version": "1.21.1",
           "date": "2026-10-11",
           "notes": [
