@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.25.1",
+          "date": "2026-10-11",
+          "notes": [
+            "Match cards: goal hovers no longer flicker — each goal on the shot map and in the goal frame has one solid hover zone (dot, ring and name), goals sit on top of the other shots in the frame, and nothing changes size when it lights up"
+          ]
+        },
+        {
           "version": "1.25.0",
           "date": "2026-10-11",
           "notes": [
