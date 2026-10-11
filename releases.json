@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.23.1",
+          "date": "2026-10-11",
+          "notes": [
+            "Season Tower: the card buttons in the order Teams, Matches, Scorers, Keepers (the app list too)"
+          ]
+        },
+        {
           "version": "1.23.0",
           "date": "2026-10-11",
           "notes": [
