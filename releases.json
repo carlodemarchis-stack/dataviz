@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.26.0",
+          "date": "2026-10-11",
+          "notes": [
+            "Scorer, team and goalkeeper cards: click any played game box to open its match card (⌘/ctrl-click for a new tab; on a phone, tap once for the summary, again to open)"
+          ]
+        },
+        {
           "version": "1.25.3",
           "date": "2026-10-11",
           "notes": [
