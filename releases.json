@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.26.3",
+          "date": "2026-10-12",
+          "notes": [
+            "Match cards: every goal on the flow chart is a ball on the line at its minute, with the scorer's name (in the club colour) right on the bars of that moment instead of far off at the edges",
+            "Match cards: the shot-map labels drop the club names — just \"↑ Shots\" / \"↓ Shots\" in the club colour"
+          ]
+        },
+        {
           "version": "1.26.2",
           "date": "2026-10-12",
           "notes": [
