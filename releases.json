@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.26.4",
+          "date": "2026-10-12",
+          "notes": [
+            "Match cards: on the flow chart a thin line in the club colour ties each goal's ball to the scorer's name"
+          ]
+        },
+        {
           "version": "1.26.3",
           "date": "2026-10-12",
           "notes": [
