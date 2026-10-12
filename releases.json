@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.26.5",
+          "date": "2026-10-12",
+          "notes": [
+            "Match cards: when both clubs wear similar colours the away side now takes a lighter shade of its own colour (a darker one if still too close) instead of dark grey, which read as \"level\" on the flow line"
+          ]
+        },
+        {
           "version": "1.26.4",
           "date": "2026-10-12",
           "notes": [
