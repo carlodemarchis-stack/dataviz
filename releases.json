@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.26.2",
+          "date": "2026-10-12",
+          "notes": [
+            "LaLiga summer signings without a new portrait yet get their previous one — last season's LaLiga photo (Gudelj at Sevilla) or the Premier League cutout (Rodri, Gabriel Jesus) — instead of the league's silhouette",
+            "Stand-in silhouettes (including the keeper ones) are recognised and replaced by initials everywhere: 14 removed",
+            "Match cards: players without a photo show their initials in the face again (they were blown up into faint giant letters on the pitch)"
+          ]
+        },
+        {
           "version": "1.26.1",
           "date": "2026-10-12",
           "notes": [
