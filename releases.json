@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.26.6",
+          "date": "2026-10-13",
+          "notes": [
+            "Match cards: on a light half of the pitch (Dortmund yellow, a light away shade) the club name, formation and table move turn a deep shade of the club colour and the big score is filled darker, so they stay readable",
+            "Match cards: club names on the pitch are re-fitted once the font has loaded and when a card comes on screen — no more clipped names (\"DORTMUNI\")"
+          ]
+        },
+        {
           "version": "1.26.5",
           "date": "2026-10-12",
           "notes": [
