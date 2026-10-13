@@ -883,6 +883,15 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.0",
+          "date": "2026-10-13",
+          "notes": [
+            "A ? on the expected-vs-result strip opens a short explainer of what it measures",
+            "The strip now leads with percentages, next to a yardstick: favourites normally win about 2 games in 3",
+            "Every upset gets a red corner on the winner's box in the tower"
+          ]
+        },
+        {
           "version": "1.8.0",
           "date": "2026-10-05",
           "notes": [
