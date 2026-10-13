@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.28.2",
+          "date": "2026-10-13",
+          "notes": [
+            "Team cards: a Stats button in the top bar jumps to the first stats card (it stays lit while you're on them)",
+            "Team cards: the find list (g) opens with a Stats section — the table, the chart, game state, comebacks & collapses, push vs payoff — searchable by name"
+          ]
+        },
+        {
           "version": "1.28.1",
           "date": "2026-10-13",
           "notes": [
