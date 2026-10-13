@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.28.1",
+          "date": "2026-10-13",
+          "notes": [
+            "Team cards: a ? on Push vs payoff and on Comebacks & collapses opens a full explanation — how each number is counted, how to read it, worked examples, the caveats, and today's leaders from the live data",
+            "Push vs payoff: a crest that fails to load is retried, then drawn as a dot in the club colour with its code — no more broken images"
+          ]
+        },
+        {
           "version": "1.28.0",
           "date": "2026-10-13",
           "notes": [
