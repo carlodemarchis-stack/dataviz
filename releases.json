@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.28.0",
+          "date": "2026-10-13",
+          "notes": [
+            "Team cards: Comebacks & collapses — every club's points won in games it trailed (green, right) against points thrown away from a winning position (red, left), ranked by the balance",
+            "Team cards: Push vs payoff — a crest per club on its share of the attacking push (shots, shots on target, goals, corners) against its share of the goals; above the diagonal = clinical, below = wasteful. A crest opens the club"
+          ]
+        },
+        {
           "version": "1.27.0",
           "date": "2026-10-13",
           "notes": [
