@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.27.0",
+          "date": "2026-10-13",
+          "notes": [
+            "Team cards: a new closing card, Game state — every club ranked by the share of its minutes spent leading, with level and trailing in one stacked bar (All Leagues: all 96 clubs; each league: its own); a row opens the club",
+            "Team cards: under the W-D-L, a small bar with the club's minutes led / level / behind",
+            "Match cards: under the flow, how long each side was ahead and how long it stayed level (\"Torino ahead 30′ · level 60′ · Udinese ahead 0′\")"
+          ]
+        },
+        {
           "version": "1.26.6",
           "date": "2026-10-13",
           "notes": [
