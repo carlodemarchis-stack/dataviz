@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.28.4",
+          "date": "2026-10-14",
+          "notes": [
+            "Every top-bar switch (All Leagues, a league, the matchday arrows) and the tower's Teams · Matches · Scorers · Keepers buttons now start the film from its first card; a reload still keeps your place"
+          ]
+        },
+        {
           "version": "1.28.3",
           "date": "2026-10-14",
           "notes": [
