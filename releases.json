@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.29.0",
+          "date": "2026-10-14",
+          "notes": [
+            "Match cards: an All Leagues film — every match of the five leagues from the last 7 days (counted back from the latest one), latest first, no matchday switch; the league of the match on screen is lit in the top bar and named in the context line",
+            "Season Tower: on the all-leagues overview the Matches button opens that film"
+          ]
+        },
+        {
           "version": "1.28.5",
           "date": "2026-10-14",
           "notes": [
