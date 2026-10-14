@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.28.3",
+          "date": "2026-10-14",
+          "notes": [
+            "Team cards: the Position chart has a scale on the left — 1st, 5th, 10th, 15th and last — with a faint guide line across at each"
+          ]
+        },
+        {
           "version": "1.28.2",
           "date": "2026-10-13",
           "notes": [
