@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.28.5",
+          "date": "2026-10-14",
+          "notes": [
+            "Match cards: each matchday now runs from the latest kick-off back to the earliest"
+          ]
+        },
+        {
           "version": "1.28.4",
           "date": "2026-10-14",
           "notes": [
