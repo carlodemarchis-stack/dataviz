@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.29.1",
+          "date": "2026-10-15",
+          "notes": [
+            "Match cards: the big club name on each half of the pitch opens that club's team card"
+          ]
+        },
+        {
           "version": "1.29.0",
           "date": "2026-10-14",
           "notes": [
