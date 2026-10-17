@@ -952,6 +952,15 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.12.0",
+          "date": "2026-10-17",
+          "notes": [
+            "Two buttons in the towers' header: Teams and Players, each opening its half of the film",
+            "Team cards follow the towers' League · Wins order, so a team sits at the same number on both pages",
+            "The header stays on one row at every desktop width, shedding the games count and labels as the window narrows"
+          ]
+        },
+        {
           "version": "1.11.0",
           "date": "2026-10-17",
           "notes": [
