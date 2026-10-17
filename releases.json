@@ -952,6 +952,15 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.14.0",
+          "date": "2026-10-17",
+          "notes": [
+            "Player cards gain a bio beside the portrait: number, age, height, weight, college and years in the league",
+            "Every headline number shows where it ranks in the player's group, e.g. 2nd of 24 QBs",
+            "A second row shows the other side of each player's game, such as a quarterback's rushing, and charts get a y axis"
+          ]
+        },
+        {
           "version": "1.13.0",
           "date": "2026-10-17",
           "notes": [
