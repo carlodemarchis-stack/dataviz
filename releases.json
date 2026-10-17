@@ -952,6 +952,14 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.0",
+          "date": "2026-10-17",
+          "notes": [
+            "Every player card stands on a career box: career totals, best season and how he was drafted (round, pick, club) or that he went undrafted",
+            "The box is gold for Super Bowl champions, silver for major award winners such as NFL MVP, and plain for everyone else"
+          ]
+        },
+        {
           "version": "1.16.0",
           "date": "2026-10-17",
           "notes": [
