@@ -952,6 +952,15 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.0",
+          "date": "2026-10-17",
+          "notes": [
+            "Club cards in the Season Film open on Key players: the same twelve slots for every club, each filled by its leader on that position's stat",
+            "Each tile shows the headshot, number, headline stat and a second line; leaders open their own player card",
+            "The full roster stays one tab away, grouped by offense, defense, special teams and reserve"
+          ]
+        },
+        {
           "version": "1.9.0",
           "date": "2026-10-13",
           "notes": [
