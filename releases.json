@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.30.6",
+          "date": "2026-10-18",
+          "notes": [
+            "Everyone vs everyone: it opens with every match lit and no club picked; point at a club to follow it (it stays), \"show all matches\" goes back; the legend sits under the polygon"
+          ]
+        },
+        {
           "version": "1.30.5",
           "date": "2026-10-18",
           "notes": [
