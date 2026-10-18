@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.38.1",
+          "date": "2026-10-18",
+          "notes": [
+            "The coach card follows the last player with league minutes in the squad film",
+            "Substitutions title and summary on one line"
+          ]
+        },
+        {
           "version": "1.38.0",
           "date": "2026-10-18",
           "notes": [
