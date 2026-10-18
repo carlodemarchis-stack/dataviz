@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.31.0",
+          "date": "2026-10-18",
+          "notes": [
+            "Scorer and goalkeeper cards (Serie A): under each game box, the player's Fantacalcio mark for that game (Redazione) — green from 7, red under 6; refreshed with every update",
+            "Team cards: Game state and Comebacks & collapses show each club's crest next to its name"
+          ]
+        },
+        {
           "version": "1.30.8",
           "date": "2026-10-18",
           "notes": [
