@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.30.2",
+          "date": "2026-10-18",
+          "notes": [
+            "Season Tower: the match pop-up of a played game has a \"Find out more\" button that opens its full match card"
+          ]
+        },
+        {
           "version": "1.30.1",
           "date": "2026-10-18",
           "notes": [
