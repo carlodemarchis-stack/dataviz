@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.30.7",
+          "date": "2026-10-18",
+          "notes": [
+            "Everyone vs everyone: the polygon grows to the space the window has (no fixed maximum), the season columns stretch to the full height"
+          ]
+        },
+        {
           "version": "1.30.6",
           "date": "2026-10-18",
           "notes": [
