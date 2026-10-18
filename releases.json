@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.40.0",
+          "date": "2026-10-18",
+          "notes": [
+            "Every player card shows Games / started (e.g. 8/7); keeper cards in the squad films keep their minutes too",
+            "Two-number figures (games / started, yellow / red, on target / shots, pens saved) show the second number smaller"
+          ]
+        },
+        {
           "version": "1.39.4",
           "date": "2026-10-18",
           "notes": [
