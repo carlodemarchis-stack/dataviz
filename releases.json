@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.39.0",
+          "date": "2026-10-18",
+          "notes": [
+            "Coach cards show the formation of every game over its box, and his formations counted (e.g. Palladino switching Bologna from 4-2-3-1 to a back three)"
+          ]
+        },
+        {
           "version": "1.38.1",
           "date": "2026-10-18",
           "notes": [
