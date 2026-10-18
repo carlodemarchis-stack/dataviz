@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.30.3",
+          "date": "2026-10-18",
+          "notes": [
+            "Team cards: the three players in the photo panel each carry a label at their feet — name and goals (assists if he hasn't scored), shown where the panel has room"
+          ]
+        },
+        {
           "version": "1.30.2",
           "date": "2026-10-18",
           "notes": [
