@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-18",
   "apps": [
     {
       "id": "f1",
@@ -182,6 +182,16 @@
       "color": "#2f9e58",
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
+        {
+          "version": "1.35.0",
+          "date": "2026-10-18",
+          "notes": [
+            "Squad cards show three game states: played, on the bench but not used (pale), and not in the matchday squad (hatched)",
+            "A fact line flags players missing from recent matchday squads. No reason is ever guessed: the only one shown is the game after a red card",
+            "Squad cards now show height and the full nation name in the photo's info box",
+            "The club crest sits on the left on every scorer, keeper and squad card"
+          ]
+        },
         {
           "version": "1.34.2",
           "date": "2026-10-18",
