@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.37.0",
+          "date": "2026-10-18",
+          "notes": [
+            "Coach cards show his substitutions: how many changes, when the first one comes, half-time changes, and goals and assists by the players he sends on",
+            "The players he uses most off the bench, and every change of his latest games (minute, who came on for whom)"
+          ]
+        },
+        {
           "version": "1.36.1",
           "date": "2026-10-18",
           "notes": [
