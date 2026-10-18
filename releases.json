@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.34.1",
+          "date": "2026-10-18",
+          "notes": [
+            "Scorer, goalkeeper and squad cards: a yellow or red card in the corner of the game box when he was booked or sent off in that game"
+          ]
+        },
+        {
           "version": "1.34.0",
           "date": "2026-10-18",
           "notes": [
