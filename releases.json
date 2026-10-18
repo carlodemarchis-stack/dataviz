@@ -183,6 +183,16 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.36.0",
+          "date": "2026-10-18",
+          "notes": [
+            "Head coaches everywhere: under the club name on team cards, under each formation on match cards, and a coach card closing every squad film",
+            "The coach card shows his points per game and record, the season strip with the games of his predecessors greyed, and every coach the club has had this season",
+            "Coach changes mid-season are tracked game by game from the line-ups (e.g. Bologna: Tedesco, Tarozzi, Palladino)",
+            "Team cards name every top scorer when there is a tie"
+          ]
+        },
+        {
           "version": "1.35.1",
           "date": "2026-10-18",
           "notes": [
