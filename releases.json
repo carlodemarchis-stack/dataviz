@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.34.2",
+          "date": "2026-10-18",
+          "notes": [
+            "Scorer, goalkeeper and squad cards: the player's role, age, nation (and height) move from under the name to a frosted-glass box at the foot of his photo"
+          ]
+        },
+        {
           "version": "1.34.1",
           "date": "2026-10-18",
           "notes": [
