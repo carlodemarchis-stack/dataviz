@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.39.1",
+          "date": "2026-10-18",
+          "notes": [
+            "The Season view opens on the season barcode"
+          ]
+        },
+        {
           "version": "1.39.0",
           "date": "2026-10-18",
           "notes": [
