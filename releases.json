@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.30.5",
+          "date": "2026-10-18",
+          "notes": [
+            "Scores on result-coloured boxes are white on every shade — light green, yellow, grey and light red included — across the tower, the barcode, everyone vs everyone, the team, scorer and keeper cards and their match pop-ups (boxes faded out by possession or minutes keep dark text)"
+          ]
+        },
+        {
           "version": "1.30.4",
           "date": "2026-10-18",
           "notes": [
