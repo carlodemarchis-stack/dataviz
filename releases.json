@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.33.3",
+          "date": "2026-10-18",
+          "notes": [
+            "Squad cards: no club line under the player's name — the whole film is one club, already in the top bar"
+          ]
+        },
+        {
           "version": "1.33.2",
           "date": "2026-10-18",
           "notes": [
