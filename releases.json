@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.30.4",
+          "date": "2026-10-18",
+          "notes": [
+            "Everyone vs everyone: lines, the season columns and the legend now use the app's six result shades (won 2+ · won 1 · draw · 0-0 · lost 1 · lost 2+) instead of three colours"
+          ]
+        },
+        {
           "version": "1.30.3",
           "date": "2026-10-18",
           "notes": [
