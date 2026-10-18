@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.35.1",
+          "date": "2026-10-18",
+          "notes": [
+            "A game missed right after a red card is shown as a suspension (red stripes), naming where he was sent off"
+          ]
+        },
+        {
           "version": "1.35.0",
           "date": "2026-10-18",
           "notes": [
