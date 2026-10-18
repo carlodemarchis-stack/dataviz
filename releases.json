@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.33.0",
+          "date": "2026-10-18",
+          "notes": [
+            "Squad cards: every player of every club now has his own card — click a tile in a team's Squad tab to open the film of that whole squad on him (keepers first, then defenders, midfielders, forwards)",
+            "Outfield players get the scorer card (goals or minutes on the panel; goals, assists, games, minutes, cards, Serie A average mark; the season box by box with his minutes, goals and assists), keepers the goalkeeper card (saves, every shot on target faced, the goals against him) — one look for every player",
+            "The scorer and goalkeeper films stay as the rankings; their cards now share the same code"
+          ]
+        },
+        {
           "version": "1.32.0",
           "date": "2026-10-18",
           "notes": [
