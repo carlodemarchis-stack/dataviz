@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.34.0",
+          "date": "2026-10-18",
+          "notes": [
+            "Players are clickable everywhere: on match cards (every player on the pitch, every scorer), on team cards (the three photos and the scorers) and on scorer and goalkeeper cards (the name and the photo) — each opens his card in his club's squad film"
+          ]
+        },
+        {
           "version": "1.33.4",
           "date": "2026-10-18",
           "notes": [
