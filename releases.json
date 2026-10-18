@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.39.3",
+          "date": "2026-10-18",
+          "notes": [
+            "Squad cards: a player with no goals but assists lists his assists (minute, opponent, who scored) where the goals would be"
+          ]
+        },
+        {
           "version": "1.39.2",
           "date": "2026-10-18",
           "notes": [
