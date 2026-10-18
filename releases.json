@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.33.1",
+          "date": "2026-10-18",
+          "notes": [
+            "Squad cards: a sharp official portrait for every player (2,097 new, 600px) instead of the enlarged thumbnail",
+            "Squad cards: the big number on the photo is the shirt number; the highlighted number is saves for keepers, goals for a scorer, minutes for everyone else; the film runs from the most league minutes down"
+          ]
+        },
+        {
           "version": "1.33.0",
           "date": "2026-10-18",
           "notes": [
