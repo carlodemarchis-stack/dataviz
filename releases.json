@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.32.0",
+          "date": "2026-10-18",
+          "notes": [
+            "Team, match, scorer and goalkeeper films: the \"← Season Tower\" button is replaced by tabs in the middle of the top bar — Season · Teams · Matches · Scorers · Keepers — the current one filled; each keeps the league you're on (icons only on narrower screens)"
+          ]
+        },
+        {
           "version": "1.31.0",
           "date": "2026-10-18",
           "notes": [
