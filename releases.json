@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.40.1",
+          "date": "2026-10-18",
+          "notes": [
+            "Player cards: club games / played / started in one figure (e.g. 7/6/6), only his games big"
+          ]
+        },
+        {
           "version": "1.40.0",
           "date": "2026-10-18",
           "notes": [
