@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.33.4",
+          "date": "2026-10-18",
+          "notes": [
+            "Squad cards: just the shirt number on the photo (no \"shirt\" label), the club crest watermark moved to the left"
+          ]
+        },
+        {
           "version": "1.33.3",
           "date": "2026-10-18",
           "notes": [
