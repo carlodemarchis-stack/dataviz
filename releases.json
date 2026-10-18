@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.30.0",
+          "date": "2026-10-18",
+          "notes": [
+            "Season Tower: a new view, ◔ Everyone vs everyone (after the barcode, five leagues) — the league as a polygon: clubs on the corners in standings order as win/draw/loss pies, every match a line between two clubs coloured by the result, first and second legs as two parallel lines",
+            "Beside the polygon, one club's season — first half on the left, second half on the right; click a club on the polygon to pick it, hover a match to keep only that pairing, click it for the match. It follows the matchday slider"
+          ]
+        },
+        {
           "version": "1.29.1",
           "date": "2026-10-15",
           "notes": [
