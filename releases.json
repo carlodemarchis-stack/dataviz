@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.36.1",
+          "date": "2026-10-18",
+          "notes": [
+            "A game missed through suspension keeps the team's result colour under the usual hatch; the line above the strip names the sending-off"
+          ]
+        },
+        {
           "version": "1.36.0",
           "date": "2026-10-18",
           "notes": [
