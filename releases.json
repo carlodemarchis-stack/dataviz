@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.33.2",
+          "date": "2026-10-18",
+          "notes": [
+            "Squad cards: keepers show their minutes played too (with their starts), like every other player"
+          ]
+        },
+        {
           "version": "1.33.1",
           "date": "2026-10-18",
           "notes": [
