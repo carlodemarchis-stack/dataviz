@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.30.8",
+          "date": "2026-10-18",
+          "notes": [
+            "Team cards: the photo-panel labels show names only — the leader's full name in the middle, the two beside him by surname, pinned to the panel's edges so they never cover the middle player"
+          ]
+        },
+        {
           "version": "1.30.7",
           "date": "2026-10-18",
           "notes": [
