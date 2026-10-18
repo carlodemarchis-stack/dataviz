@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.38.0",
+          "date": "2026-10-18",
+          "notes": [
+            "Coach cards add the players he takes off most and the substitution he repeats (e.g. Castro for Malen ×4)",
+            "Serie A coaches get their Fantacalcio mark under each game and an average mark"
+          ]
+        },
+        {
           "version": "1.37.0",
           "date": "2026-10-18",
           "notes": [
