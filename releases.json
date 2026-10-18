@@ -1183,6 +1183,13 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.2",
+          "date": "2026-10-18",
+          "notes": [
+            "A bye box leaves the tower as soon as the next week's first game is played, instead of waiting for that team's own next game"
+          ]
+        },
+        {
           "version": "1.17.1",
           "date": "2026-10-17",
           "notes": [
