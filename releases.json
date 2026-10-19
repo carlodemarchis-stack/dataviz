@@ -1460,6 +1460,15 @@
       "url": "https://nba.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.6.0",
+          "date": "2026-10-19",
+          "notes": [
+            "Ready for 2026-27: every team card carries its current roster, with stats filling in as games are played",
+            "The site now updates itself three times a night with results, standings, rosters and player lines",
+            "Early-season cards say what is true so far — no playoff verdicts until April, no biggest win before the first win"
+          ]
+        },
+        {
           "version": "1.5.1",
           "date": "2026-10-05",
           "notes": [
