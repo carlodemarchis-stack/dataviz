@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.41.1",
+          "date": "2026-10-19",
+          "notes": [
+            "Coaches film: a single league loads only its own match data, so it opens faster"
+          ]
+        },
+        {
           "version": "1.41.0",
           "date": "2026-10-19",
           "notes": [
