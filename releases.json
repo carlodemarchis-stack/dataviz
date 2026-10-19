@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.42.2",
+          "date": "2026-10-19",
+          "notes": [
+            "The Tactical tab uses the full card width, like the Squad tab"
+          ]
+        },
+        {
           "version": "1.42.1",
           "date": "2026-10-19",
           "notes": [
