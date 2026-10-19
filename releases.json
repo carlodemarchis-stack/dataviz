@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.40.4",
+          "date": "2026-10-19",
+          "notes": [
+            "Match cards: long club names (Real Madrid, Real Sociedad) always shrink to fit instead of being cut"
+          ]
+        },
+        {
           "version": "1.40.3",
           "date": "2026-10-19",
           "notes": [
