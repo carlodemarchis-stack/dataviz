@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.42.0",
+          "date": "2026-10-19",
+          "notes": [
+            "Team cards get a Tactical tab: every league game's starting XI on a half pitch in its formation, newest first, with the substitutes used and the unused bench below"
+          ]
+        },
+        {
           "version": "1.41.2",
           "date": "2026-10-19",
           "notes": [
