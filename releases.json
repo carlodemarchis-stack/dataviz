@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.40.3",
+          "date": "2026-10-19",
+          "notes": [
+            "The films' top bar uses icons only for Season, Teams, Matches, Scorers and Keepers (names on hover)"
+          ]
+        },
+        {
           "version": "1.40.2",
           "date": "2026-10-19",
           "notes": [
