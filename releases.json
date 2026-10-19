@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.40.5",
+          "date": "2026-10-19",
+          "notes": [
+            "Player and coach cards: the info box under the photo shrinks its text to show every value whole, never cut with '…'"
+          ]
+        },
+        {
           "version": "1.40.4",
           "date": "2026-10-19",
           "notes": [
