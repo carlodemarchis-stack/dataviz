@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.41.0",
+          "date": "2026-10-19",
+          "notes": [
+            "New Coaches film: every head coach of the five leagues, plus the ones who left during the season, ranked by points per game (All Leagues or one league)",
+            "Each card: record, formations, the club's season with other coaches' games greyed, the bench this season and his substitutions",
+            "A Coaches tab in every film and a Coaches button on the Season page"
+          ]
+        },
+        {
           "version": "1.40.5",
           "date": "2026-10-19",
           "notes": [
