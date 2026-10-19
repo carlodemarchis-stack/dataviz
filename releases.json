@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.42.1",
+          "date": "2026-10-19",
+          "notes": [
+            "Squad tiles show each player's nationality flag at the bottom right of his photo",
+            "Parma 0-3 Torino corrected (the results feed had 1-3)"
+          ]
+        },
+        {
           "version": "1.42.0",
           "date": "2026-10-19",
           "notes": [
