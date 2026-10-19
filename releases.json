@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.40.2",
+          "date": "2026-10-19",
+          "notes": [
+            "A stand-in on the bench (Domenichini for Spalletti at Juventus) no longer reads as a new coach: the head coach keeps his card, the game is tagged as a stand-in"
+          ]
+        },
+        {
           "version": "1.40.1",
           "date": "2026-10-18",
           "notes": [
