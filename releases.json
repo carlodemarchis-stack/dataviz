@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.41.2",
+          "date": "2026-10-19",
+          "notes": [
+            "A stand-in on the bench (Domenichini for Spalletti) now counts in the head coach's record, formations and substitutions; the game is tagged with the stand-in's name. Interim coaches after a sacking stay separate"
+          ]
+        },
+        {
           "version": "1.41.1",
           "date": "2026-10-19",
           "notes": [
