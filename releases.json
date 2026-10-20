@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.52.0",
+          "date": "2026-10-20",
+          "notes": [
+            "Coach Tactical: hover a player's dot to see him alone across every game, with a card of his game — role, minutes or who replaced him, goals, assists, km, card, mark — and how many of the coach's games he started"
+          ]
+        },
+        {
           "version": "1.51.2",
           "date": "2026-10-20",
           "notes": [
