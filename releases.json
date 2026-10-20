@@ -1755,6 +1755,14 @@
       "url": "https://nba.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.6.1",
+          "date": "2026-10-20",
+          "notes": [
+            "The season counts to 82 games: the two not yet scheduled until the NBA Cup group stage show as TBD",
+            "No conference seeds on the cards until the standings give every place to one team — opening night briefly made every team a 1 seed"
+          ]
+        },
+        {
           "version": "1.6.0",
           "date": "2026-10-19",
           "notes": [
