@@ -183,10 +183,11 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
-          "version": "1.49.5",
+          "version": "1.49.6",
           "date": "2026-10-20",
           "notes": [
-            "Tactical: a game off the bench shows the pitch too, him (dashed ring) in the place of the player he replaced — the minute is in the table below, who he replaced on hover"
+            "Tactical: a game off the bench shows the pitch too, him in the place of the player he replaced (who, on hover)",
+            "His dot carries ↑ when he came on and ↓ when he was taken off, so a full 90 stands out at a glance"
           ]
         },
         {
