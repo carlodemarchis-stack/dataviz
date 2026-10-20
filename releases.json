@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.45.2",
+          "date": "2026-10-20",
+          "notes": [
+            "Player cards: the Season | Tactical switch sits on the club line, which stays in both views; each game in Tactical reads formation · role and minutes · goals, assists, cards"
+          ]
+        },
+        {
           "version": "1.45.1",
           "date": "2026-10-20",
           "notes": [
