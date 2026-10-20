@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.48.1",
+          "date": "2026-10-20",
+          "notes": [
+            "Tactical and Heatmaps: a small table under each game's pitch (formation · minutes · goals, assists and cards, the Serie A mark in a badge), level across the whole grid",
+            "The legend stays in sight at the bottom when the grid scrolls"
+          ]
+        },
+        {
           "version": "1.48.0",
           "date": "2026-10-20",
           "notes": [
