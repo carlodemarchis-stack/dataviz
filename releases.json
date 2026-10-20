@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.43.2",
+          "date": "2026-10-20",
+          "notes": [
+            "Barcelona: every player now has a current-kit photo (six from the club's own site)"
+          ]
+        },
+        {
           "version": "1.43.1",
           "date": "2026-10-20",
           "notes": [
