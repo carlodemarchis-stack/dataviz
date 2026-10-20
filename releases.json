@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.51.1",
+          "date": "2026-10-20",
+          "notes": [
+            "Fix: on screens narrower than 1600px the coach Tactical view stacked its games in one column"
+          ]
+        },
+        {
           "version": "1.51.0",
           "date": "2026-10-20",
           "notes": [
