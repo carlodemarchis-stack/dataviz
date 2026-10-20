@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.42.6",
+          "date": "2026-10-20",
+          "notes": [
+            "Team cards: the top scorer's goals next to his name"
+          ]
+        },
+        {
           "version": "1.42.5",
           "date": "2026-10-20",
           "notes": [
