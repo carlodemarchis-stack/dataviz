@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.45.3",
+          "date": "2026-10-20",
+          "notes": [
+            "Tactical: each game he played is tinted with its result colour (as on the season strip), so the run of results reads at a glance"
+          ]
+        },
+        {
           "version": "1.45.2",
           "date": "2026-10-20",
           "notes": [
