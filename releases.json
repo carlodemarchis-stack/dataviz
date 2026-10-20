@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.51.2",
+          "date": "2026-10-20",
+          "notes": [
+            "Coach Tactical: shirt numbers in every dot at any screen size (dots and numbers scale with the pitch); no empty row under the pitch when he has no mark or booking"
+          ]
+        },
+        {
           "version": "1.51.1",
           "date": "2026-10-20",
           "notes": [
