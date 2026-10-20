@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.47.0",
+          "date": "2026-10-20",
+          "notes": [
+            "Heatmaps: a third view on every player card (Season | Tactical | Heatmaps) turning each game's pitch into where he touched the ball, attacking up, on the result colour",
+            "Updated nightly for all five leagues"
+          ]
+        },
+        {
           "version": "1.46.2",
           "date": "2026-10-20",
           "notes": [
