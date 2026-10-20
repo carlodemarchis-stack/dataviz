@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.49.2",
+          "date": "2026-10-20",
+          "notes": [
+            "Player cards: his assists listed under his goals, bottom left (minute, opponent, who scored)",
+            "Fix: a Serie A mark of 5.5 showed as 55 (fantacalcio.it sometimes writes it without the comma), which also inflated the average mark"
+          ]
+        },
+        {
           "version": "1.49.1",
           "date": "2026-10-20",
           "notes": [
