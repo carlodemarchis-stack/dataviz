@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.49.0",
+          "date": "2026-10-20",
+          "notes": [
+            "Serie A and Premier League: the km he ran in every game, next to his minutes on the Tactical and Heatmaps tables, with his top speed on hover",
+            "Updated nightly from the league's own tracking (Serie A) and FotMob (Premier League)"
+          ]
+        },
+        {
           "version": "1.48.1",
           "date": "2026-10-20",
           "notes": [
