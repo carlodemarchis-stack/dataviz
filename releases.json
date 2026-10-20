@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.43.1",
+          "date": "2026-10-20",
+          "notes": [
+            "Top scorers are now counted from our own match cards — the same data as every other card — so they're never a day behind and a player who changed clubs counts at his current club"
+          ]
+        },
+        {
           "version": "1.43.0",
           "date": "2026-10-20",
           "notes": [
