@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.49.3",
+          "date": "2026-10-20",
+          "notes": [
+            "The match pop-up on a player card names the substitution: \"replaced by Anthony Gordon at 65'\", \"off the bench for Lamine Yamal at 70'\""
+          ]
+        },
+        {
           "version": "1.49.2",
           "date": "2026-10-20",
           "notes": [
