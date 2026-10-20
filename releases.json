@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.42.4",
+          "date": "2026-10-20",
+          "notes": [
+            "Top scorers no longer miss goals from the latest games: players are counted from the match reports too, so ESPN's lagging season list can't leave anyone out (Giovanni Simeone)",
+            "Tactical tab: in rows of four or five, long double surnames shorten to the last word so no name overlaps or leaves the pitch"
+          ]
+        },
+        {
           "version": "1.42.3",
           "date": "2026-10-20",
           "notes": [
