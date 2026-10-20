@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.46.1",
+          "date": "2026-10-20",
+          "notes": [
+            "Tactical: under each pitch the formation and his minutes — the role was redundant with his dot"
+          ]
+        },
+        {
           "version": "1.46.0",
           "date": "2026-10-20",
           "notes": [
