@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.44.1",
+          "date": "2026-10-20",
+          "notes": [
+            "One shape per shot outcome on every shot graphic (match and player cards): ● goal · ○ on target · × off target · ▪ blocked"
+          ]
+        },
+        {
           "version": "1.44.0",
           "date": "2026-10-20",
           "notes": [
