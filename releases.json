@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.49.8",
+          "date": "2026-10-20",
+          "notes": [
+            "Tactical and Heatmaps: a full 90' shown reversed (white on black) so the whole games stand out"
+          ]
+        },
+        {
           "version": "1.49.7",
           "date": "2026-10-20",
           "notes": [
