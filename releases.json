@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.49.7",
+          "date": "2026-10-20",
+          "notes": [
+            "Tactical: the ↑ / ↓ badges on his dot filled in green and red, white arrow"
+          ]
+        },
+        {
           "version": "1.49.6",
           "date": "2026-10-20",
           "notes": [
