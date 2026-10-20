@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.45.0",
+          "date": "2026-10-20",
+          "notes": [
+            "Player cards: a Season | Tactical switch (top right, or 't') — Tactical keeps the name and photo and fills the card with every game: where he lined up, role and formation, minutes, goals, assists, cards (keepers: shots faced and saves)",
+            "Roles are worked out from the formation where the data only says 'forward' or 'midfielder' (LaLiga)"
+          ]
+        },
+        {
           "version": "1.44.2",
           "date": "2026-10-20",
           "notes": [
