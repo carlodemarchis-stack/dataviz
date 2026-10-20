@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.50.0",
+          "date": "2026-10-20",
+          "notes": [
+            "Coach cards: his bookings — yellow / red in the corner of the result box, the count in the numbers and each one (match day, minute) in the note",
+            "Serie A from the league's own line-ups (complete), the other leagues from FotMob",
+            "Coach cards get the club line under the name (place, points, W-D-L, goal difference), like the player cards"
+          ]
+        },
+        {
           "version": "1.49.8",
           "date": "2026-10-20",
           "notes": [
