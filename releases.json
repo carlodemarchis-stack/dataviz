@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.42.8",
+          "date": "2026-10-20",
+          "notes": [
+            "Coach cards: every game's substitutions in one sideways-scrolling row with ‹ › arrows (was only the latest that fit)"
+          ]
+        },
+        {
           "version": "1.42.7",
           "date": "2026-10-20",
           "notes": [
