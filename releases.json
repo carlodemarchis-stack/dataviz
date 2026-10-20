@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.46.0",
+          "date": "2026-10-20",
+          "notes": [
+            "One player card everywhere: the Scorers, Keepers and squad films now show the identical card — shirt number on the photo, role in the corner (plus the rank in the Scorers and Keepers lists), the club line with the Season | Tactical switch, the same numbers, and bench / not in squad / suspended games",
+            "Behind it, one calculation of a player's season, shared by the three films"
+          ]
+        },
+        {
           "version": "1.45.4",
           "date": "2026-10-20",
           "notes": [
