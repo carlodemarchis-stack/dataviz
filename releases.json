@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.42.3",
+          "date": "2026-10-20",
+          "notes": [
+            "Tactical tab: arrows to scroll through the games, more space under the tabs, and names in rows of four or more on two levels so they never overlap"
+          ]
+        },
+        {
           "version": "1.42.2",
           "date": "2026-10-19",
           "notes": [
