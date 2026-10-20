@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.49.4",
+          "date": "2026-10-20",
+          "notes": [
+            "Fix: the Tactical tab on the team cards was blank since the player cards got their own Tactical view"
+          ]
+        },
+        {
           "version": "1.49.3",
           "date": "2026-10-20",
           "notes": [
