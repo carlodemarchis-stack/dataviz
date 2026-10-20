@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.51.0",
+          "date": "2026-10-20",
+          "notes": [
+            "Coach cards get a Season | Tactical switch: all 38 games, his starting XI on each pitch with shirt numbers, ↓ on the players he took off",
+            "Under each pitch: the formation, his first change, his bookings and (Serie A) his Fantacalcio mark; hover for every change"
+          ]
+        },
+        {
           "version": "1.50.0",
           "date": "2026-10-20",
           "notes": [
