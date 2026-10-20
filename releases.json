@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.49.1",
+          "date": "2026-10-20",
+          "notes": [
+            "The table under each game: formation left and minutes right on one line, the km right-aligned below, the Fantacalcio mark always on the right",
+            "No km line where the league has no tracking (LaLiga, Ligue 1, Bundesliga)"
+          ]
+        },
+        {
           "version": "1.49.0",
           "date": "2026-10-20",
           "notes": [
