@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.45.4",
+          "date": "2026-10-20",
+          "notes": [
+            "Tactical: games off the bench take the result colour too"
+          ]
+        },
+        {
           "version": "1.45.3",
           "date": "2026-10-20",
           "notes": [
