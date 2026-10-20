@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.43.0",
+          "date": "2026-10-20",
+          "notes": [
+            "Player cards: his shots on one goal at the bottom right — goals, saved, off target round the frame, blocked counted — next to the goals list"
+          ]
+        },
+        {
           "version": "1.42.8",
           "date": "2026-10-20",
           "notes": [
