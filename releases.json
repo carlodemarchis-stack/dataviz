@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.45.1",
+          "date": "2026-10-20",
+          "notes": [
+            "Player and coach films: the current name sits in the bottom bar beside the card counter, at a fixed width so the buttons never move"
+          ]
+        },
+        {
           "version": "1.45.0",
           "date": "2026-10-20",
           "notes": [
