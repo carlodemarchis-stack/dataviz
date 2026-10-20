@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.48.0",
+          "date": "2026-10-20",
+          "notes": [
+            "Heatmaps: his shots on every pitch, in the zone they came from (● goal · ○ on target · × off · ▪ blocked)",
+            "Goalkeepers: the pitch zooms to the 36 m in front of his goal, with every shot he faced and the goals he let in, in red"
+          ]
+        },
+        {
           "version": "1.47.0",
           "date": "2026-10-20",
           "notes": [
