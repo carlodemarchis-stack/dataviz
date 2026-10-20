@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.44.0",
+          "date": "2026-10-20",
+          "notes": [
+            "Match story: a button on every player card opens his season game by game over the card — where he lined up in each XI (keepers: the shots they faced and their saves), role and formation, minutes, goals, assists, cards and marks"
+          ]
+        },
+        {
           "version": "1.43.2",
           "date": "2026-10-20",
           "notes": [
