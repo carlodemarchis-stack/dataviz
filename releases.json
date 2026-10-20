@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.46.2",
+          "date": "2026-10-20",
+          "notes": [
+            "Tactical: his shirt number (and the Season | Tactical switch) in white on the club colour, dark only on really pale colours"
+          ]
+        },
+        {
           "version": "1.46.1",
           "date": "2026-10-20",
           "notes": [
