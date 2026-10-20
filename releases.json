@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.44.2",
+          "date": "2026-10-20",
+          "notes": [
+            "Player cards: the Club/played/started label is smaller than the others, as it is the longest"
+          ]
+        },
+        {
           "version": "1.44.1",
           "date": "2026-10-20",
           "notes": [
