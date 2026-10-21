@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.59.2",
+          "date": "2026-10-21",
+          "notes": [
+            "Coach cards: His core's numbers (players used, XI's average age, youngest XI) in the same big-number format as His team, a game"
+          ]
+        },
+        {
           "version": "1.59.1",
           "date": "2026-10-21",
           "notes": [
