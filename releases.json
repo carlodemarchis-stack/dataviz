@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.56.5",
+          "date": "2026-10-21",
+          "notes": [
+            "Squad tiles: the nationality flag sits bottom right, resting on the stat strip, without the white frame"
+          ]
+        },
+        {
           "version": "1.56.4",
           "date": "2026-10-21",
           "notes": [
