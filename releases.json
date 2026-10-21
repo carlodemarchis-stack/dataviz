@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.53.1",
+          "date": "2026-10-21",
+          "notes": [
+            "Coach Subs tab: the three lists as ranked columns; when he changes and the score at the time side by side"
+          ]
+        },
+        {
           "version": "1.53.0",
           "date": "2026-10-21",
           "notes": [
