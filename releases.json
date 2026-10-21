@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.54.3",
+          "date": "2026-10-21",
+          "notes": [
+            "Coach cards: every player opens his card (his core, the Subs lists and changes, the dots of the Tactical view) and the club opens its team card"
+          ]
+        },
+        {
           "version": "1.54.2",
           "date": "2026-10-21",
           "notes": [
