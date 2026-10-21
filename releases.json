@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.60.0",
+          "date": "2026-10-21",
+          "notes": [
+            "Order by on the Scorers film (goals, minutes per goal, age) and the Keepers film (saves, save %, clean sheets, age), after the selector in the control bar — like the coaches",
+            "The number each order uses turns club-coloured on the cards; the choice is remembered and the card on screen stays on screen"
+          ]
+        },
+        {
           "version": "1.59.2",
           "date": "2026-10-21",
           "notes": [
