@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.56.4",
+          "date": "2026-10-21",
+          "notes": [
+            "Goals tab: the pitches were mirrored left to right — every shot now on its real side (checked against the match commentary); where the goals went in was already right"
+          ]
+        },
+        {
           "version": "1.56.3",
           "date": "2026-10-21",
           "notes": [
