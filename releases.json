@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.57.1",
+          "date": "2026-10-21",
+          "notes": [
+            "Fix: on screens under 1600px the Squad and Tactical tabs had lost their full width since 1.57.0",
+            "The Goals tab now goes full width on every desktop screen too — only the Season tab keeps the photo panel"
+          ]
+        },
+        {
           "version": "1.57.0",
           "date": "2026-10-21",
           "notes": [
