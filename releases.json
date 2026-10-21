@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.54.2",
+          "date": "2026-10-21",
+          "notes": [
+            "Coach cards: the per-game style chart gives way to one line of team numbers (possession, shots for and against, pass accuracy, games outshot)",
+            "His core shows the player cutouts as they are, no circle crop",
+            "The coaches of the season sit right under the strip, title and names on one line, so a club with several coaches still fits"
+          ]
+        },
+        {
           "version": "1.54.1",
           "date": "2026-10-21",
           "notes": [
