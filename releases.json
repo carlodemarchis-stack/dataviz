@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.54.0",
+          "date": "2026-10-21",
+          "notes": [
+            "Coach cards, Season view: his style under the strip, aligned with each game — shots for and against, possession — with the season averages and how often his side was outshot",
+            "His core: the eight players he gives the most minutes (photo, minutes, starts), how many players he has used, his XI's average age and his youngest XI",
+            "Subs tab: the list titles share one height, so the rows line up"
+          ]
+        },
+        {
           "version": "1.53.2",
           "date": "2026-10-21",
           "notes": [
