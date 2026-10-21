@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.60.1",
+          "date": "2026-10-21",
+          "notes": [
+            "Keepers: a league with more cards than clubs says why — \"21 · 20 clubs, 2 at Monza\", two keepers sharing the job (both with three or more starts)"
+          ]
+        },
+        {
           "version": "1.60.0",
           "date": "2026-10-21",
           "notes": [
