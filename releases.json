@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.58.0",
+          "date": "2026-10-21",
+          "notes": [
+            "Goals tab: the numbers move into a column each side — scored on the left, conceded on the right: goals, shots, on target, xG and goals vs xG, with bars for how the goals came, with what and from where",
+            "Nothing above or below the net and the pitch any more, so both are bigger"
+          ]
+        },
+        {
           "version": "1.57.1",
           "date": "2026-10-21",
           "notes": [
