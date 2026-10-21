@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.53.0",
+          "date": "2026-10-21",
+          "notes": [
+            "Coach cards: a third tab, Subs — the substitutions move off the Season view and grow: top 8 lists, when in the game he changes (by 15 minutes), the score at the time (ahead / level / behind) and every game's changes in a grid"
+          ]
+        },
+        {
           "version": "1.52.1",
           "date": "2026-10-20",
           "notes": [
