@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.56.0",
+          "date": "2026-10-21",
+          "notes": [
+            "Team cards: a Goals tab — scored and conceded side by side, where each goal went in over where every shot came from, sized by xG",
+            "Goals against xG for both columns and how the goals came (open play, corner, counter-attack, penalty…); hover a goal for scorer, minute, xG and assist, click for the match card",
+            "Every shot of every match from FotMob's shot map, all five leagues, updated nightly"
+          ]
+        },
+        {
           "version": "1.55.1",
           "date": "2026-10-21",
           "notes": [
