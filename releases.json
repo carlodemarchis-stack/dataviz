@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.59.0",
+          "date": "2026-10-21",
+          "notes": [
+            "Coaches: an Order by button in the control bar, after the coach selector — points per game (default), goals per game, or age (youngest first); remembered, and the coach on screen stays on screen"
+          ]
+        },
+        {
           "version": "1.58.0",
           "date": "2026-10-21",
           "notes": [
