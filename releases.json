@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.55.0",
+          "date": "2026-10-21",
+          "notes": [
+            "Teams, Matches, Scorers, Keepers, Coaches and the squad films: the view icons move to the right end of the top bar, and the credit line down to the control bar, on its right"
+          ]
+        },
+        {
           "version": "1.54.3",
           "date": "2026-10-21",
           "notes": [
