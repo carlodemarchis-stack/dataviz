@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.57.0",
+          "date": "2026-10-21",
+          "notes": [
+            "Goals tab: on wide screens the net and the pitch use the whole width, as big as the height allows, while the goal dots keep one size — more room between goals as the season fills up",
+            "The legend line is gone: a ? by Scored explains the tab in place"
+          ]
+        },
+        {
           "version": "1.56.5",
           "date": "2026-10-21",
           "notes": [
