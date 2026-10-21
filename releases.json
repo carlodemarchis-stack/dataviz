@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.59.1",
+          "date": "2026-10-21",
+          "notes": [
+            "Coach cards: goals per game joins the numbers, in the club colour when the film is ordered by it",
+            "Points sit under W-D-L, and the bookings stay in the line below (with match day and minute), so the row fits a laptop screen"
+          ]
+        },
+        {
           "version": "1.59.0",
           "date": "2026-10-21",
           "notes": [
