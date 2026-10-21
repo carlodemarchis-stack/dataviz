@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.60.2",
+          "date": "2026-10-21",
+          "notes": [
+            "Keeper cards: the club line under the name like the scorer cards — place, points, W-D-L, goal difference"
+          ]
+        },
+        {
           "version": "1.60.1",
           "date": "2026-10-21",
           "notes": [
