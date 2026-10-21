@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.55.1",
+          "date": "2026-10-21",
+          "notes": [
+            "Team cards: the club's previous coaches this season on the same line as the current one"
+          ]
+        },
+        {
           "version": "1.55.0",
           "date": "2026-10-21",
           "notes": [
