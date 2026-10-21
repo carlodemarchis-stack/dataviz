@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.56.3",
+          "date": "2026-10-21",
+          "notes": [
+            "Goals tab: a goal's card could show the match from the other club's side (\"vs TOR\" on Torino's own card) — fixed"
+          ]
+        },
+        {
           "version": "1.56.2",
           "date": "2026-10-21",
           "notes": [
