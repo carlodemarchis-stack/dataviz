@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.56.1",
+          "date": "2026-10-21",
+          "notes": [
+            "Goals tab: hovering a goal lights it in the net and on the pitch at once (the rest fades), with its card above the column — no flicker, every goal the same size"
+          ]
+        },
+        {
           "version": "1.56.0",
           "date": "2026-10-21",
           "notes": [
