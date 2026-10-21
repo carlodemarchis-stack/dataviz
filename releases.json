@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.56.2",
+          "date": "2026-10-21",
+          "notes": [
+            "Goals tab: fixed the flicker and the jumping dot on hover (an old goal-dot style was scaling it); smaller goal dots, so busy pitches overlap less"
+          ]
+        },
+        {
           "version": "1.56.1",
           "date": "2026-10-21",
           "notes": [
