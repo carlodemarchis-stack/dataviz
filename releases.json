@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.54.1",
+          "date": "2026-10-21",
+          "notes": [
+            "Coach Subs tab: every game in pages of 15 (three rows of five, newest first), the earlier ones a sideways scroll away"
+          ]
+        },
+        {
           "version": "1.54.0",
           "date": "2026-10-21",
           "notes": [
