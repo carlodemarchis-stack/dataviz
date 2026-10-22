@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.64.0",
+          "date": "2026-10-22",
+          "notes": [
+            "Goals tab: goals from one spot (every penalty, tap-ins) share one numbered dot on the pitch; hover it to light them all in the net with a list, click it to keep the list open and pick a goal's match"
+          ]
+        },
+        {
           "version": "1.63.1",
           "date": "2026-10-22",
           "notes": [
