@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.61.1",
+          "date": "2026-10-22",
+          "notes": [
+            "Goals tab: each goal's card names the keeper who was beaten, small on the right (his replacement if he had come off)",
+            "xG explained where it is used: \"a 20% chance\" on a goal's card and a ? by each column's xG",
+            "Conceded column: vs xG is green when the team let in fewer than the chances were worth"
+          ]
+        },
+        {
           "version": "1.61.0",
           "date": "2026-10-22",
           "notes": [
