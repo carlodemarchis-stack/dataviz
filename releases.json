@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.61.0",
+          "date": "2026-10-22",
+          "notes": [
+            "Goals tab: a goal's card is now as wide as the goal it sits on, with the scorer's photo — for goals conceded too — the minute, xG and how far out he shot from, then how it came and the assist"
+          ]
+        },
+        {
           "version": "1.60.3",
           "date": "2026-10-22",
           "notes": [
