@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.63.0",
+          "date": "2026-10-22",
+          "notes": [
+            "Team cards: a Rivals tab — the league as a circle in table order with the club at its place, every other club split into the two meetings (home | away) in the result colour with the score, and an arc for each game played; hover for both games, click for that club's card"
+          ]
+        },
+        {
           "version": "1.62.0",
           "date": "2026-10-22",
           "notes": [
