@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.60.3",
+          "date": "2026-10-22",
+          "notes": [
+            "Player and keeper cards: the club (crest and name) opens its team card"
+          ]
+        },
+        {
           "version": "1.60.2",
           "date": "2026-10-21",
           "notes": [
