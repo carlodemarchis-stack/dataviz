@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.62.0",
+          "date": "2026-10-22",
+          "notes": [
+            "Goals tab: the bars are filters — click open play, corner, header, outside the box… to show only those goals in the net and on the pitch, scored and conceded separately; the big number counts what is shown"
+          ]
+        },
+        {
           "version": "1.61.1",
           "date": "2026-10-22",
           "notes": [
