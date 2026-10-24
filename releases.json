@@ -2324,6 +2324,13 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.2.1",
+          "date": "2026-10-24",
+          "notes": [
+            "The district count on each state tile is now larger and brighter, so it reads at a glance"
+          ]
+        },
+        {
           "version": "1.2.0",
           "date": "2026-10-24",
           "notes": [
