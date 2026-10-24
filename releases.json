@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-24",
   "apps": [
     {
       "id": "f1",
@@ -2304,6 +2304,26 @@
             "A card for the 100 leading scorers with every shot on a rink, and for the 15 goalies with the most wins with every shot they faced",
             "All 32 teams with roster, goalies, playoff run and season arc; scoring, goal, assist and goalie races, the biggest nights and shot volume",
             "Season towers where an overtime loss earns its half, and the Stanley Cup playoff bracket"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "midterms",
+      "name": "US Midterms",
+      "kicker": "Every seat on the 2026 ballot",
+      "color": "#a78bfa",
+      "url": "https://elections.aguywithascarf.com/",
+      "releases": [
+        {
+          "version": "1.0.0",
+          "date": "2026-10-24",
+          "notes": [
+            "First release, ten days before election day: all 435 House seats, 35 Senate races and 36 governorships, each with its civicAPI rating from Safe Democratic to Safe Republican",
+            "One bar per seat, sorted from safest blue to safest red, with the line a party must cross for control and the chance of crossing it",
+            "A tile map of every state, with one square per House district, and a panel for any race with the matchup and its forecast chance",
+            "On election night the page polls the live results: called races go solid, uncalled ones fade, and a call against the forecast is marked",
+            "A full table of every race, and deep links to a chamber or a single race that survive a reload"
           ]
         }
       ]
