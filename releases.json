@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.68.0",
+          "date": "2026-10-24",
+          "notes": [
+            "Goals tab: pick a filter and every other bar recounts for those goals — off the bench, say, shows how the subs scored, with what, from where and when — the whole season left as a faint bar behind"
+          ]
+        },
+        {
           "version": "1.67.2",
           "date": "2026-10-24",
           "notes": [
