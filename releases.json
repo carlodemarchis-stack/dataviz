@@ -2324,6 +2324,13 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.3.3",
+          "date": "2026-10-24",
+          "notes": [
+            "The seat totals for each side now sit above the bar, so the numbers come first and the bar underneath shows where they come from"
+          ]
+        },
+        {
           "version": "1.3.2",
           "date": "2026-10-24",
           "notes": [
