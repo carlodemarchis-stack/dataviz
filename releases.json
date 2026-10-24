@@ -186,7 +186,7 @@
           "version": "1.66.0",
           "date": "2026-10-24",
           "notes": [
-            "Season tower (rows and towers): wins are filled with the club's own colour and draws with a lighter shade of it, so every club's points read as one solid bar; the opponent stays on its colour chip"
+            "Season tower (rows and towers): wins and draws are filled with the club's own colour (a draw is the smaller box), so every club's points read as one solid bar; the opponent stays on its colour chip"
           ]
         },
         {
