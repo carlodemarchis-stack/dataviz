@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.65.4",
+          "date": "2026-10-24",
+          "notes": [
+            "Every card's season strip: games still to play show their match day and date (\"MD 9 · 28 Oct\")",
+            "The view icons in the top bar carry their names again on screens wide enough",
+            "Goals tab: stoppage time (45+, 90+) in red in the When chart"
+          ]
+        },
+        {
           "version": "1.65.3",
           "date": "2026-10-24",
           "notes": [
