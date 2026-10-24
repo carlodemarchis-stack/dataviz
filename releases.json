@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.67.2",
+          "date": "2026-10-24",
+          "notes": [
+            "Season tower: a white line between each club's box and its points bar (now both in the club colour)"
+          ]
+        },
+        {
           "version": "1.67.1",
           "date": "2026-10-24",
           "notes": [
