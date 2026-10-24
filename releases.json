@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.65.0",
+          "date": "2026-10-24",
+          "notes": [
+            "Goals tab: When — the goals scored and conceded by 15-minute spell (1–15 … 76–90, with 45+ and 90+ stoppage time apart), each column a filter like the bars above"
+          ]
+        },
+        {
           "version": "1.64.0",
           "date": "2026-10-22",
           "notes": [
