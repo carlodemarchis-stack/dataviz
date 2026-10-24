@@ -2324,6 +2324,15 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.3.0",
+          "date": "2026-10-24",
+          "notes": [
+            "A second way to see the House: Equal blocks, with every district drawn as the same size block, stacked from the biggest state (California, 52 seats) down to the single-seat states",
+            "Inside each state the blocks run from safest Democratic to safest Republican, and they fill in on election night just like the map",
+            "A switch beside the map flips between the two views, and the page remembers your choice"
+          ]
+        },
+        {
           "version": "1.2.1",
           "date": "2026-10-24",
           "notes": [
