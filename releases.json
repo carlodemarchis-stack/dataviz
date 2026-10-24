@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.66.2",
+          "date": "2026-10-24",
+          "notes": [
+            "Goals tab: shots, on target, xG and goals vs xG on two lines, so the side columns fit every kind of goal even on small laptops"
+          ]
+        },
+        {
           "version": "1.66.1",
           "date": "2026-10-24",
           "notes": [
