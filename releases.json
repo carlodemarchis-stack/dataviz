@@ -2324,6 +2324,13 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.3.6",
+          "date": "2026-10-24",
+          "notes": [
+            "Less empty space between the title and the seat bar, so the bar and its numbers come into view sooner"
+          ]
+        },
+        {
           "version": "1.3.5",
           "date": "2026-10-24",
           "notes": [
