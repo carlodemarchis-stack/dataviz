@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.67.0",
+          "date": "2026-10-24",
+          "notes": [
+            "Rivals tab: the whole width, the circle bigger, and the club's games beside it — first half on the left, second on the right, with scores or dates; hover a row to light that club"
+          ]
+        },
+        {
           "version": "1.66.2",
           "date": "2026-10-24",
           "notes": [
