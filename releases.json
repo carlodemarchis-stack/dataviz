@@ -186,7 +186,7 @@
           "version": "1.69.1",
           "date": "2026-10-24",
           "notes": [
-            "Goals scored full view: a reload brings it back open on the same club"
+            "Goals scored full view: it stays open as you move from club to club, and a reload brings it back"
           ]
         },
         {
