@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.71.1",
+          "date": "2026-10-25",
+          "notes": [
+            "Results arrive faster: when football-data.org is late posting a final score, ESPN's fills the gap until it does"
+          ]
+        },
+        {
           "version": "1.71.0",
           "date": "2026-10-24",
           "notes": [
