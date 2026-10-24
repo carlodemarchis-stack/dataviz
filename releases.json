@@ -2324,6 +2324,16 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.1.0",
+          "date": "2026-10-24",
+          "notes": [
+            "A guide to the page: what the forecast shows today, with the live chance of control for each chamber, and where the numbers come from",
+            "The guide walks through election night: faded seats waiting, pulsing seats being counted, solid seats once called, and a white cap when a race goes against the forecast",
+            "The Senate counter now says when Republicans reach 50, since the Vice President breaks a tie, and the governors counter announces a majority",
+            "A Guide link in the top bar, and demo links to preview an invented election night"
+          ]
+        },
+        {
           "version": "1.0.0",
           "date": "2026-10-24",
           "notes": [
