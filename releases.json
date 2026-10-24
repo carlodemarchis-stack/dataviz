@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.67.1",
+          "date": "2026-10-24",
+          "notes": [
+            "Goals tab: goals scored filter by who scored them — starters or off the bench; the When chart sits at the foot of the screen"
+          ]
+        },
+        {
           "version": "1.67.0",
           "date": "2026-10-24",
           "notes": [
