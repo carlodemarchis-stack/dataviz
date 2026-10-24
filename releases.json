@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.71.0",
+          "date": "2026-10-24",
+          "notes": [
+            "Team cards: the tabs are now a switch at the right end of the coach line, as on the player and coach cards; the squad's Order by moves to the key line under the tiles",
+            "Every card (teams, scorers, keepers, coaches): a thin line under the club / coach line, separating it from the card below"
+          ]
+        },
+        {
           "version": "1.70.1",
           "date": "2026-10-24",
           "notes": [
