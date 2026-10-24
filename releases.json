@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.65.2",
+          "date": "2026-10-24",
+          "notes": [
+            "Goals tab: a click anywhere outside the bars and the goals clears the filters",
+            "Team cards: the top scorer's name in the club line opens his card"
+          ]
+        },
+        {
           "version": "1.65.1",
           "date": "2026-10-24",
           "notes": [
