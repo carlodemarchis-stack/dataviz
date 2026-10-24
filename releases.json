@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.66.1",
+          "date": "2026-10-24",
+          "notes": [
+            "Season tower: a club's pop-up opens its team card — click the crest or the name, or the Team card button"
+          ]
+        },
+        {
           "version": "1.66.0",
           "date": "2026-10-24",
           "notes": [
