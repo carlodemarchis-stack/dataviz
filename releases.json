@@ -2324,6 +2324,13 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.3.1",
+          "date": "2026-10-24",
+          "notes": [
+            "The page now uses the full width of the window instead of a narrow centred column, on laptops and wide monitors alike"
+          ]
+        },
+        {
           "version": "1.3.0",
           "date": "2026-10-24",
           "notes": [
