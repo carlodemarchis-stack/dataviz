@@ -2324,6 +2324,14 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.4.0",
+          "date": "2026-10-24",
+          "notes": [
+            "Equal blocks is now a compact layout: each state is a block five squares tall, with its code and seat count above, and the blocks run in a sequence from California to the single-seat states",
+            "The whole House now fits on about one screen instead of a long list of rows, on laptops and phones alike"
+          ]
+        },
+        {
           "version": "1.3.6",
           "date": "2026-10-24",
           "notes": [
