@@ -2324,6 +2324,14 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.3.4",
+          "date": "2026-10-24",
+          "notes": [
+            "Each level in the key now sits under its own stretch of the bar, so the count reads straight off the colour above it",
+            "Seats that are not up this year are split into a Democratic and a Republican count at the two ends of the bar"
+          ]
+        },
+        {
           "version": "1.3.3",
           "date": "2026-10-24",
           "notes": [
