@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.70.1",
+          "date": "2026-10-24",
+          "notes": [
+            "Goals scored full view: a goal's card (and the list of goals from one spot) now opens on the Scorers column, so the net and pitch stay free to hover and click"
+          ]
+        },
+        {
           "version": "1.70.0",
           "date": "2026-10-24",
           "notes": [
