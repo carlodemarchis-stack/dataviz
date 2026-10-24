@@ -2324,6 +2324,15 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.2.0",
+          "date": "2026-10-24",
+          "notes": [
+            "Ready for election night: results now come through a shared cache, so a crowd of viewers costs the data source a few requests instead of thousands",
+            "A tab left open from before election day switches into results mode by itself when the day arrives",
+            "Coming back to a tab refreshes it straight away, and the forecast refreshes every ten minutes"
+          ]
+        },
+        {
           "version": "1.1.0",
           "date": "2026-10-24",
           "notes": [
