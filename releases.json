@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.69.0",
+          "date": "2026-10-24",
+          "notes": [
+            "Goals tab: a full-card view of the goals scored (the ⤢ by Scored) — a one-line club bar, the filters, a bigger net and pitch, and the scorers on the right, each one a filter too; Esc or × to close"
+          ]
+        },
+        {
           "version": "1.68.0",
           "date": "2026-10-24",
           "notes": [
