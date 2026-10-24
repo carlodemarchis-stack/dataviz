@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.65.1",
+          "date": "2026-10-24",
+          "notes": [
+            "Team cards: the minutes led, level and behind as a small donut with its three shares, in place of the thin bar"
+          ]
+        },
+        {
           "version": "1.65.0",
           "date": "2026-10-24",
           "notes": [
