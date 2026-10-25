@@ -2353,6 +2353,15 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.5.0",
+          "date": "2026-10-25",
+          "notes": [
+            "Every version of the forecast is now saved as it changes, so the last prediction before polls open is on record",
+            "A scorecard page sets that prediction against the results as races are called, and against the final results: how many went the way the forecast favoured, whether its percentages held up, whether the seat totals landed in its range, and the biggest surprises",
+            "A table shows how the forecast moved over time"
+          ]
+        },
+        {
           "version": "1.4.0",
           "date": "2026-10-24",
           "notes": [
