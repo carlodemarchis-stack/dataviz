@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.71.2",
+          "date": "2026-10-25",
+          "notes": [
+            "Standings fixed: football-data.org's league table was trailing its own results (Serie A still had Inter top after Lazio's win). Its table is now checked against the results, and our own order (points, goal difference, goals scored) is used until it catches up"
+          ]
+        },
+        {
           "version": "1.71.1",
           "date": "2026-10-25",
           "notes": [
