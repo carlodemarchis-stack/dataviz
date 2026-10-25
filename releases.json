@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.71.3",
+          "date": "2026-10-25",
+          "notes": [
+            "No more blank page after an update: a page kept from before the site was rebuilt (a tab the browser put to sleep, a cached copy) now refreshes itself instead of staying empty"
+          ]
+        },
+        {
           "version": "1.71.2",
           "date": "2026-10-25",
           "notes": [
