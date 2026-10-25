@@ -2125,6 +2125,13 @@
       "url": "https://nba.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.6.2",
+          "date": "2026-10-25",
+          "notes": [
+            "A season still being played reads as one: the ladder is \"How 2026-27 is going\", the cover speaks of the ladder as it stands, and the season arc shows where a team is now rather than where it finished"
+          ]
+        },
+        {
           "version": "1.6.1",
           "date": "2026-10-20",
           "notes": [
