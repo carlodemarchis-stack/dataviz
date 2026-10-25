@@ -1921,6 +1921,13 @@
       "url": "https://nfl.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.5",
+          "date": "2026-10-25",
+          "notes": [
+            "No more blank page after a tab sits idle: if a page left open across a site update can't find its script, it fetches a fresh copy of itself once"
+          ]
+        },
+        {
           "version": "1.17.4",
           "date": "2026-10-19",
           "notes": [
