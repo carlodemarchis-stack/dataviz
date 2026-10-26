@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.76.1",
+          "date": "2026-10-26",
+          "notes": [
+            "Card panels: the club crest behind the photo is now a subtle tone of the club colour, so every crest's drawing shows (no more flat white shapes for pale crests like Brighton's)",
+            "Coach stats: the columns are now points per game, players used, Fired (coaches who left, fewest games first; one-or-two-game interims aside), youngest and oldest. The card also sits at the top of the jump list"
+          ]
+        },
+        {
           "version": "1.76.0",
           "date": "2026-10-26",
           "notes": [
