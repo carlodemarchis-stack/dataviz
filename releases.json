@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.71.4",
+          "date": "2026-10-26",
+          "notes": [
+            "Team cards, Goals tab: the goals-scored number and the full-view icon in the club colour"
+          ]
+        },
+        {
           "version": "1.71.3",
           "date": "2026-10-25",
           "notes": [
