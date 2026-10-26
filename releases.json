@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.76.2",
+          "date": "2026-10-26",
+          "notes": [
+            "Stats cards: switching league (or All Leagues) from the top bar keeps you on the same stats card in the new league, where it exists, instead of card 1",
+            "Coach stats: a coach who left has his number in grey too, not just his name"
+          ]
+        },
+        {
           "version": "1.76.1",
           "date": "2026-10-26",
           "notes": [
