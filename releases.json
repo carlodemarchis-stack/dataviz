@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.74.1",
+          "date": "2026-10-26",
+          "notes": [
+            "Team cards: how many players have scored, next to the Scorers title"
+          ]
+        },
+        {
           "version": "1.74.0",
           "date": "2026-10-26",
           "notes": [
