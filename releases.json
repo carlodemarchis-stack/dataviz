@@ -183,6 +183,15 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.74.0",
+          "date": "2026-10-26",
+          "notes": [
+            "Kickoff dates and times now come from ESPN and refresh every night for all five leagues: the real day (rounds spread Friday to Monday) and time in CET. A game whose time isn't fixed yet shows its date only, instead of LaLiga's '02:00' or a raw 'None'",
+            "Player cards, Tactical view: the games still to play show their matchday and date",
+            "Season Tower: the match count sits right after the matchday scrubber"
+          ]
+        },
+        {
           "version": "1.73.3",
           "date": "2026-10-26",
           "notes": [
