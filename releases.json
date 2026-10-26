@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.72.1",
+          "date": "2026-10-26",
+          "notes": [
+            "Player Goals view: only his goals open a card on hover or a match on click; team-mates' faded goals stay in the background"
+          ]
+        },
+        {
           "version": "1.72.0",
           "date": "2026-10-26",
           "notes": [
