@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.73.0",
+          "date": "2026-10-26",
+          "notes": [
+            "Player Goals view: on the right, the games he scored in, each with the result as in the season strip, the opponent and his goals there. Click one to see only that game's goals in the net, on the pitch and in the bars"
+          ]
+        },
+        {
           "version": "1.72.2",
           "date": "2026-10-26",
           "notes": [
