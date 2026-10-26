@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.75.0",
+          "date": "2026-10-26",
+          "notes": [
+            "Team film: a new Team stats card with eight ranked columns: goals scored, scored per game, fewest conceded, fewest conceded per game, number of scorers, number of coaches, longest winning run, longest losing run. Each shows the top 20 (a league's 18 or 20 clubs) as their code on their colour, with the league in All Leagues mode. Ties share a rank, ● marks a run still going, and a club opens its card"
+          ]
+        },
+        {
           "version": "1.74.1",
           "date": "2026-10-26",
           "notes": [
