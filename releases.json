@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.76.0",
+          "date": "2026-10-26",
+          "notes": [
+            "Coach film: a closing Coach stats card with six ranked columns: points per game, goals scored per game, fewest conceded per game, clean sheets, players used and youngest. Each row shows the club's code on its colour and the coach's name, with the top 20 in All Leagues. Rates need 3 games or more, coaches who left are in grey, and a row opens the coach's card"
+          ]
+        },
+        {
           "version": "1.75.1",
           "date": "2026-10-26",
           "notes": [
