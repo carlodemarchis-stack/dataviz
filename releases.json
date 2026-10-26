@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.73.1",
+          "date": "2026-10-26",
+          "notes": [
+            "Season Tower: the coloured film buttons sit at the right end of the bar, Matches first (Matches · Teams · Scorers · Keepers · Coaches); the view switch, +, ?, fullscreen and the match count follow straight after the matchday scrubber"
+          ]
+        },
+        {
           "version": "1.73.0",
           "date": "2026-10-26",
           "notes": [
