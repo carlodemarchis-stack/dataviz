@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.77.1",
+          "date": "2026-10-26",
+          "notes": [
+            "Player cards: 'His shots' gets more room. The legend stays on one line and the goal drawing is larger and always whole (it used to be cut at the bottom)"
+          ]
+        },
+        {
           "version": "1.77.0",
           "date": "2026-10-26",
           "notes": [
