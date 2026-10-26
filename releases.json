@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.73.2",
+          "date": "2026-10-26",
+          "notes": [
+            "Phones: on player, keeper and coach cards the photo scrolls away as you go down and the name stays pinned at the top; the Tactical legend now follows the games instead of covering them"
+          ]
+        },
+        {
           "version": "1.73.1",
           "date": "2026-10-26",
           "notes": [
