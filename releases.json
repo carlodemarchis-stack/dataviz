@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.75.1",
+          "date": "2026-10-26",
+          "notes": [
+            "Team stats: the Coaches column lists only clubs that have had more than one; the ● for a run still going sits before the number"
+          ]
+        },
+        {
           "version": "1.75.0",
           "date": "2026-10-26",
           "notes": [
