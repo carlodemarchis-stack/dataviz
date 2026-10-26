@@ -183,6 +183,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.72.2",
+          "date": "2026-10-26",
+          "notes": [
+            "Player cards: the goals list is compact (minute, opponent, PEN / HEAD / FK; the assist on hover) and the assists follow in the same flow, so a whole season shows without a hidden scroll",
+            "Phones: the goals, assists and shots under a player card no longer overlap"
+          ]
+        },
+        {
           "version": "1.72.1",
           "date": "2026-10-26",
           "notes": [
