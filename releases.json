@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.72.0",
+          "date": "2026-10-26",
+          "notes": [
+            "Player cards (Scorers and squad films): a new Goals view for every player with league goals: his club's goals as on the team card, his own lit in the net and on the pitch and his share solid in every bar (how, with what, from where, by whom, role, when), with his own shots and xG. The bars still filter his goals"
+          ]
+        },
+        {
           "version": "1.71.4",
           "date": "2026-10-26",
           "notes": [
