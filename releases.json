@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.73.3",
+          "date": "2026-10-26",
+          "notes": [
+            "Phones: the name and the view tabs stay pinned at the top of every card (players, keepers, coaches and now teams) in every view, all the way down; the photo and the team line scroll away"
+          ]
+        },
+        {
           "version": "1.73.2",
           "date": "2026-10-26",
           "notes": [
