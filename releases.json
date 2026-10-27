@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.78.1",
+          "date": "2026-10-27",
+          "notes": [
+            "Finishing card: each player shows his funnel (shots · on target · goals) next to his name, with a smaller club badge and a short name to make room"
+          ]
+        },
+        {
           "version": "1.78.0",
           "date": "2026-10-27",
           "notes": [
