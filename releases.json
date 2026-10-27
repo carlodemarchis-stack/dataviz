@@ -183,6 +183,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.78.0",
+          "date": "2026-10-27",
+          "notes": [
+            "Scorers film: a closing Finishing card (shots → on target → goals) with five ranked columns over the scorers with 15 shots or more: conversion, shots on target, shots per goal, goals − xG and non-penalty goals − xG. Each row shows the club code in colour and the player; click one for his card. It also sits at the top of the jump list"
+          ]
+        },
+        {
           "version": "1.77.2",
           "date": "2026-10-27",
           "notes": [
