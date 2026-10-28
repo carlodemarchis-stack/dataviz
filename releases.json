@@ -2519,6 +2519,16 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.6.0",
+          "date": "2026-10-28",
+          "notes": [
+            "A dress-rehearsal mode: civicAPI is running test elections, and the page and scorecard can now be run on them to see exactly how election night will look, with a test page that shows whether one is running",
+            "Fixed a counting error found in the rehearsal: seat totals would have been counted twice once races were called. They now match civicAPI's own totals",
+            "Invented test results are never shown as real, and a forecast that cannot be right (the 27 October Senate one, with seat totals of 135 in a 100-seat chamber) is replaced by the last sane one, with a note saying so",
+            "The scorecard now picks the last sane forecast for each chamber and keeps rejected ones on record, flagged"
+          ]
+        },
+        {
           "version": "1.5.0",
           "date": "2026-10-25",
           "notes": [
