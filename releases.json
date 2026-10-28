@@ -2519,6 +2519,14 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.7.0",
+          "date": "2026-10-28",
+          "notes": [
+            "A replay mode: step through a saved test election frame by frame, with a play button and a scrubber, and watch an election night fill in at any time",
+            "Every frame shows exactly what the page does live: races counting, being called, and going against the forecast"
+          ]
+        },
+        {
           "version": "1.6.0",
           "date": "2026-10-28",
           "notes": [
