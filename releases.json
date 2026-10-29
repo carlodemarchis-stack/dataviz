@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-29",
   "apps": [
     {
       "id": "f1",
@@ -2518,6 +2518,14 @@
       "color": "#a78bfa",
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
+                {
+          "version": "1.7.1",
+          "date": "2026-10-29",
+          "notes": [
+            "The Senate shows civicAPI's newest race ratings again: its 27 Oct forecast had broken totals and odds, but the ratings were sound, so only the odds stay on the earlier forecast, with a note",
+            "The guide and the scorecard handle a half-broken forecast the same way"
+          ]
+        },
         {
           "version": "1.7.0",
           "date": "2026-10-28",
