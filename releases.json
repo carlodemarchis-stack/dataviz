@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "apps": [
     {
       "id": "f1",
@@ -2518,6 +2518,15 @@
       "color": "#a78bfa",
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
+                                {
+                  "version": "1.8.0",
+                  "date": "2026-10-30",
+                  "notes": [
+                    "Three ways to read every race: switch the whole page between civicAPI (a blend), Kalshi (a prediction market) and Fox News (network ratings), with a card for each that says what it is and what it is not",
+                    "A new section, Where the three sources disagree: the races where they are two or more steps apart, one marker per source on the same scale, and who leans furthest toward each party",
+                    "The guide explains the three sources, and why Fox has no percentages and only civicAPI has odds of control"
+                  ]
+                },
                 {
           "version": "1.7.1",
           "date": "2026-10-29",
