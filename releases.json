@@ -9,6 +9,13 @@
       "url": "https://f1.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.0",
+          "date": "2026-10-30",
+          "notes": [
+            "Title match point: when the championship can be settled at the next race, the top-bar alert says so, and the weekend card spells out what the leader needs and who can still stop him"
+          ]
+        },
+        {
           "version": "1.9.0",
           "date": "2026-09-25",
           "notes": [
