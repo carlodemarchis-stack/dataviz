@@ -190,6 +190,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.79.2",
+          "date": "2026-11-01",
+          "notes": [
+            "Team stats cards: clean sheets, defeats and the longest runs show out of the games played, with the total faded (6/11)"
+          ]
+        },
+        {
           "version": "1.79.1",
           "date": "2026-11-01",
           "notes": [
