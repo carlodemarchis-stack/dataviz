@@ -190,6 +190,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.79.3",
+          "date": "2026-11-01",
+          "notes": [
+            "Team cards, Rivals: Juventus's white crest now sits on a dark disc, so it shows on its own card and on everyone else's"
+          ]
+        },
+        {
           "version": "1.79.2",
           "date": "2026-11-01",
           "notes": [
