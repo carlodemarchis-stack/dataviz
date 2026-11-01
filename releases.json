@@ -190,6 +190,14 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.79.0",
+          "date": "2026-11-01",
+          "notes": [
+            "Team film: a second stats card, More team stats, with seven ranked columns: clean sheets, fewest defeats (clubs on 0 or 1), possession, shots per game, home and away points per game, and form (points from the last 5 games)",
+            "Team stats: the Coaches column lists every club again (one coach included), still without stand-ins and short interims"
+          ]
+        },
+        {
           "version": "1.78.1",
           "date": "2026-10-27",
           "notes": [
