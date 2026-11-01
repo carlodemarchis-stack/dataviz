@@ -190,6 +190,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.79.1",
+          "date": "2026-11-01",
+          "notes": [
+            "Team film, All Leagues: the Game state card's rows are tidy again (a style clash had scrambled them)"
+          ]
+        },
+        {
           "version": "1.79.0",
           "date": "2026-11-01",
           "notes": [
