@@ -9,13 +9,6 @@
       "url": "https://f1.aguywithascarf.com/",
       "releases": [
         {
-          "version": "1.11.1",
-          "date": "2026-11-02",
-          "notes": [
-            "Film: drivers appear from their first start, so Piastri and Hülkenberg, who did not start in Australia, join in China"
-          ]
-        },
-        {
           "version": "1.11.0",
           "date": "2026-11-02",
           "notes": [
