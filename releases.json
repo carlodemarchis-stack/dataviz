@@ -9,6 +9,14 @@
       "url": "https://f1.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.11.0",
+          "date": "2026-11-02",
+          "notes": [
+            "Film: the welcome card now opens with Kimi Antonelli's title moment before the season plays out race by race",
+            "Kimi's driver card carries a 2026 World Champion badge"
+          ]
+        },
+        {
           "version": "1.10.1",
           "date": "2026-11-02",
           "notes": [
