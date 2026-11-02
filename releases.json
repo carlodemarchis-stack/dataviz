@@ -9,6 +9,13 @@
       "url": "https://f1.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.1",
+          "date": "2026-11-02",
+          "notes": [
+            "Film: the race list behind the counter lines up properly again, with round numbers and full names"
+          ]
+        },
+        {
           "version": "1.10.0",
           "date": "2026-10-30",
           "notes": [
