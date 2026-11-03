@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-11-03",
   "apps": [
     {
       "id": "f1",
@@ -2583,6 +2583,14 @@
       "color": "#a78bfa",
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
+        {
+          "version": "1.9.0",
+          "date": "2026-11-03",
+          "notes": [
+            "A + button opens the other sports experiences, and a fullscreen button (or the f key) fills the screen, like the rest of the family",
+            "Forecast refreshed to civicAPI's 3 Nov numbers, and the pre-election predictions are saved as a fixed baseline to compare with the results"
+          ]
+        },
                                 {
                   "version": "1.8.0",
                   "date": "2026-10-30",
