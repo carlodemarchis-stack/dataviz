@@ -2598,6 +2598,14 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.0",
+          "date": "2026-11-03",
+          "notes": [
+            "The scorecard now sets civicAPI, Kalshi and Fox News against the results: how often each was right when it took a side, a Brier score for the two that publish odds, which one was closest race by race, and a list of the races where they disagreed with who was right",
+            "A list of the races where nobody had the winner"
+          ]
+        },
+        {
           "version": "1.9.0",
           "date": "2026-11-03",
           "notes": [
