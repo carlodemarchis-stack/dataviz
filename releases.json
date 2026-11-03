@@ -205,6 +205,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.80.1",
+          "date": "2026-11-03",
+          "notes": [
+            "Season Tower, everyone vs everyone: with a club selected, each of its lines is drawn in that club's result colour end to end, instead of half from each side"
+          ]
+        },
+        {
           "version": "1.80.0",
           "date": "2026-11-03",
           "notes": [
