@@ -205,6 +205,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.80.0",
+          "date": "2026-11-03",
+          "notes": [
+            "Team cards, Rivals: a W–D–L weighted by the opponents' current points. Each game counts the opponent's points ÷ the league average, so a win over a top club counts as more than one and a win over the bottom club as a fraction. Shown with weighted points, the actual record and the opponents' average, in the circle's bottom-right corner (hover for the explanation)"
+          ]
+        },
+        {
           "version": "1.79.4",
           "date": "2026-11-03",
           "notes": [
