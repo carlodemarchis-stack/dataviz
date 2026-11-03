@@ -205,6 +205,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.80.2",
+          "date": "2026-11-03",
+          "notes": [
+            "Season Tower, everyone vs everyone: every club's W-D-L pie is the same size, as big as the spacing allows, so even the bottom clubs' pies read clearly (they used to shrink with their points)"
+          ]
+        },
+        {
           "version": "1.80.1",
           "date": "2026-11-03",
           "notes": [
