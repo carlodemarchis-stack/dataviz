@@ -2598,6 +2598,13 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.3",
+          "date": "2026-11-04",
+          "notes": [
+            "Every source now has the same top bar as the map: chamber buttons, links to Map, Scorecard and Guide, the + for other sports and fullscreen"
+          ]
+        },
+        {
           "version": "1.17.2",
           "date": "2026-11-04",
           "notes": [
