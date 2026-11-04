@@ -2598,6 +2598,13 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.1",
+          "date": "2026-11-04",
+          "notes": [
+            "The top bar now links to the Scorecard and to Every source"
+          ]
+        },
+        {
           "version": "1.17.0",
           "date": "2026-11-04",
           "notes": [
