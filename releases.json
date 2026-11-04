@@ -2598,6 +2598,13 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.15.2",
+          "date": "2026-11-04",
+          "notes": [
+            "The footer, the guide and the scorecard now say that race calls are shown as published by civicAPI, and that we make none ourselves"
+          ]
+        },
+        {
           "version": "1.15.1",
           "date": "2026-11-04",
           "notes": [
