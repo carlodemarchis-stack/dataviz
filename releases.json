@@ -2598,6 +2598,13 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.13.3",
+          "date": "2026-11-04",
+          "notes": [
+            "On the source cards, a right-so-far figure turns red whenever a source missed a race at that strength, not only when it missed more than half"
+          ]
+        },
+        {
           "version": "1.13.2",
           "date": "2026-11-04",
           "notes": [
