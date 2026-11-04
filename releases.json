@@ -2598,6 +2598,14 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.17.0",
+          "date": "2026-11-04",
+          "notes": [
+            "New page, Every source: all fifteen forecasters civicAPI republishes (Cook, Sabato, Inside Elections, Kalshi, Polymarket, VoteHub, Split Ticket and more) counted as right, so-so or wrong as races are called, for the House, Senate and governorships, with firm and narrow calls told apart and a Brier score where odds exist",
+            "Their pre-election forecasts were frozen on the morning of 4 Nov, so later updates cannot rewrite them"
+          ]
+        },
+        {
           "version": "1.16.2",
           "date": "2026-11-04",
           "notes": [
