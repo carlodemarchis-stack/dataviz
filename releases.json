@@ -2598,6 +2598,13 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.13.1",
+          "date": "2026-11-04",
+          "notes": [
+            "The list of races where the sources disagree now puts called races first, then the ones being counted, biggest gap first within each"
+          ]
+        },
+        {
           "version": "1.13.0",
           "date": "2026-11-04",
           "notes": [
