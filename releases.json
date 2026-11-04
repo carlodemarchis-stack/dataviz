@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "apps": [
     {
       "id": "f1",
@@ -2597,6 +2597,14 @@
       "color": "#a78bfa",
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
+        {
+          "version": "1.11.0",
+          "date": "2026-11-04",
+          "notes": [
+            "Each source card now shows how its calls have held up so far: called races it leaned the right way, by strength (Safe, Likely, Lean, Tilt), with Tossups counted separately",
+            "The explanation on each source card sits behind a ? button, so the cards are shorter"
+          ]
+        },
         {
           "version": "1.10.0",
           "date": "2026-11-03",
