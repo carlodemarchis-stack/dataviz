@@ -2598,6 +2598,14 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.16.0",
+          "date": "2026-11-04",
+          "notes": [
+            "Called races in the list of disagreements are now dramatic: the name block turns solid blue or red with the winning party and candidate in white, and the winner's half of the scale lights up while the other half fades",
+            "A source that leaned the wrong way gets a white ring round its dot"
+          ]
+        },
+        {
           "version": "1.15.2",
           "date": "2026-11-04",
           "notes": [
