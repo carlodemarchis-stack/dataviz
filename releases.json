@@ -2598,6 +2598,14 @@
       "url": "https://elections.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.13.0",
+          "date": "2026-11-04",
+          "notes": [
+            "The map and the race panel now come before the list of races where the sources disagree",
+            "In that list, a called race shows who won with a bar in the winner's colour, a counting race shows its reporting percentage, and each source gets a tick, a cross or a dash for whether it leaned to the winner"
+          ]
+        },
+        {
           "version": "1.12.0",
           "date": "2026-11-04",
           "notes": [
