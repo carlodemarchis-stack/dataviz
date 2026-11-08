@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gruppo Florence · Sustainability Report 2025, card by card</title>
+<meta name="description" content="An independent reading of the Gruppo Florence Sustainability Report 2025: emissions, energy, water, materials, targets, people, economic value and supply chain, one card per chapter, year by year.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Gruppo Florence · Sustainability Report 2025, card by card">
+<meta property="og:description" content="Twelve cards, three years, every table of the report. An independent reading by Carlo De Marchis.">
+<link rel="icon" href="../favicon.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --black: #3A3836; --cream: #F0F0E6; --white: #FFFFFF; --yellow: #CEB232; --aux: #518F83; --acad: #7B6887;
+    --acid: #99CCCC; --dust: #5F8C9B; --dark: #375A66; --cremisi: #C54660; --grey: #908E8E; --mute: #DDDCD2; --line: rgba(58,56,54,.16);
+    --serif: "Bodoni Moda", "Linotype Didot", Didot, "Bodoni 72", Georgia, serif;
+    --sans: "Barlow", "DIN 2014", "DIN Alternate", "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--cream); color: var(--black); font-family: var(--sans); font-variant-numeric: tabular-nums; }
+  body { overflow: hidden; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+
+  /* film: snap-scrolling full-bleed cards */
+  .film { height: 100vh; display: flex; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .film::-webkit-scrollbar { display: none; }
+  .card { flex: 0 0 100vw; width: 100vw; height: 100vh; overflow-y: auto; overflow-x: hidden; scroll-snap-align: start; scroll-snap-stop: always; padding: 3rem clamp(1rem, 5vw, 4rem) 6rem; display: grid; grid-template-columns: minmax(0, 20rem) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 4rem); align-content: start; border-left: 1px solid var(--line); position: relative; scrollbar-width: thin; }
+  .card:nth-child(even) { background: var(--white); }
+  @media (max-width: 820px) { .card { grid-template-columns: 1fr; padding-top: 2.5rem; padding-bottom: 8rem; } }
+  .card .side .n { color: var(--aux); font-size: .7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; margin: 0 0 .7rem; }
+  .card h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(1.5rem, 2.4vw, 2.1rem); line-height: 1.15; margin: 0 0 .9rem; }
+  .card h2 b { font-weight: 400; color: var(--aux); }
+  .card .why { font-size: .95rem; line-height: 1.55; margin: 0 0 1rem; opacity: .85; }
+  .card .why b { font-weight: 700; }
+  .card .foot { font-size: .72rem; color: var(--grey); line-height: 1.5; }
+  .card .main { min-width: 0; }
+
+  /* cover */
+  .cover { grid-template-columns: 1fr; padding-top: 4rem; }
+  .cover .kicker { color: var(--aux); font-size: .72rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; margin: 0 0 1.2rem; }
+  .cover h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(2.2rem, 5vw, 4.4rem); line-height: 1.02; letter-spacing: .01em; text-transform: uppercase; margin: 0 0 1.4rem; max-width: 20ch; }
+  .cover .lead { font-size: 1.05rem; line-height: 1.6; max-width: 46rem; margin: 0 0 2rem; }
+  .cover .index { display: grid; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); gap: .6rem 1.5rem; max-width: 60rem; }
+  .cover .index button { text-align: left; padding: .6rem 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 2.2rem 1fr; gap: .4rem; align-items: baseline; }
+  .cover .index button:hover .t { color: var(--aux); }
+  .cover .index .k { font-size: .68rem; letter-spacing: 2px; color: var(--aux); font-weight: 700; }
+  .cover .index .t { font-family: var(--serif); font-size: 1.05rem; line-height: 1.2; }
+  .cover .index .s { grid-column: 2; font-size: .75rem; color: var(--grey); }
+
+  /* top bar: the single state */
+  .bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 10; display: flex; align-items: center; gap: 1rem; padding: .7rem clamp(1rem, 5vw, 4rem); background: rgba(240,240,230,.94); backdrop-filter: blur(8px); border-top: 1px solid var(--line); }
+  .bar .ico { width: 2.1rem; height: 2.1rem; border: 1px solid var(--line); display: inline-flex; align-items: center; justify-content: center; font-size: .95rem; }
+  .bar .ico:hover, .bar .nav button:hover:not(:disabled), .bar .state button:hover:not(:disabled) { background: var(--black); color: var(--cream); }
+  .bar .nav .pos { cursor: pointer; }
+  .bar .nav .pos:hover b { color: var(--aux); }
+  /* modal: index and method */
+  .modal { position: fixed; inset: 0; z-index: 30; background: rgba(58,56,54,.55); display: none; align-items: center; justify-content: center; padding: 1.5rem; }
+  .modal.open { display: flex; }
+  .modal .box { background: var(--cream); color: var(--black); width: min(52rem, 100%); max-height: 86vh; overflow-y: auto; padding: 2rem clamp(1.2rem, 4vw, 2.5rem) 2.2rem; border: 1px solid var(--line); position: relative; }
+  .modal .box h3 { font-family: var(--serif); font-weight: 400; font-size: 1.6rem; margin: 0 0 1.2rem; text-transform: uppercase; letter-spacing: .02em; }
+  .modal .box h4 { font-size: .7rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; color: var(--aux); margin: 1.4rem 0 .5rem; }
+  .modal .box p, .modal .box li { font-size: .88rem; line-height: 1.55; }
+  .modal .box p { margin: 0 0 .7rem; }
+  .modal .box ul { margin: 0; padding-left: 1.1rem; }
+  .modal .box a { color: var(--aux); word-break: break-all; }
+  .modal .close { position: absolute; top: .8rem; right: .8rem; width: 2rem; height: 2rem; border: 1px solid var(--line); font-size: 1rem; }
+  .modal .close:hover { background: var(--black); color: var(--cream); }
+  .modal .index { display: grid; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); gap: .4rem 1.5rem; }
+  .modal .index button { text-align: left; padding: .6rem 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 2.2rem 1fr; gap: .4rem; align-items: baseline; width: 100%; }
+  .modal .index button.on .t, .modal .index button:hover .t { color: var(--aux); }
+  .modal .index .k { font-size: .68rem; letter-spacing: 2px; color: var(--aux); font-weight: 700; }
+  .modal .index .t { font-family: var(--serif); font-size: 1.05rem; line-height: 1.2; }
+  .modal .index .s { grid-column: 2; font-size: .75rem; color: var(--grey); }
+  .bar .brand { font-family: var(--serif); text-transform: uppercase; letter-spacing: .12em; font-size: .85rem; white-space: nowrap; }
+  .bar .brand small { font-family: var(--sans); letter-spacing: 2px; font-size: .62rem; color: var(--grey); margin-left: .6rem; font-weight: 700; }
+  .bar .spacer { flex: 1; }
+  .bar .hint { font-size: .68rem; color: var(--grey); letter-spacing: 1px; text-transform: uppercase; }
+  @media (max-width: 820px) { .bar .hint { display: none; } }
+  /* card navigation: ‹ 03 / 10 › */
+  .bar .nav { display: flex; align-items: center; border: 1px solid var(--line); }
+  .bar .nav button { padding: .3rem .6rem; font-size: .9rem; line-height: 1; }
+  .bar .nav button:disabled { opacity: .3; cursor: default; }
+  .bar .nav .pos { font-size: .72rem; letter-spacing: 2px; font-weight: 700; min-width: 4.6rem; text-align: center; color: var(--grey); }
+  .bar .nav .pos b { color: var(--black); }
+  /* state control: year slider with step and play, the Season Tower pattern */
+  .bar .state { display: flex; align-items: center; gap: .6rem; border: 1px solid var(--black); padding: .25rem .5rem .25rem .8rem; }
+  .bar .state .lab { font-family: var(--serif); font-size: 1.25rem; line-height: 1; min-width: 3.2ch; letter-spacing: .02em; }
+  .bar .state .k { font-size: .62rem; letter-spacing: 2px; text-transform: uppercase; color: var(--grey); font-weight: 700; margin-right: .2rem; }
+  .bar .state button { padding: .2rem .45rem; font-size: .95rem; line-height: 1; }
+  .bar .state button:disabled { opacity: .3; cursor: default; }
+    .bar .state .trk { position: relative; width: clamp(7rem, 14vw, 13rem); height: 1.6rem; display: flex; align-items: center; }
+  .bar .state input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 2px; background: var(--mute); margin: 0; outline: none; }
+  .bar .state input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--aux); border: 2px solid var(--cream); cursor: pointer; }
+  .bar .state input[type=range]::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--aux); border: 2px solid var(--cream); cursor: pointer; }
+  .bar .state .ticks { position: absolute; left: 7px; right: 7px; top: 1.15rem; display: flex; justify-content: space-between; font-size: .58rem; letter-spacing: 1px; color: var(--grey); pointer-events: none; }
+  .bar .state .ticks span.on { color: var(--black); font-weight: 700; }
+  @media (max-width: 820px) { .bar { gap: .5rem; flex-wrap: wrap; padding-top: .5rem; } .bar .brand { display: none; } .bar .state .trk { width: 6rem; } .bar .state .k { display: none; } }
+
+  /* progress rail */
+
+
+  /* chart primitives */
+  .panel { background: var(--white); border: 1px solid var(--line); padding: 1.1rem 1.2rem; margin-bottom: 1rem; }
+  .card:nth-child(even) .panel { background: var(--cream); }
+  .panel h3 { font-size: .68rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; color: var(--grey); margin: 0 0 .8rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .panel h3 .v { color: var(--black); font-family: var(--serif); font-size: 1.35rem; letter-spacing: 0; text-transform: none; font-weight: 400; }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1rem; }
+
+  /* horizontal sorted bars with FLIP */
+  .hbars { display: flex; flex-direction: column; gap: .35rem; }
+  .hrow { display: grid; grid-template-columns: minmax(7rem, 11rem) 1fr 5.5rem; gap: .6rem; align-items: center; font-size: .82rem; will-change: transform; }
+  .hrow .nm { color: var(--black); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hrow .tr { height: 14px; background: transparent; position: relative; }
+  .hrow .bf { height: 100%; transition: width .6s cubic-bezier(.2,.8,.2,1); }
+  .hrow .bf.ghost { position: absolute; left: 0; top: 0; opacity: .25; }
+  .hrow .vl { text-align: right; font-weight: 600; }
+  .hrow.off { opacity: .45; }
+  .hrow .nr { color: var(--grey); font-weight: 400; font-style: italic; font-size: .75rem; }
+
+  /* year columns */
+  .ycols { display: flex; gap: 1.2rem; align-items: flex-end; height: 150px; padding-top: 1.4rem; }
+  .ycol { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; gap: .3rem; cursor: pointer; }
+  .ycol .v { font-size: .78rem; font-weight: 600; }
+  .ycol .b { width: 100%; max-width: 64px; background: var(--mute); transition: height .6s cubic-bezier(.2,.8,.2,1), background .3s; }
+  .ycol.on .b { background: var(--aux); }
+  .ycol .y { font-size: .72rem; color: var(--grey); letter-spacing: 1px; }
+  .ycol.on .y { color: var(--black); font-weight: 700; }
+
+  /* stacked columns */
+  .stack { display: flex; gap: 1.2rem; align-items: flex-end; height: 220px; padding-top: 1.4rem; }
+  .stack .col { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; align-items: center; gap: .3rem; cursor: pointer; }
+  .stack .col .segs { width: 100%; max-width: 72px; display: flex; flex-direction: column-reverse; }
+  .stack .seg { width: 100%; transition: height .6s cubic-bezier(.2,.8,.2,1), opacity .3s; }
+  .stack .col:not(.on) .seg { opacity: .35; }
+  .stack .v { font-size: .78rem; font-weight: 600; }
+  .stack .y { font-size: .72rem; color: var(--grey); letter-spacing: 1px; }
+  .stack .col.on .y { color: var(--black); font-weight: 700; }
+  .legend { display: flex; flex-wrap: wrap; gap: .4rem 1rem; font-size: .74rem; color: var(--grey); margin-top: .6rem; }
+  .legend i { display: inline-block; width: 10px; height: 10px; margin-right: .35rem; vertical-align: -1px; }
+
+  /* progress to target */
+  .target { margin: .6rem 0 1rem; }
+  .target .lab { display: flex; justify-content: space-between; font-size: .8rem; margin-bottom: .3rem; }
+  .target .lab b { font-weight: 600; }
+  .target .trk { position: relative; height: 10px; background: var(--mute); }
+  .target .trk .done { position: absolute; left: 0; top: 0; height: 100%; background: var(--aux); transition: width .6s cubic-bezier(.2,.8,.2,1); }
+  .target .trk .path { position: absolute; top: -3px; width: 2px; height: 16px; background: var(--yellow); }
+  .target .sub { font-size: .72rem; color: var(--grey); margin-top: .3rem; }
+
+  /* detail tables */
+  details.rows { margin-top: .4rem; }
+  details.rows summary { cursor: pointer; font-size: .7rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; color: var(--aux); list-style: none; }
+  details.rows summary::before { content: "+ "; }
+  details.rows[open] summary::before { content: "− "; }
+  table.t { width: 100%; border-collapse: collapse; font-size: .78rem; margin-top: .6rem; }
+  table.t th, table.t td { text-align: right; padding: .3rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.t th:first-child, table.t td:first-child { text-align: left; }
+  table.t th { color: var(--grey); font-weight: 600; letter-spacing: 1px; font-size: .68rem; text-transform: uppercase; }
+  table.t td.cur, table.t th.cur { background: rgba(81,143,131,.10); font-weight: 600; }
+  table.t tr.grp td { font-weight: 700; }
+  table.t tr.sub td:first-child { padding-left: 1.2rem; color: var(--grey); }
+  .toggle { display: inline-flex; border: 1px solid var(--line); margin-left: auto; }
+  .toggle button { padding: .15rem .6rem; font-size: .68rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; color: var(--grey); }
+  .toggle button.on { background: var(--black); color: var(--cream); }
+  .kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: .8rem; }
+  .kv div { border-top: 2px solid var(--aux); padding-top: .4rem; }
+  .kv .k { font-size: .66rem; letter-spacing: 2px; text-transform: uppercase; color: var(--grey); font-weight: 700; }
+  .kv .v { font-family: var(--serif); font-size: 1.6rem; line-height: 1.1; }
+  .kv .s { font-size: .72rem; color: var(--grey); }
+  .tl { list-style: none; margin: 0; padding: 0; }
+  .tl li { display: grid; grid-template-columns: 6rem 1fr; gap: .8rem; padding: .45rem 0; border-bottom: 1px solid var(--line); font-size: .82rem; line-height: 1.4; }
+  .tl li .d { color: var(--aux); font-weight: 700; letter-spacing: 1px; font-size: .72rem; text-transform: uppercase; }
+  .tip { position: fixed; z-index: 20; background: var(--black); color: var(--cream); padding: .4rem .6rem; font-size: .75rem; pointer-events: none; display: none; max-width: 18rem; line-height: 1.4; }
+  .tip .k { color: var(--yellow); text-transform: uppercase; letter-spacing: 1px; font-size: .64rem; display: block; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } .film { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="bar">
+  <div class="brand">Gruppo Florence <small>Report Film · Sustainability Report 2025</small></div>
+  <div class="nav" id="nav">
+    <button id="prevCard" title="Previous card (←)">‹</button>
+    <span class="pos" id="posBtn" title="Open the index"><b id="posNow">00</b> / <span id="posMax">12</span></span>
+    <button id="nextCard" title="Next card (→)">›</button>
+  </div>
+  <div class="spacer"></div>
+  <span class="hint">↑ ↓ year · ← → cards</span>
+  <div class="state">
+    <span class="k">Report year</span>
+    <span class="lab" id="yearLab">—</span>
+    <button id="stepBack" title="Previous year (↓)">◂</button>
+    <div class="trk">
+      <input type="range" id="yearSlider" min="0" max="2" step="1" value="2" aria-label="Report year">
+      <div class="ticks" id="ticks"></div>
+    </div>
+    <button id="stepFwd" title="Next year (↑)">▸</button>
+  </div>
+  <button class="ico" id="helpBtn" title="Method and sources">?</button>
+  <button class="ico" id="fsBtn" title="Full screen">⛶</button>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="box">
+    <button class="close" id="modalClose" title="Close (Esc)">×</button>
+    <div id="mIndex">
+      <h3>Index</h3>
+      <div class="index" id="index"></div>
+    </div>
+    <div id="mHelp">
+      <h3>Method and sources</h3>
+      <p>Every number in this film comes from the text layer of the English PDF of the Gruppo Florence Sustainability Report 2025, 97 pages and 331,000 characters, read page by page. Nothing is interpolated or estimated; where the report gives no figure the card says so. The year slider is the single state: every card re-sorts to the selected year and shows the previous year as a ghost bar where it helps.</p>
+      <h4>The report</h4>
+      <p>GRI Standards 2021 with reference; limited assurance by EY S.p.A. under ISAE 3000 Revised, with some indicators excluded; impact materiality only; CSRD reporting expected from FY2027. Published by Gruppo Florence in June 2026 on the Auxilium page of gruppoflorence.it.</p>
+      <h4>Where each card comes from</h4>
+      <ul>
+        <li>Emissions, energy, intensity: environment chapter, intensity on p. 37; Scope 2 location-based is given for 2025 only.</li>
+        <li>Water, materials and waste: environment chapter; the 2025 renewable materials share reflects a methodological refinement.</li>
+        <li>Targets: SBTi commitment, SA8000 plan and milestones as published; progress bars and the straight-line path are computed here.</li>
+        <li>Structure: divisions, board and group perimeter from the governance chapter.</li>
+        <li>People: pp. 68 to 81. Grade, age, training, pay, hires and exits are Italy only; foreign companies appear as headcount totals. Injury hours: 2023 estimated, 2024 excludes SNG, Logama and foreign companies, 2025 full scope.</li>
+        <li>Economic value: pp. 57 to 58. 2023 is the sum of statutory accounts net of intercompany items; 2024 and 2025 are from the IFRS consolidated statements, so the bases are not strictly comparable. </li>
+        <li>Economic value by division: Table 20, p. 58, the same two bases as above.</li>
+        <li>Supply chain: Tables 23 to 30, pp. 62 to 64 (processing supplier assessments, spend coverage, acquisitions) and Table 9, p. 40 (material certifications by division).</li>
+      </ul>
+      <h4>Known gaps</h4>
+      <ul>
+        <li>Scope 3 categories 9 to 12 not available for 2023; 8 and 13 to 15 not reported; category 1 limited to materials the group considers relevant.</li>
+        <li>Renewable electricity: the letter says 100% of Italian sites, a footnote says close to full because of contract timing; the energy table is used.</li>
+        <li>No figures by brand, by material or by laboratory; nothing below division level.</li>
+      </ul>
+      <h4>Identity</h4>
+      <p>Typography and palette follow gruppoflorence.it (Linotype Didot and DIN 2014 via Typekit; Bodoni Moda and Barlow stand in here). This is an independent reading of a public report, not a company publication. Compiled 8 November 2026 by Carlo De Marchis.</p>
+      <h4>Source</h4>
+      <p><a href="https://www.gruppoflorence.it/wp-content/uploads/sites/2/2026/06/GF-VIEW.BdS_2025-ENG_Lo-Res-1-1.pdf" target="_blank" rel="noopener">Gruppo Florence, Sustainability Report 2025 (English PDF)</a><br><a href="https://www.gruppoflorence.it/" target="_blank" rel="noopener">gruppoflorence.it</a></p>
+    </div>
+  </div>
+</div>
+<div class="tip" id="tip"></div>
+
+<main class="film" id="film">
+
+  <section class="card cover" id="c0">
+    <div>
+      <p class="kicker">Auxilium · Valore Italia · one state, every table</p>
+      <h1>The 2025 sustainability report, card by card</h1>
+      <p class="lead">Gruppo Florence groups 39 Italian laboratories that make ready-to-wear, footwear, leather goods and intermediate processing for the luxury brands. Its 2025 sustainability report covers three years of a group that grew by acquisition and then slowed with the market: 4,627 people, 588 million euros of economic value generated, Scope 1 and 2 emissions down 43% while Scope 3 rose to 383,000 tonnes, water and materials following the perimeter, SA8000 spreading across the sites, and a cost base that outran revenue for two years running. Each card below takes one chapter of the report and lets you read it year by year.</p>
+      <div class="index" id="coverIndex"></div>
+    </div>
+  </section>
+
+  <section class="card" id="c1">
+    <div class="side">
+      <p class="n">01 · Emissions</p>
+      <h2>Scope 3 is <b id="s3share">—</b> of the footprint in <b class="yr">—</b>, and purchased goods alone are <b id="c1share">—</b></h2>
+      <p class="why">Scope 1 and 2 are what the group controls and they fell 43% over the period, almost all through market-based Scope 2. Scope 3 grew with the perimeter. The SBTi target covers categories 1, 4 and 7, which together are <b id="sbtishare">—</b> of Scope 3 in the selected year.</p>
+      <p class="foot">Source: Table 7, Scope 1, 2, 3 by GHG Protocol category. Categories 8 and 13 to 15 not reported; 9 to 12 not available for 2023; category 1 covers materials the group considers relevant. Scope 2 market-based unless the toggle says otherwise.</p>
+    </div>
+    <div class="main">
+      <div class="grid2">
+        <div class="panel">
+          <h3><span>Total emissions, tCO2e</span><span class="v" id="emTotal">—</span></h3>
+          <div class="stack" id="emStack"></div>
+          <div class="legend"><span><i style="background:var(--dust)"></i>Scope 1</span><span><i style="background:var(--acid)"></i>Scope 2</span><span><i style="background:var(--aux)"></i>Scope 3</span></div>
+        </div>
+        <div class="panel">
+          <h3><span>Scope 2 method, 2025 only</span><span class="toggle" id="s2toggle"><button data-m="mb" class="on">Market</button><button data-m="lb">Location</button></span></h3>
+          <div class="ycols" id="s2cols"></div>
+          <p class="foot" style="margin:.6rem 0 0">Location-based is given for 2025 only. The gap between the two is the part of the Scope 1+2 reduction that is contractual renewable purchasing.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <h3><span>Scope 3 by category, tCO2e, sorted for <span class="yr">—</span></span><span class="v" id="s3Total">—</span></h3>
+        <div class="hbars" id="s3bars"></div>
+        <details class="rows"><summary>Show the rows</summary><div id="s3table"></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="c2">
+    <div class="side">
+      <p class="n">02 · Energy</p>
+      <h2>Renewable electricity went from <b id="renShare23">—</b> to <b id="renShare25">—</b> of purchases; fuels still carry <b id="fuelShare">—</b> of the energy in <b class="yr">—</b></h2>
+      <p class="why">The renewable switch is the whole Scope 2 story. The fuel side is heat for processes (natural gas) and vehicles (diesel), and that is where the physical change has to come from. Self-generated solar is small and growing, with part of it sold back.</p>
+      <p class="foot">Source: Table 5, energy consumption in GJ. The 2024 and 2025 vehicle fuel split is partly estimated by the group (85% diesel, 15% petrol for spend-based data).</p>
+    </div>
+    <div class="main">
+      <div class="grid2">
+        <div class="panel">
+          <h3><span>Total energy, GJ</span><span class="v" id="enTotal">—</span></h3>
+          <div class="ycols" id="enCols"></div>
+        </div>
+        <div class="panel">
+          <h3><span>Purchased electricity, GJ</span><span class="v" id="elTotal">—</span></h3>
+          <div class="stack" id="elStack"></div>
+          <div class="legend"><span><i style="background:var(--aux)"></i>Renewable</span><span><i style="background:var(--mute)"></i>Non-renewable</span></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3><span>Energy by source, GJ, sorted for <span class="yr">—</span></span></h3>
+        <div class="hbars" id="enBars"></div>
+        <details class="rows"><summary>Show the rows</summary><div id="enTable"></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="c3">
+    <div class="side">
+      <p class="n">03 · Intensity and productivity</p>
+      <h2>In <b class="yr">—</b> the group emitted <b id="intC">—</b> tCO2e and used <b id="intE">—</b> GJ per thousand euros, with <b id="tpe">—</b> thousand euros of turnover per employee</h2>
+      <p class="why">Carbon intensity fell by a third in 2025 while energy intensity stayed flat, so the gain is the source of the electricity, not less of it. Turnover per employee fell by a third over the period because headcount grew through acquisitions while the brands destocked.</p>
+      <p class="foot">Source: Tables 6 and 8 (intensity, as published), revenue described as economic value generated, year-end headcount. Turnover per employee is computed here from those two figures.</p>
+    </div>
+    <div class="main">
+      <div class="grid2">
+        <div class="panel"><h3><span>tCO2e per EUR thousand</span></h3><div class="ycols" id="intCcols"></div></div>
+        <div class="panel"><h3><span>GJ per EUR thousand</span></h3><div class="ycols" id="intEcols"></div></div>
+        <div class="panel"><h3><span>Turnover, EUR million</span></h3><div class="ycols" id="toCols"></div></div>
+        <div class="panel"><h3><span>Employees at year end</span></h3><div class="ycols" id="empCols"></div></div>
+      </div>
+      <details class="rows"><summary>Show the rows</summary><div id="intTable"></div></details>
+    </div>
+  </section>
+
+  <section class="card" id="c4">
+    <div class="side">
+      <p class="n">04 · Water</p>
+      <h2>In <b class="yr">—</b> the group withdrew <b id="wTot">—</b> megalitres, <b id="wStr">—</b> of it in water-stressed areas, and discharged <b id="wDis">—</b></h2>
+      <p class="why">Third-party supply is the main source and the one that grew. Almost all water withdrawn is discharged, so net consumption is small; the exposure is where it is drawn, and most laboratories sit in areas the report classes as stressed.</p>
+      <p class="foot">Source: Tables 16 and 17, megalitres. Net consumption 2025: 1.95 ML (withdrawals minus discharges).</p>
+    </div>
+    <div class="main">
+      <div class="grid2">
+        <div class="panel">
+          <h3><span>Withdrawals by source, ML</span><span class="v" id="wTot2">—</span></h3>
+          <div class="stack" id="wStack"></div>
+          <div class="legend"><span><i style="background:var(--aux)"></i>Third party</span><span><i style="background:var(--dust)"></i>Groundwater</span></div>
+        </div>
+        <div class="panel">
+          <h3><span>Discharges by destination, ML</span><span class="v" id="wDis2">—</span></h3>
+          <div class="stack" id="dStack"></div>
+          <div class="legend"><span><i style="background:var(--acad)"></i>To third parties</span><span><i style="background:var(--acid)"></i>To surface water</span></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3><span>Water-stressed areas, ML, <span class="yr">—</span></span></h3>
+        <div class="hbars" id="wBars"></div>
+        <details class="rows"><summary>Show the rows</summary><div id="wTable"></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="c5">
+    <div class="side">
+      <p class="n">05 · Materials and waste</p>
+      <h2>Of <b id="mTot">—</b> tonnes of materials in <b class="yr">—</b>, <b id="mRen">—</b> were renewable; of <b id="wsTot">—</b> tonnes of waste, <b id="wsRec">—</b> was diverted from disposal</h2>
+      <p class="why">Textiles and mixed packaging are the two largest waste streams and both grew. Hazardous waste fell from 63 tonnes to 15. What still goes to landfill is mostly textiles and unsorted waste, the two streams a circular programme would target first.</p>
+      <p class="foot">Source: Tables 10 to 15. The group notes the 2025 renewable materials share fell against 2024 because of a methodological refinement. Waste totals: diverted plus directed to disposal.</p>
+    </div>
+    <div class="main">
+      <div class="grid2">
+        <div class="panel">
+          <h3><span>Materials, tonnes</span><span class="v" id="mTot2">—</span></h3>
+          <div class="stack" id="mStack"></div>
+          <div class="legend"><span><i style="background:var(--aux)"></i>Renewable</span><span><i style="background:var(--mute)"></i>Non-renewable</span></div>
+        </div>
+        <div class="panel">
+          <h3><span>Waste by fate, tonnes</span><span class="v" id="wsTot2">—</span></h3>
+          <div class="stack" id="wsStack"></div>
+          <div class="legend"><span><i style="background:var(--aux)"></i>Recycling</span><span><i style="background:var(--dust)"></i>Other recovery</span><span><i style="background:var(--cremisi)"></i>Landfill</span><span><i style="background:var(--acad)"></i>Other disposal</span></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3><span>Waste streams, tonnes, sorted for <span class="yr">—</span></span><span class="toggle" id="wsToggle"><button data-f="all" class="on">All</button><button data-f="div">Diverted</button><button data-f="dis">To disposal</button></span></h3>
+        <div class="hbars" id="wsBars"></div>
+        <details class="rows"><summary>Show the rows</summary><div id="wsTable"></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="c6">
+    <div class="side">
+      <p class="n">06 · Targets and certifications</p>
+      <h2>Scope 1 and 2 are <b id="tgtS12">—</b> of the way to the 2033 target; Scope 3 is moving the other way</h2>
+      <p class="why">SBTi validated the targets in the second half of 2025 on a 2023 base. The yellow marker on each bar is where a straight-line path to 2033 would sit in the selected year. Social and environmental certification is on a dated plan; chemicals went from a programme to a system in 2025.</p>
+      <p class="foot">Source: SBTi targets, Auxilium section; certifications and chemical management text. Progress is computed here as the share of the 2033 absolute reduction already achieved against the 2023 base; the straight-line path is an aid to reading, not the group's own trajectory.</p>
+    </div>
+    <div class="main">
+      <div class="panel">
+        <h3><span>SBTi near-term targets, base 2023, target 2033, position in <span class="yr">—</span></span></h3>
+        <div id="targets"></div>
+      </div>
+      <div class="grid2">
+        <div class="panel">
+          <h3><span>SA8000 sites</span></h3>
+          <div class="ycols" id="saCols"></div>
+          <p class="foot" style="margin:.6rem 0 0">13 before 2025, 22 at end 2025, 18 more planned by 2026, all Italian sites by end 2027 (count not stated).</p>
+        </div>
+        <div class="panel">
+          <h3><span>Coverage and milestones</span></h3>
+          <div class="kv">
+            <div><div class="k">ISO 14001 + 45001</div><div class="v">~70%</div><div class="s">of laboratories, multi-site; goal 100%</div></div>
+            <div><div class="k">LWG leather</div><div class="v">Yes</div><div class="s">sourced from LWG-certified suppliers</div></div>
+            <div><div class="k">Scope certificate</div><div class="v">11</div><div class="s">processing suppliers (GOTS, GRS, RDS, RWS)</div></div>
+            <div><div class="k">Suppliers mapped</div><div class="v">~1,000</div><div class="s">chemical management, 2025</div></div>
+          </div>
+          <ul class="tl" style="margin-top:1rem">
+            <li><span class="d">2023</span><span>ZDHC Signatory Friend Vendor; SBTi base year</span></li>
+            <li><span class="d">2024</span><span>First double materiality assessment; Italian companies reorganised</span></li>
+            <li><span class="d">2025</span><span>Group Chemical Management System; PRSL issued (September); Fairly Made selected, API to ZDHC Gateway; SBTi validation (H2); SA8000 +9 sites; ESG Business Line Coordinators</span></li>
+            <li><span class="d">2026</span><span>SA8000 +18 sites planned; divisional chemical training; PFAS testing plan; renewable contracts abroad from late 2026</span></li>
+            <li><span class="d">2027</span><span>All Italian sites SA8000; CSRD reporting expected from FY2027</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="c7">
+    <div class="side">
+      <p class="n">07 · Structure and governance</p>
+      <h2>37 manufacturing divisions, more than 100 brands, nine regions, and a board that went from two women to four</h2>
+      <p class="why">Ready-to-wear is 25 of the 37 divisions. The parent board grew to eleven in 2024. The report states that no formal structure yet ensures direct Board involvement in ESG; a Strategic Council reviews it monthly and a six-member Supply Chain Committee meets monthly.</p>
+      <p class="foot">Source: Tables 1 and 2 (board and committee composition), group description, business unit list. Chair: Francesco Trapani until September 2025, then Beatrice Ballini. CEO through 2025: Attila Kiss (President from May 2026, Fabrizio Ciafrei CEO).</p>
+    </div>
+    <div class="main">
+      <div class="grid2">
+        <div class="panel">
+          <h3><span>Divisions by business unit</span><span class="v">37</span></h3>
+          <div class="hbars" id="divBars"></div>
+          <p class="foot" style="margin:.6rem 0 0">Business lines: Woven, Knitwear, Lightwear and Jersey, Soft Accessories, Denim, Leatherwear, Shoes and Intermediate Process, Leathergoods.</p>
+        </div>
+        <div class="panel">
+          <h3><span>Board of G.F. S.p.A., <span class="yr">—</span></span><span class="v" id="boardN">—</span></h3>
+          <div class="hbars" id="boardBars"></div>
+          <details class="rows"><summary>Show the rows</summary><div id="boardTable"></div></details>
+        </div>
+      </div>
+      <div class="panel">
+        <h3><span>Group in the selected year</span></h3>
+        <div class="kv" id="groupKv"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="c8">
+    <div class="side">
+      <p class="n">08 · People</p>
+      <h2>In <b class="yr">—</b>: <b id="pTot">—</b> employees, <b id="pWomen">—</b> women, <b id="pItaly">—</b> in Italy; <b id="pTrain">—</b> training hours per head and <b id="pInj">—</b> injuries per million hours</h2>
+      <p class="why">The workforce is four fifths women and three quarters Italian, with manual workers the majority. Training hours fell in 2025 while headcount rose, and the injury count doubled as the reporting scope was widened to every group company, so the rate is only partly comparable. Women earn less than men at every grade except middle management.</p>
+      <p class="foot">Source: Tables 31 to 45, Chapter 5. Job grade, age, training, pay and turnover breakdowns cover Italy; foreign companies are reported as totals only. Injury hours for 2023 were estimated from contractual hours; 2024 excludes SNG, Logama and the foreign companies; 2025 covers all group companies.</p>
+    </div>
+    <div class="main">
+      <div class="grid2">
+        <div class="panel">
+          <h3><span>Employees by country</span><span class="v" id="pTot2">—</span></h3>
+          <div class="hbars" id="pCountry"></div>
+        </div>
+        <div class="panel">
+          <h3><span>Italy by job grade and gender, <span class="yr">—</span></span></h3>
+          <div class="hbars" id="pGrade"></div>
+          <div class="legend"><span><i style="background:var(--aux)"></i>Women</span><span><i style="background:var(--dust)"></i>Men</span></div>
+        </div>
+        <div class="panel">
+          <h3><span>Hires and exits, Italy</span></h3>
+          <div class="stack" id="pFlow"></div>
+          <div class="legend"><span><i style="background:var(--aux)"></i>Hires</span><span><i style="background:var(--cremisi)"></i>Exits</span></div>
+        </div>
+        <div class="panel">
+          <h3><span>Women's pay as a ratio of men's, <span class="yr">—</span></span></h3>
+          <div class="hbars" id="pPay"></div>
+          <p class="foot" style="margin:.6rem 0 0">Table 42, average total pay; 1.0 means parity. Base salary ratios (Table 41) are within 0.1 of these.</p>
+        </div>
+        <div class="panel">
+          <h3><span>Training hours per employee</span></h3>
+          <div class="ycols" id="pTrainCols"></div>
+        </div>
+        <div class="panel">
+          <h3><span>Injury rate per million hours worked</span></h3>
+          <div class="ycols" id="pInjCols"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3><span>Contracts and the flexibility buffer, Italy, <span class="yr">—</span></span></h3>
+        <div class="kv" id="pContract"></div>
+        <p class="foot" style="margin:.6rem 0 0">Tables 31 to 33. Part-time is a women's arrangement in the laboratories; the non-employee buffer (agency staff, interns, contractors) stays around 3% of headcount, so seasonal peaks are absorbed with hours rather than heads. 100% of employees are covered by collective bargaining.</p>
+      </div>
+      <details class="rows"><summary>Show the rows</summary><div id="pTable"></div></details>
+    </div>
+  </section>
+
+  <section class="card" id="c9">
+    <div class="side">
+      <p class="n">09 · Economic value</p>
+      <h2>In <b class="yr">—</b> the group generated <b id="evGen">—</b> million euros and distributed <b id="evDis">—</b>; personnel costs took <b id="evPers">—</b> and finance costs <b id="evFin">—</b></h2>
+      <p class="why">This is the table behind the loss question. Value generated fell 15% from 2023 to 2025 while personnel costs rose 50% and finance costs rose 164%. From 2024 the group distributed more than it generated, so retained value is negative. Suppliers' share fell as the group kept more work in-house and bought fewer processing services.</p>
+      <p class="foot">Source: Tables 18, 19, 21 and 22, EUR thousand. 2023 is the sum of statutory accounts net of intercompany items; 2024 and 2025 are the IFRS consolidated financial statements of Gruppo Florence S.p.A. Finance costs are value distributed to capital providers.</p>
+    </div>
+    <div class="main">
+      <div class="grid2">
+        <div class="panel">
+          <h3><span>Value distributed by stakeholder, EUR million</span><span class="v" id="evDis2">—</span></h3>
+          <div class="stack" id="evStack"></div>
+          <div class="legend"><span><i style="background:var(--mute)"></i>Operating costs (suppliers)</span><span><i style="background:var(--aux)"></i>Personnel</span><span><i style="background:var(--cremisi)"></i>Finance costs</span><span><i style="background:var(--acad)"></i>Public administration</span><span><i style="background:var(--yellow)"></i>Community</span></div>
+        </div>
+        <div class="panel">
+          <h3><span>Generated, distributed, retained, EUR million</span></h3>
+          <div class="hbars" id="evBars"></div>
+          <p class="foot" style="margin:.6rem 0 0">Retained is negative in 2024 and 2025: the report states no value was retained because distribution exceeded generation.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <h3><span>Value generated by country, EUR million, <span class="yr">—</span></span></h3>
+        <div class="hbars" id="evCountry"></div>
+        <details class="rows"><summary>Show the rows</summary><div id="evTable"></div></details>
+      </div>
+      <div class="panel">
+        <h3><span>Financial assistance received from government, EUR thousand</span><span class="v" id="govTot">—</span></h3>
+        <div class="hbars" id="govBars"></div>
+        <p class="foot" style="margin:.6rem 0 0">Tables 21 and 22. Against <b id="govPA">—</b> paid to public administration in the same year, public money is a net outflow; receipts are 0.2% of value generated. Grants and subsidies of 2023 gave way to tax credits and incentives from 2024. All but a few thousand euros were received in Italy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="c10">
+    <div class="side">
+      <p class="n">10 · Economic value by division</p>
+      <h2>In <b class="yr">—</b> <b id="buNeg">—</b> of the four divisions retained less than they distributed; ready-to-wear generated <b id="buRtwShare">—</b> of the group's value</h2>
+      <p class="why">The group's negative retained value is not one division's problem. Ready-to-wear held its revenue at around 470 million across the three years while its distributed value rose 40 million, so it turned negative in 2025. Footwear lost 40% of its value generated in 2024 and has retained a loss of 14 to 17 million since. Intermediate processing shrank by four fifths after 2023 as work moved inside the garment divisions. Leather goods doubled with acquisitions and still retains a loss.</p>
+      <p class="foot">Source: Table 20, EUR thousand, p. 58. Divisions as the report defines them: RTW, IP (intermediate processing and related), Footwear, Leather Goods. Negative retained value means distribution exceeded generation.</p>
+    </div>
+    <div class="main">
+      <div class="grid2">
+        <div class="panel">
+          <h3><span>Value generated by division, EUR million, <span class="yr">—</span></span></h3>
+          <div class="hbars" id="buGen"></div>
+        </div>
+        <div class="panel">
+          <h3><span>Value retained by division, EUR million, <span class="yr">—</span></span></h3>
+          <div class="hbars" id="buRet"></div>
+          <p class="foot" style="margin:.6rem 0 0">Bars show the size of the retained value; cremisi bars are losses, green bars are positive retained value.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <h3><span>Value generated by division, three years, EUR million</span></h3>
+        <div class="stack" id="buStack"></div>
+        <div class="legend"><span><i style="background:var(--aux)"></i>Ready-to-wear</span><span><i style="background:var(--dust)"></i>Footwear</span><span><i style="background:var(--acad)"></i>Leather goods</span><span><i style="background:var(--yellow)"></i>Intermediate processing</span></div>
+        <details class="rows"><summary>Show the rows</summary><div id="buTable"></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="c11">
+    <div class="side">
+      <p class="n">11 · Supply chain</p>
+      <h2>In <b class="yr">—</b> the group assessed <b id="spAssessed">—</b> processing suppliers and found significant social impacts at <b id="spSig">—</b> of them</h2>
+      <p class="why">Gruppo Florence sits in the middle of the chain: the brands audit it, and it audits the façonisti who do embroidery, assembly, washing and printing for its laboratories. Coverage is built on spend rather than headcount: 65% of active suppliers but 95% of processing spend were assessed in 2025. The jump in significant social findings, from 43% to 66%, comes from a stricter checklist (a 1 to 5 scale with the option of terminating the relationship), so it reads as tighter scrutiny rather than a worse supply base. Environmental findings stay rare because most processing is low-impact; the checks concentrate on printing, washing, upper-making and dyeing.</p>
+      <p class="foot">Source: Tables 23 to 30, pp. 62 to 64; Table 9, p. 40. "Significant" means a qualification outcome of 1 to 2 on the 2024 scale and 1 to 3 on the 2025 scale. No suppliers came in through acquisitions in 2025.</p>
+    </div>
+    <div class="main">
+      <div class="grid2">
+        <div class="panel">
+          <h3><span>Processing suppliers assessed</span><span class="v" id="spAssessed2">—</span></h3>
+          <div class="ycols" id="spCols"></div>
+        </div>
+        <div class="panel">
+          <h3><span>Of those assessed, with significant impacts, <span class="yr">—</span></span></h3>
+          <div class="hbars" id="spBars"></div>
+          <p class="foot" style="margin:.6rem 0 0">Share of processing spend assessed: <b id="spSpend">—</b>; with significant social impacts <b id="spSpendSig">—</b>; with significant environmental impacts <b id="spSpendEnv">—</b>.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <h3><span>Suppliers added through acquisitions and how many were assessed</span></h3>
+        <div class="kv" id="spNew"></div>
+        <details class="rows"><summary>Show the rows</summary><div id="spTable"></div></details>
+      </div>
+      <div class="panel">
+        <h3><span>Material certifications held by division, 2025</span></h3>
+        <div id="spCerts"></div>
+        <p class="foot" style="margin:.6rem 0 0">Table 9. Certified processing suppliers are those included in the group's scope certificate. Certifications are renewed yearly and do not change with the year slider.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="c12">
+    <div class="side">
+      <p class="n">12 · Method and gaps</p>
+      <h2>What this film can and cannot show</h2>
+      <p class="why">Every number here comes from the text layer of the English PDF of the 2025 report, 97 pages and 331,000 characters, read page by page. An earlier version of this film lacked the People chapter and the economic value table because the first reading tool truncated the document at about a third of its length; both are now included from pages 57 to 81.</p>
+      <p class="foot">Report: GRI Standards 2021 with reference; limited assurance by EY S.p.A. (ISAE 3000 Revised), some indicators excluded; impact materiality only; CSRD expected from FY2027.</p>
+    </div>
+    <div class="main">
+      <div class="panel">
+        <h3><span>Known gaps and caveats</span></h3>
+        <ul class="tl">
+          <li><span class="d">People</span><span>Job grade, age, training, pay, hires and exits are reported for Italy only; the foreign companies (Poland, Albania, Romania, Tunisia, Portugal) appear as headcount totals. Injury hours: 2023 estimated, 2024 excludes SNG, Logama and foreign companies, 2025 full scope.</span></li>
+          <li><span class="d">Economic</span><span>2023 is the sum of statutory accounts net of intercompany items; 2024 and 2025 come from the IFRS consolidated statements. The two bases are not strictly comparable.</span></li>
+          <li><span class="d">Scope 2</span><span>Location-based given for 2025 only; the market and location toggle therefore applies to 2025.</span></li>
+          <li><span class="d">Scope 3</span><span>Categories 9 to 12 not available for 2023; 8 and 13 to 15 not reported. Category 1 limited to materials the group considers relevant.</span></li>
+          <li><span class="d">Renewables</span><span>The letter says 100% of Italian sites; a footnote says close to full because of contract timing. The energy table is used.</span></li>
+          <li><span class="d">Materials</span><span>2025 renewable share reflects a methodological refinement, so the 2024 to 2025 change is partly definitional.</span></li>
+          <li><span class="d">Targets</span><span>Progress bars and the straight-line path are computed here; the group publishes targets and absolute figures, not a trajectory.</span></li>
+          <li><span class="d">Identity</span><span>Typography and palette follow gruppoflorence.it (Linotype Didot and DIN 2014 via Typekit; Bodoni Moda and Barlow stand in here). This is an independent reading of a public report, not a company publication.</span></li>
+        </ul>
+      </div>
+      <p class="foot">Source document: Gruppo Florence, Sustainability Report 2025 (English), gruppoflorence.it/wp-content/uploads/sites/2/2026/06/GF-VIEW.BdS_2025-ENG_Lo-Res-1-1.pdf. Compiled 8 November 2026.</p>
+    </div>
+  </section>
+
+</main>
+
+<script>
+// ---------- DATA: every figure from the Gruppo Florence Sustainability Report 2025 ----------
+const YEARS = [2023, 2024, 2025];
+const D = {
+  group: { turnover_k: {2023: 692616.77, 2024: 608285.34, 2025: 587849.01}, employees: {2023: 3665, 2024: 4544, 2025: 4627}, companies: 37, brands: '100+', regions: 9 },
+  intensity: { c: {2023: 0.011, 2024: 0.013, 2025: 0.007}, e: {2023: 0.14, 2024: 0.20, 2025: 0.19} },
+  scope1: {2023: 3067, 2024: 4100, 2025: 3607},
+  scope2mb: {2023: 4523, 2024: 4010, 2025: 751},
+  scope2lb: {2025: 3996},
+  scope3: [
+    ['Cat 1 · Purchased goods and services', {2023: 290380, 2024: 293119, 2025: 367445}, true],
+    ['Cat 2 · Capital goods', {2023: 4911, 2024: 2717, 2025: 1569}],
+    ['Cat 3 · Fuel and energy related', {2023: 2563, 2024: 3286, 2025: 2399}],
+    ['Cat 4 · Upstream transport', {2023: 1044, 2024: 1335, 2025: 1135}, true],
+    ['Cat 5 · Waste in operations', {2023: 625, 2024: 5, 2025: 5}],
+    ['Cat 6 · Business travel', {2023: 122, 2024: 406, 2025: 358}],
+    ['Cat 7 · Employee commuting', {2023: 4678, 2024: 6045, 2025: 6262}, true],
+    ['Cat 9 · Downstream transport', {2023: null, 2024: 422, 2025: 365}],
+    ['Cat 10 · Processing of sold products', {2023: null, 2024: 26, 2025: 26}],
+    ['Cat 11 · Use of sold products', {2023: null, 2024: 2296, 2025: 1881}],
+    ['Cat 12 · End of life of sold products', {2023: null, 2024: 2265, 2025: 2025}]
+  ],
+  scope3total: {2023: 304323, 2024: 311922, 2025: 383470},
+  energy: [
+    ['Purchased electricity, renewable', {2023: 6424.30, 2024: 19860.08, 2025: 45479.38}, 'el'],
+    ['Purchased electricity, non-renewable', {2023: 37383.81, 2024: 32525.04, 2025: 8089.58}, 'el'],
+    ['Self-generated solar, consumed', {2023: 3229.62, 2024: 4194.00, 2025: 5008.69}, 'el'],
+    ['Self-generated solar, sold', {2023: 1379.18, 2024: 2430.22, 2025: 1809.85}, 'el'],
+    ['Natural gas, heat and processes', {2023: 26784.83, 2024: 30570.16, 2025: 27999.96}, 'heat'],
+    ['LPG, heat and processes', {2023: 937.86, 2024: 2485.53, 2025: 2264.98}, 'heat'],
+    ['Diesel, heat and processes', {2023: 27.72, 2024: null, 2025: 100.62}, 'heat'],
+    ['Diesel, vehicles', {2023: 18211.09, 2024: 26988.63, 2025: 21640.18}, 'veh'],
+    ['Gasoline, vehicles', {2023: 2121.14, 2024: 3996.47, 2025: 4598.04}, 'veh'],
+    ['LPG, vehicles', {2023: 201.38, 2024: 69.05, 2025: 52.34}, 'veh']
+  ],
+  energyTotal: {2023: 96700.93, 2024: 120688.97, 2025: 115233.77},
+  water: {
+    gw: {2023: 8.51, 2024: 11.83, 2025: 9.13}, gwStr: {2023: 5.40, 2024: 9.27, 2025: 6.47},
+    tp: {2023: 33.62, 2024: 41.31, 2025: 45.16}, tpStr: {2023: 25.93, 2024: 35.76, 2025: 38.83},
+    tot: {2023: 42.13, 2024: 53.14, 2025: 54.29},
+    dSurf: {2023: 7.28, 2024: 6.14, 2025: 4.31}, dSurfStr: {2023: 4.17, 2024: 3.59, 2025: 1.07},
+    dTp: {2023: 34.85, 2024: 46.99, 2025: 48.03}, dTpStr: {2023: 27.16, 2024: 41.44, 2025: 41.70},
+    dTot: {2023: 42.13, 2024: 53.14, 2025: 52.34}
+  },
+  materials: { ren: {2023: 2433, 2024: 2698, 2025: 2034}, non: {2023: 338, 2024: 1417, 2025: 1503}, tot: {2023: 2771, 2024: 4115, 2025: 3537} },
+  wasteTotal: {2023: 1264.68, 2024: 1472.98, 2025: 1563.51},
+  wasteFate: { recycling: {2023: 162.95, 2024: 393.12, 2025: 495.86}, recovery: {2023: 937.08, 2024: 837.59, 2025: 819.35}, landfill: {2023: 137.04, 2024: 242.27, 2025: 238.61}, otherdis: {2023: 27.62, 2024: 0, 2025: 9.69} },
+  wasteDiverted: [
+    ['Textiles', {2023: 247.77, 2024: 529.65, 2025: 535.68}, 'nh'], ['Mixed packaging', {2023: 252.08, 2024: 269.24, 2025: 275.13}, 'nh'], ['Leather', {2023: 227.45, 2024: 137.05, 2025: 126.19}, 'nh'],
+    ['Paper and cardboard', {2023: 190.48, 2024: 171.94, 2025: 196.77}, 'nh'], ['Plastic', {2023: 64.35, 2024: 32.65, 2025: 55.89}, 'nh'], ['Wood', {2023: 25.61, 2024: 24.78, 2025: 22.74}, 'nh'],
+    ['Iron and steel', {2023: 11.80, 2024: 13.13, 2025: 23.05}, 'nh'], ['Sludge', {2023: null, 2024: 0.90, 2025: 41.66}, 'nh'], ['Unsorted waste', {2023: 7.97, 2024: 4.61, 2025: 17.81}, 'nh'],
+    ['Absorbent and filtering materials', {2023: 14.13, 2024: 0.55, 2025: 0.13}, 'nh'], ['End-of-life equipment', {2023: 2.86, 2024: 2.45, 2025: 5.80}, 'nh'], ['Aqueous solutions', {2023: 0.30, 2024: null, 2025: null}, 'nh'], ['Other non-hazardous', {2023: 21.33, 2024: 18.00, 2025: 7.48}, 'nh'],
+    ['Contaminated packaging (haz.)', {2023: 21.33, 2024: 9.38, 2025: 2.64}, 'h'], ['Paints, varnishes, solvents (haz.)', {2023: 8.99, 2024: 6.41, 2025: 1.40}, 'h'], ['Adhesives and sealants (haz.)', {2023: 0.38, 2024: 1.91, 2025: 0.64}, 'h'],
+    ['Absorbents, filters (haz.)', {2023: 1.08, 2024: 1.89, 2025: 0.81}, 'h'], ['End-of-life equipment (haz.)', {2023: 0.03, 2024: 1.54, 2025: 0.71}, 'h'], ['Aerosol cans (haz.)', {2023: 0.76, 2024: null, 2025: null}, 'h'], ['Sludge (haz.)', {2023: 0.45, 2024: 0.43, 2025: 0.43}, 'h'], ['Other hazardous', {2023: 0.89, 2024: 4.22, 2025: 0.25}, 'h']
+  ],
+  wasteDisposed: [
+    ['Textiles', {2023: 29.36, 2024: 28.00, 2025: 117.11}, 'nh'], ['Unsorted waste', {2023: null, 2024: 49.73, 2025: 67.76}, 'nh'], ['Mixed packaging', {2023: 49.89, 2024: 88.50, 2025: null}, 'nh'],
+    ['Paper and cardboard', {2023: 0.70, 2024: 11.88, 2025: 27.99}, 'nh'], ['Aqueous solutions', {2023: 24.94, 2024: 9.59, 2025: 12.30}, 'nh'], ['Plastic', {2023: null, 2024: 6.89, 2025: 7.90}, 'nh'],
+    ['Leather', {2023: 12.46, 2024: 1.52, 2025: 4.22}, 'nh'], ['Sludge', {2023: null, 2024: 36.00, 2025: null}, 'nh'], ['Absorbent and filtering materials', {2023: 17.77, 2024: 1.15, 2025: 0.71}, 'nh'],
+    ['Iron and steel', {2023: null, 2024: 0.60, 2025: null}, 'nh'], ['Other non-hazardous', {2023: 0.33, 2024: 1.10, 2025: 2.02}, 'nh'],
+    ['Absorbents, filters (haz.)', {2023: 11.26, 2024: 2.36, 2025: 2.21}, 'h'], ['Adhesives and sealants (haz.)', {2023: 9.22, 2024: 0.87, 2025: 0.65}, 'h'], ['Contaminated packaging (haz.)', {2023: 3.61, 2024: 2.03, 2025: 2.69}, 'h'],
+    ['Paints, varnishes, solvents (haz.)', {2023: 3.32, 2024: 0.79, 2025: 1.04}, 'h'], ['Aqueous solutions (haz.)', {2023: 1.26, 2024: 0.09, 2025: null}, 'h'], ['Other hazardous', {2023: 0.54, 2024: 1.19, 2025: 1.40}, 'h'], ['Unsorted (haz.)', {2023: null, 2024: null, 2025: 0.30}, 'h']
+  ],
+  sbti: [
+    { name: 'Scope 1 and 2', target: 54.6, base: 7590, cur: {2023: 7590, 2024: 8110, 2025: 4358}, path: '1.5°C' },
+    { name: 'Scope 3, categories 1, 4 and 7', target: 32.5, base: 296102, cur: {2023: 296102, 2024: 300499, 2025: 374842}, path: 'well below 2°C' },
+    { name: 'Scope 3 FLAG', target: 39.4, base: null, cur: {}, path: '1.5°C, with net removals; absolute figures not published' }
+  ],
+  sa8000: {2024: 13, 2025: 22, 2026: 40},
+  board: { 2023: {total: 10, men: 8, women: 2, a3050: 4, a50: 6}, 2024: {total: 11, men: 8, women: 3, a3050: 4, a50: 7}, 2025: {total: 11, men: 7, women: 4, a3050: 4, a50: 7} },
+  committee: { 2024: {total: 6, men: 4, women: 2}, 2025: {total: 6, men: 4, women: 2} },
+  people: {
+    total: {2023: 3665, 2024: 4544, 2025: 4627}, men: {2023: 748, 2024: 934, 2025: 978}, women: {2023: 2917, 2024: 3610, 2025: 3649},
+    country: [['Italy', {2023: 2642, 2024: 3376, 2025: 3514}], ['Albania', {2023: 514, 2024: 519, 2025: 507}], ['Tunisia', {2023: 230, 2024: 251, 2025: 194}], ['Poland', {2023: 167, 2024: 152, 2025: 149}], ['Portugal', {2023: null, 2024: 132, 2025: 140}], ['Romania', {2023: 112, 2024: 114, 2025: 123}]],
+    italyWomen: {2023: 1958, 2024: 2522, 2025: 2623}, italyMen: {2023: 684, 2024: 854, 2025: 891},
+    partGender: { men: {2023: 11, 2024: 17, 2025: 18}, women: {2023: 149, 2024: 220, 2025: 219} }, nonEmpDetail: { temp: {2023: 108, 2024: 98, 2025: 97}, interns: {2023: 34, 2024: 14, 2025: 20}, contractors: {2023: 7, 2024: 26, 2025: 24} },
+    italyContract: { open: {2023: 2454, 2024: 3263, 2025: 3296}, fixed: {2023: 188, 2024: 110, 2025: 217}, ngh: {2023: 0, 2024: 3, 2025: 1}, full: {2023: 2482, 2024: 3139, 2025: 3277}, part: {2023: 160, 2024: 237, 2025: 237} },
+    grade: [['Manual workers', {2023: [456, 1392], 2024: [506, 1732], 2025: [548, 1838]}], ['Office workers', {2023: [182, 534], 2024: [246, 738], 2025: [242, 729]}], ['Middle managers', {2023: [25, 24], 2024: [48, 28], 2025: [57, 31]}], ['Executives', {2023: [21, 8], 2024: [54, 24], 2025: [44, 25]}]],
+    hiresItaly: {2023: 471, 2024: 455, 2025: 594}, hiresTotal: {2023: 688, 2024: 606, 2025: 721}, exitsItaly: {2023: 221, 2024: 393, 2025: 644}, exitRateItaly: {2023: 8, 2024: 12, 2025: 18}, hireRateItaly: {2023: 18, 2024: 13, 2025: 17},
+    nonEmployee: {2023: 148, 2024: 138, 2025: 141},
+    trainHours: {2023: 4647, 2024: 12079, 2025: 9411}, trainAvg: {2023: 1.7, 2024: 4.0, 2025: 2.0},
+    payRatio: [['Manual workers', {2023: 0.9, 2024: 0.9, 2025: 0.9}], ['Office workers', {2023: 0.8, 2024: 0.8, 2025: 0.8}], ['Middle managers', {2023: 1.1, 2024: 1.1, 2025: 1.1}], ['Executives', {2023: 0.7, 2024: 0.8, 2025: 0.8}]],
+    remRatio: {2023: 16, 2024: 16, 2025: 13},
+    injuries: {2023: 9, 2024: 18, 2025: 36}, injRate: {2023: 1.7, 2024: 4.24, 2025: 4.79}, hours: {2023: 5328960, 2024: 4248331, 2025: 7518040},
+    iso45001: {2023: 15, 2024: 60, 2025: 60}, perfReview: {2023: 45, 2024: 75, 2025: 92}
+  },
+  ev: {
+    gen: {2023: 692617, 2024: 608285, 2025: 587849}, dis: {2023: 637552, 2024: 617611, 2025: 628814}, ret: {2023: 55065, 2024: -9326, 2025: -40965},
+    opcost: {2023: 459559, 2024: 381968, 2025: 349968}, pers: {2023: 122223, 2024: 149784, 2025: 183042}, fin: {2023: 34195, 2024: 78202, 2025: 90123}, pa: {2023: 21186, 2024: 7452, 2025: 5507}, comm: {2023: 389, 2024: 205, 2025: 174},
+    genCountry: [['Italy', {2023: 686272, 2024: 603351, 2025: 564938}], ['Portugal', {2023: null, 2024: null, 2025: 17110}], ['Albania', {2023: 5580, 2024: 4424, 2025: 3997}], ['Poland', {2023: 706, 2024: 537, 2025: 1684}], ['Romania', {2023: 15, 2024: 1, 2025: 63}], ['Tunisia', {2023: 44, 2024: -27, 2025: 57}]],
+    retCountry: [['Italy', {2023: 55249, 2024: 2903, 2025: -33930}], ['Albania', {2023: -968, 2024: -5482, 2025: -5126}], ['Poland', {2023: 489, 2024: -4332, 2025: -3269}], ['Tunisia', {2023: 244, 2024: -1705, 2025: -1264}], ['Romania', {2023: 52, 2024: -709, 2025: -643}], ['Portugal', {2023: null, 2024: null, 2025: 3267}]],
+    gov: { total: {2023: 1312, 2024: 1891, 2025: 1418}, italy: {2023: 1312, 2024: 1880, 2025: 1402}, taxcredits: {2023: 59, 2024: 1019, 2025: 848}, subsidies: {2023: 270, 2024: 0, 2025: 0}, grants: {2023: 980, 2024: 0, 2025: 0}, incentives: {2023: 3, 2024: 857, 2025: 570}, other: {2023: 0, 2024: 15, 2025: 0} },
+    suppliers: { active2025: 1167, assessed: {2023: 571, 2024: 685, 2025: 758}, significant: {2023: 191, 2024: 296, 2025: 497}, sigPct: {2023: 33, 2024: 43, 2025: 66}, spendAssessed: {2023: null, 2024: 92, 2025: 95}, envSig: {2023: 4, 2024: 24, 2025: 20}, envMinor2025: 74 }
+  },
+  divisions: [['Ready-to-wear', 25], ['Intermediate processing', 6], ['Footwear', 3], ['Leather goods', 3]],
+  evBU: {
+    gen: { 'Ready-to-wear': {2023: 474488, 2024: 474658, 2025: 468087}, 'Intermediate processing': {2023: 78546, 2024: 18164, 2025: 15748}, 'Footwear': {2023: 118208, 2024: 74300, 2025: 71200}, 'Leather goods': {2023: 21375, 2024: 41163, 2025: 32814} },
+    dis: { 'Ready-to-wear': {2023: 437186, 2024: 458457, 2025: 477435}, 'Intermediate processing': {2023: 66865, 2024: 22554, 2025: 21215}, 'Footwear': {2023: 114153, 2024: 88538, 2025: 87864}, 'Leather goods': {2023: 19348, 2024: 48062, 2025: 42300} },
+    ret: { 'Ready-to-wear': {2023: 42034, 2024: 16201, 2025: -9348}, 'Intermediate processing': {2023: 10451, 2024: -4390, 2025: -5466}, 'Footwear': {2023: -247, 2024: -14237, 2025: -16664}, 'Leather goods': {2023: 2826, 2024: -6899, 2025: -9487} }
+  },
+  supply: {
+    active2025: 1167,
+    assessed: {2023: 571, 2024: 685, 2025: 758},
+    socSig: {2023: 191, 2024: 296, 2025: 497}, socSigPct: {2023: 33, 2024: 43, 2025: 66},
+    envSig: {2023: 4, 2024: 24, 2025: 20}, envSigPct: {2023: 0, 2024: 4, 2025: 3},
+    spendAssessed: {2023: null, 2024: 92, 2025: 95}, spendSocSig: {2023: null, 2024: 39, 2025: 71}, spendEnvSig: {2023: null, 2024: 2, 2025: 2},
+    newSup: {2023: 60, 2024: 395, 2025: null}, newAssessed: {2023: 58, 2024: 193, 2025: null}, newAssessedPct: {2023: 97, 2024: 49, 2025: null}, newSpend: {2023: null, 2024: 18, 2025: null},
+    envMinor2025: 74,
+    certs: [
+      ['GOTS', 'Global Organic Textile Standard', { 'Woven': ['Giuntini', 'Eurotex'], 'Jersey and soft accessories': ['Antica Valserchio', 'Manifatture Cesari', 'PACO'], 'Knitwear': ['Erika', 'Spagnol', 'Melys', 'Style Up', 'Metaphor'], 'Denim': ['Ideal Blue'] }, 19],
+      ['GRS', 'Global Recycle Standard', { 'Jersey and soft accessories': ['Antica Valserchio', 'PACO'], 'Intermediate processes': ['Label System'] }, null],
+      ['RDS', 'Responsible Down Standard', { 'Woven': ['Giuntini'] }, null],
+      ['RWS', 'Responsible Wool Standard', { 'Woven': ['Eurotex'], 'Jersey and soft accessories': ['Antica Valserchio'], 'Knitwear': ['Erika', 'Spagnol', 'Metaphor'] }, 5],
+      ['NPF', 'Nativa Precious Fiber', { 'Jersey and soft accessories': ['Antica Valserchio'] }, null]
+    ]
+  }
+};
+
+// ---------- STATE ----------
+let year = 2025;
+let s2mode = 'mb';
+let wsFilter = 'all';
+const fmt = (v, d = 0) => v == null ? '—' : Number(v).toLocaleString('en', { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (a, b) => b ? (a / b * 100) : null;
+const $ = (id) => document.getElementById(id);
+const C = { aux: '#518F83', dust: '#5F8C9B', acid: '#99CCCC', acad: '#7B6887', yellow: '#CEB232', cremisi: '#C54660', dark: '#375A66', mute: '#DDDCD2', grey: '#908E8E' };
+
+// ---------- PRIMITIVES ----------
+// FLIP: record rects, mutate, invert, play
+function flip(container, mutate) {
+  const before = new Map();
+  [...container.children].forEach((el) => before.set(el.dataset.key, el.getBoundingClientRect()));
+  mutate();
+  [...container.children].forEach((el) => {
+    const b = before.get(el.dataset.key); if (!b) return;
+    const a = el.getBoundingClientRect(); const dy = b.top - a.top; if (!dy) return;
+    el.style.transition = 'none'; el.style.transform = `translateY(${dy}px)`;
+    requestAnimationFrame(() => { el.style.transition = 'transform .6s cubic-bezier(.2,.8,.2,1)'; el.style.transform = ''; });
+  });
+}
+// horizontal sorted bars. items: [{key,name,v,color,ghost,note}]; max shared
+function hbars(el, items, { fmtv = (v) => fmt(v), maxv } = {}) {
+  const max = maxv || Math.max(...items.map((i) => i.v || 0), 1e-9);
+  const sorted = items.slice().sort((a, b) => (b.v ?? -1) - (a.v ?? -1));
+  const existing = new Map([...el.children].map((c) => [c.dataset.key, c]));
+  flip(el, () => {
+    sorted.forEach((it) => {
+      let row = existing.get(it.key);
+      if (!row) { row = document.createElement('div'); row.className = 'hrow'; row.dataset.key = it.key; row.innerHTML = '<span class="nm"></span><span class="tr"><span class="bf ghost"></span><span class="bf"></span></span><span class="vl"></span>'; }
+      row.querySelector('.nm').textContent = it.name; row.querySelector('.nm').title = it.name;
+      const bf = row.querySelector('.bf:not(.ghost)'), gh = row.querySelector('.bf.ghost');
+      bf.style.width = (it.v == null ? 0 : it.v / max * 100) + '%'; bf.style.background = it.color || C.aux;
+      gh.style.width = (it.ghost == null ? 0 : it.ghost / max * 100) + '%'; gh.style.background = it.color || C.aux;
+      const vl = row.querySelector('.vl'); vl.innerHTML = it.v == null ? '<span class="nr">' + (it.note || 'not reported') + '</span>' : fmtv(it.v);
+      row.classList.toggle('off', it.v == null);
+      row.onmousemove = (e) => tip(e, it.tip || (it.name + ': ' + (it.v == null ? (it.note || 'not reported') : fmtv(it.v))));
+      row.onmouseleave = hideTip;
+      el.appendChild(row);
+    });
+    [...el.children].forEach((c) => { if (!sorted.find((s) => s.key === c.dataset.key)) c.remove(); });
+  });
+}
+// three year columns, current highlighted; values by year
+function ycols(el, byYear, { fmtv = (v) => fmt(v), onPick = true } = {}) {
+  const vals = YEARS.map((y) => byYear[y]).filter((v) => v != null); const max = Math.max(...vals, 1e-9);
+  el.innerHTML = '';
+  YEARS.forEach((y) => {
+    const v = byYear[y]; const col = document.createElement('div'); col.className = 'ycol' + (y === year ? ' on' : '');
+    col.innerHTML = `<span class="v">${v == null ? '<span class="nr">n/r</span>' : fmtv(v)}</span><div class="b" style="height:${v == null ? 0 : Math.max(2, v / max * 100)}%"></div><span class="y">${y}</span>`;
+    if (onPick) col.onclick = () => setYear(y);
+    el.appendChild(col);
+  });
+}
+// stacked columns; series: [{name,color,byYear}]
+function stack(el, series, { fmtv = (v) => fmt(v), total } = {}) {
+  const tot = (y) => total ? total[y] : series.reduce((s, q) => s + (q.byYear[y] || 0), 0);
+  const max = Math.max(...YEARS.map(tot), 1e-9);
+  el.innerHTML = '';
+  YEARS.forEach((y) => {
+    const col = document.createElement('div'); col.className = 'col' + (y === year ? ' on' : '');
+    const segs = series.map((q) => `<div class="seg" style="height:${(q.byYear[y] || 0) / max * 180}px;background:${q.color}" data-n="${q.name}" data-v="${fmtv(q.byYear[y] || 0)}"></div>`).join('');
+    col.innerHTML = `<span class="v">${fmtv(tot(y))}</span><div class="segs">${segs}</div><span class="y">${y}</span>`;
+    col.onclick = () => setYear(y);
+    col.querySelectorAll('.seg').forEach((s) => { s.onmousemove = (e) => { e.stopPropagation(); tip(e, `<span class="k">${y} · ${s.dataset.n}</span>${s.dataset.v}`); }; s.onmouseleave = hideTip; });
+    el.appendChild(col);
+  });
+}
+function table(el, head, rows) {
+  const th = head.map((h, i) => `<th class="${YEARS[i - 1] === year ? 'cur' : ''}">${h}</th>`).join('');
+  const body = rows.map((r) => `<tr class="${r.cls || ''}">${r.c.map((c, i) => `<td class="${i > 0 && YEARS[i - 1] === year ? 'cur' : ''}">${c}</td>`).join('')}</tr>`).join('');
+  el.innerHTML = `<table class="t"><thead><tr>${th}</tr></thead><tbody>${body}</tbody></table>`;
+}
+const tipEl = $('tip');
+function tip(e, html) { tipEl.innerHTML = html; tipEl.style.display = 'block'; const w = tipEl.offsetWidth, h = tipEl.offsetHeight; tipEl.style.left = Math.min(window.innerWidth - w - 8, e.clientX + 14) + 'px'; tipEl.style.top = Math.max(8, e.clientY - h - 10) + 'px'; }
+function hideTip() { tipEl.style.display = 'none'; }
+
+// ---------- RENDER ----------
+function render() {
+  document.querySelectorAll('.yr').forEach((e) => e.textContent = year);
+  const yi = YEARS.indexOf(year);
+  $('yearLab').textContent = year;
+  $('yearSlider').value = yi;
+  document.querySelectorAll('#ticks span').forEach((t, i) => t.classList.toggle('on', i === yi));
+  $('stepBack').disabled = yi === 0;
+  $('stepFwd').disabled = yi === YEARS.length - 1;
+  const y = year;
+
+  // 01 emissions
+  const s1 = D.scope1[y], s2 = s2mode === 'lb' && D.scope2lb[y] != null ? D.scope2lb[y] : D.scope2mb[y], s3 = D.scope3total[y];
+  const tot = s1 + s2 + s3;
+  $('emTotal').textContent = fmt(tot);
+  $('s3share').textContent = pct(s3, tot).toFixed(0) + '%';
+  $('c1share').textContent = pct(D.scope3[0][1][y], tot).toFixed(0) + '%';
+  const sbti3 = D.scope3.filter((r) => r[2]).reduce((s, r) => s + (r[1][y] || 0), 0);
+  $('sbtishare').textContent = pct(sbti3, s3).toFixed(0) + '%';
+  stack($('emStack'), [
+    { name: 'Scope 1', color: C.dust, byYear: D.scope1 },
+    { name: 'Scope 2 (' + (s2mode === 'lb' ? 'location where given' : 'market') + ')', color: C.acid, byYear: Object.fromEntries(YEARS.map((yy) => [yy, s2mode === 'lb' && D.scope2lb[yy] != null ? D.scope2lb[yy] : D.scope2mb[yy]])) },
+    { name: 'Scope 3', color: C.aux, byYear: D.scope3total }
+  ]);
+  ycols($('s2cols'), { 2023: D.scope2mb[2023], 2024: D.scope2mb[2024], 2025: s2mode === 'lb' ? D.scope2lb[2025] : D.scope2mb[2025] });
+  $('s3Total').textContent = fmt(s3);
+  const prev = YEARS[YEARS.indexOf(y) - 1];
+  hbars($('s3bars'), D.scope3.map((r) => ({ key: r[0], name: r[0] + (r[2] ? ' ★' : ''), v: r[1][y], ghost: prev ? r[1][prev] : null, color: r[2] ? C.aux : C.dust, note: 'not available', tip: `<span class="k">${r[0]}${r[2] ? ' · in SBTi target' : ''}</span>${y}: ${fmt(r[1][y])} tCO2e${prev ? '<br>' + prev + ': ' + fmt(r[1][prev]) : ''}` })), { maxv: D.scope3[0][1][2025] });
+  table($('s3table'), ['Category', '2023', '2024', '2025'], D.scope3.map((r) => ({ c: [r[0] + (r[2] ? ' ★' : ''), fmt(r[1][2023]), fmt(r[1][2024]), fmt(r[1][2025])] })).concat([{ cls: 'grp', c: ['Total Scope 3', fmt(D.scope3total[2023]), fmt(D.scope3total[2024]), fmt(D.scope3total[2025])] }, { c: ['Scope 1', fmt(D.scope1[2023]), fmt(D.scope1[2024]), fmt(D.scope1[2025])] }, { c: ['Scope 2, market-based', fmt(D.scope2mb[2023]), fmt(D.scope2mb[2024]), fmt(D.scope2mb[2025])] }, { c: ['Scope 2, location-based', '—', '—', fmt(D.scope2lb[2025])] }, { cls: 'grp', c: ['Total, market-based', fmt(D.scope1[2023] + D.scope2mb[2023] + D.scope3total[2023]), fmt(D.scope1[2024] + D.scope2mb[2024] + D.scope3total[2024]), fmt(D.scope1[2025] + D.scope2mb[2025] + D.scope3total[2025])] }]));
+
+  // 02 energy
+  const elR = D.energy[0][1], elN = D.energy[1][1];
+  $('renShare23').textContent = pct(elR[2023], elR[2023] + elN[2023]).toFixed(0) + '%';
+  $('renShare25').textContent = pct(elR[2025], elR[2025] + elN[2025]).toFixed(0) + '%';
+  const fuels = D.energy.filter((r) => r[2] !== 'el').reduce((s, r) => s + (r[1][y] || 0), 0);
+  $('fuelShare').textContent = pct(fuels, D.energyTotal[y]).toFixed(0) + '%';
+  $('enTotal').textContent = fmt(D.energyTotal[y]);
+  ycols($('enCols'), D.energyTotal);
+  $('elTotal').textContent = fmt(elR[y] + elN[y]);
+  stack($('elStack'), [{ name: 'Renewable', color: C.aux, byYear: elR }, { name: 'Non-renewable', color: C.mute, byYear: elN }]);
+  const ecol = { el: C.aux, heat: C.dust, veh: C.acad };
+  hbars($('enBars'), D.energy.map((r) => ({ key: r[0], name: r[0], v: r[1][y], ghost: prev ? r[1][prev] : null, color: ecol[r[2]], tip: `<span class="k">${r[0]}</span>${y}: ${fmt(r[1][y])} GJ${prev ? '<br>' + prev + ': ' + fmt(r[1][prev]) : ''}` })), { maxv: Math.max(...D.energy.flatMap((r) => YEARS.map((yy) => r[1][yy] || 0))) });
+  table($('enTable'), ['Source, GJ', '2023', '2024', '2025'], D.energy.map((r) => ({ c: [r[0], fmt(r[1][2023], 2), fmt(r[1][2024], 2), fmt(r[1][2025], 2)] })).concat([{ cls: 'grp', c: ['Total energy consumed', fmt(D.energyTotal[2023], 2), fmt(D.energyTotal[2024], 2), fmt(D.energyTotal[2025], 2)] }]));
+
+  // 03 intensity
+  $('intC').textContent = D.intensity.c[y].toFixed(3); $('intE').textContent = D.intensity.e[y].toFixed(2);
+  const tpe = Object.fromEntries(YEARS.map((yy) => [yy, D.group.turnover_k[yy] / D.group.employees[yy]]));
+  $('tpe').textContent = fmt(tpe[y]);
+  ycols($('intCcols'), D.intensity.c, { fmtv: (v) => v.toFixed(3) });
+  ycols($('intEcols'), D.intensity.e, { fmtv: (v) => v.toFixed(2) });
+  ycols($('toCols'), Object.fromEntries(YEARS.map((yy) => [yy, D.group.turnover_k[yy] / 1000])), { fmtv: (v) => fmt(v, 1) });
+  ycols($('empCols'), D.group.employees);
+  table($('intTable'), ['Measure', '2023', '2024', '2025'], [
+    { c: ['Turnover, EUR thousand', fmt(D.group.turnover_k[2023], 2), fmt(D.group.turnover_k[2024], 2), fmt(D.group.turnover_k[2025], 2)] },
+    { c: ['Employees, year end', fmt(D.group.employees[2023]), fmt(D.group.employees[2024]), fmt(D.group.employees[2025])] },
+    { c: ['Scope 1+2, tCO2e', fmt(D.scope1[2023] + D.scope2mb[2023]), fmt(D.scope1[2024] + D.scope2mb[2024]), fmt(D.scope1[2025] + D.scope2mb[2025])] },
+    { c: ['Carbon intensity, tCO2e per EUR k (published)', '0.011', '0.013', '0.007'] },
+    { c: ['Energy intensity, GJ per EUR k (published)', '0.14', '0.20', '0.19'] },
+    { cls: 'grp', c: ['Turnover per employee, EUR k (computed)', fmt(tpe[2023], 1), fmt(tpe[2024], 1), fmt(tpe[2025], 1)] }
+  ]);
+
+  // 04 water
+  const W = D.water;
+  $('wTot').textContent = fmt(W.tot[y], 1); $('wTot2').textContent = fmt(W.tot[y], 1);
+  $('wStr').textContent = pct(W.gwStr[y] + W.tpStr[y], W.tot[y]).toFixed(0) + '%';
+  $('wDis').textContent = fmt(W.dTot[y], 1) + ' ML'; $('wDis2').textContent = fmt(W.dTot[y], 1);
+  stack($('wStack'), [{ name: 'Third party', color: C.aux, byYear: W.tp }, { name: 'Groundwater', color: C.dust, byYear: W.gw }], { fmtv: (v) => fmt(v, 1) });
+  stack($('dStack'), [{ name: 'To third parties', color: C.acad, byYear: W.dTp }, { name: 'To surface water', color: C.acid, byYear: W.dSurf }], { fmtv: (v) => fmt(v, 1) });
+  hbars($('wBars'), [
+    { key: 'tps', name: 'Third-party withdrawals, stressed', v: W.tpStr[y], ghost: W.tp[y], color: C.aux, tip: `<span class="k">Third party</span>${fmt(W.tpStr[y], 2)} of ${fmt(W.tp[y], 2)} ML in stressed areas` },
+    { key: 'gws', name: 'Groundwater withdrawals, stressed', v: W.gwStr[y], ghost: W.gw[y], color: C.dust, tip: `<span class="k">Groundwater</span>${fmt(W.gwStr[y], 2)} of ${fmt(W.gw[y], 2)} ML in stressed areas` },
+    { key: 'dtps', name: 'Discharges to third parties, stressed', v: W.dTpStr[y], ghost: W.dTp[y], color: C.acad, tip: `<span class="k">Discharges to third parties</span>${fmt(W.dTpStr[y], 2)} of ${fmt(W.dTp[y], 2)} ML in stressed areas` },
+    { key: 'dss', name: 'Discharges to surface, stressed', v: W.dSurfStr[y], ghost: W.dSurf[y], color: C.acid, tip: `<span class="k">Discharges to surface</span>${fmt(W.dSurfStr[y], 2)} of ${fmt(W.dSurf[y], 2)} ML in stressed areas` }
+  ], { fmtv: (v) => fmt(v, 2), maxv: Math.max(...YEARS.map((yy) => Math.max(W.tp[yy], W.dTp[yy]))) });
+  table($('wTable'), ['Megalitres', '2023', '2024', '2025'], [
+    { cls: 'grp', c: ['Groundwater withdrawals', fmt(W.gw[2023], 2), fmt(W.gw[2024], 2), fmt(W.gw[2025], 2)] }, { cls: 'sub', c: ['of which in water-stressed areas', fmt(W.gwStr[2023], 2), fmt(W.gwStr[2024], 2), fmt(W.gwStr[2025], 2)] },
+    { cls: 'grp', c: ['Third-party withdrawals (freshwater)', fmt(W.tp[2023], 2), fmt(W.tp[2024], 2), fmt(W.tp[2025], 2)] }, { cls: 'sub', c: ['of which in water-stressed areas', fmt(W.tpStr[2023], 2), fmt(W.tpStr[2024], 2), fmt(W.tpStr[2025], 2)] },
+    { cls: 'grp', c: ['Total withdrawals', fmt(W.tot[2023], 2), fmt(W.tot[2024], 2), fmt(W.tot[2025], 2)] },
+    { cls: 'grp', c: ['Discharged to surface water', fmt(W.dSurf[2023], 2), fmt(W.dSurf[2024], 2), fmt(W.dSurf[2025], 2)] }, { cls: 'sub', c: ['of which in water-stressed areas', fmt(W.dSurfStr[2023], 2), fmt(W.dSurfStr[2024], 2), fmt(W.dSurfStr[2025], 2)] },
+    { cls: 'grp', c: ['Discharged to third parties', fmt(W.dTp[2023], 2), fmt(W.dTp[2024], 2), fmt(W.dTp[2025], 2)] }, { cls: 'sub', c: ['of which in water-stressed areas', fmt(W.dTpStr[2023], 2), fmt(W.dTpStr[2024], 2), fmt(W.dTpStr[2025], 2)] },
+    { cls: 'grp', c: ['Total discharges', fmt(W.dTot[2023], 2), fmt(W.dTot[2024], 2), fmt(W.dTot[2025], 2)] },
+    { c: ['Net consumption (withdrawals minus discharges)', fmt(W.tot[2023] - W.dTot[2023], 2), fmt(W.tot[2024] - W.dTot[2024], 2), fmt(W.tot[2025] - W.dTot[2025], 2)] }
+  ]);
+
+  // 05 materials and waste
+  const M = D.materials;
+  $('mTot').textContent = fmt(M.tot[y]); $('mTot2').textContent = fmt(M.tot[y]); $('mRen').textContent = pct(M.ren[y], M.tot[y]).toFixed(0) + '%';
+  stack($('mStack'), [{ name: 'Renewable', color: C.aux, byYear: M.ren }, { name: 'Non-renewable', color: C.mute, byYear: M.non }]);
+  const F = D.wasteFate; const divd = F.recycling[y] + F.recovery[y];
+  $('wsTot').textContent = fmt(D.wasteTotal[y]); $('wsTot2').textContent = fmt(D.wasteTotal[y]); $('wsRec').textContent = pct(divd, D.wasteTotal[y]).toFixed(0) + '%';
+  stack($('wsStack'), [{ name: 'Recycling', color: C.aux, byYear: F.recycling }, { name: 'Other recovery', color: C.dust, byYear: F.recovery }, { name: 'Landfill', color: C.cremisi, byYear: F.landfill }, { name: 'Other disposal (incl. incineration 2023)', color: C.acad, byYear: F.otherdis }], { total: D.wasteTotal });
+  const wsItems = [];
+  if (wsFilter !== 'dis') D.wasteDiverted.forEach((r) => wsItems.push({ key: 'div:' + r[0], name: r[0] + ' · diverted', v: r[1][y], ghost: prev ? r[1][prev] : null, color: r[2] === 'h' ? C.yellow : C.aux, note: 'none', tip: `<span class="k">${r[0]} · diverted from disposal${r[2] === 'h' ? ' · hazardous' : ''}</span>${y}: ${fmt(r[1][y], 2)} t` }));
+  if (wsFilter !== 'div') D.wasteDisposed.forEach((r) => wsItems.push({ key: 'dis:' + r[0], name: r[0] + ' · to disposal', v: r[1][y], ghost: prev ? r[1][prev] : null, color: r[2] === 'h' ? C.yellow : C.cremisi, note: 'none', tip: `<span class="k">${r[0]} · directed to disposal${r[2] === 'h' ? ' · hazardous' : ''}</span>${y}: ${fmt(r[1][y], 2)} t` }));
+  hbars($('wsBars'), wsItems, { fmtv: (v) => fmt(v, 1), maxv: Math.max(...D.wasteDiverted.concat(D.wasteDisposed).flatMap((r) => YEARS.map((yy) => r[1][yy] || 0))) });
+  document.querySelectorAll('#wsToggle button').forEach((b) => b.classList.toggle('on', b.dataset.f === wsFilter));
+  const wsRows = (arr, label) => arr.map((r) => ({ cls: r[2] === 'h' ? 'sub' : '', c: [r[0] + ' · ' + label, fmt(r[1][2023], 2), fmt(r[1][2024], 2), fmt(r[1][2025], 2)] }));
+  table($('wsTable'), ['Tonnes', '2023', '2024', '2025'], [{ cls: 'grp', c: ['Materials used, renewable', fmt(M.ren[2023]), fmt(M.ren[2024]), fmt(M.ren[2025])] }, { cls: 'grp', c: ['Materials used, non-renewable', fmt(M.non[2023]), fmt(M.non[2024]), fmt(M.non[2025])] },
+    { cls: 'grp', c: ['Waste diverted from disposal', '1,100.04', '1,230.70', '1,315.21'] }].concat(wsRows(D.wasteDiverted, 'diverted')).concat([{ cls: 'grp', c: ['Waste directed to disposal', '164.65', '242.28', '248.30'] }]).concat(wsRows(D.wasteDisposed, 'to disposal')).concat([
+    { cls: 'grp', c: ['Total waste', fmt(D.wasteTotal[2023], 2), fmt(D.wasteTotal[2024], 2), fmt(D.wasteTotal[2025], 2)] },
+    { c: ['Recycling', fmt(F.recycling[2023], 2), fmt(F.recycling[2024], 2), fmt(F.recycling[2025], 2)] }, { c: ['Other recovery operations', fmt(F.recovery[2023], 2), fmt(F.recovery[2024], 2), fmt(F.recovery[2025], 2)] },
+    { c: ['Landfill', fmt(F.landfill[2023], 2), fmt(F.landfill[2024], 2), fmt(F.landfill[2025], 2)] }, { c: ['Incineration without energy recovery / other disposal', fmt(F.otherdis[2023], 2), fmt(F.otherdis[2024], 2), fmt(F.otherdis[2025], 2)] }]));
+
+  // 06 targets
+  const T = $('targets'); T.innerHTML = '';
+  const yrsIn = y - 2023, span = 10;
+  D.sbti.forEach((t) => {
+    const cur = t.cur[y]; const red = t.base && cur != null ? (1 - cur / t.base) * 100 : null;
+    const progress = red == null ? null : Math.max(0, Math.min(100, red / t.target * 100));
+    const pathPos = yrsIn / span * 100;
+    const div = document.createElement('div'); div.className = 'target';
+    div.innerHTML = `<div class="lab"><span><b>${t.name}</b> · −${t.target}% by 2033 · ${t.path}</span><span>${red == null ? 'absolute figures not published' : (red >= 0 ? '−' : '+') + Math.abs(red).toFixed(1) + '% vs 2023 · ' + progress.toFixed(0) + '% of target'}</span></div><div class="trk"><div class="done" style="width:${progress || 0}%;${red != null && red < 0 ? 'background:' + C.cremisi : ''}"></div><div class="path" style="left:${pathPos}%" title="straight-line path position for ${y}"></div></div><div class="sub">${t.base ? 'Base ' + fmt(t.base) + ' tCO2e · ' + y + ': ' + fmt(cur) + ' tCO2e' : 'FLAG scope reported as a target only'}${red != null && red < 0 ? ' · emissions above base, bar shows the gap in red' : ''}</div>`;
+    T.appendChild(div);
+  });
+  $('tgtS12').textContent = (((1 - D.sbti[0].cur[y] / D.sbti[0].base) * 100) / 54.6 * 100).toFixed(0) + '%';
+  ycols($('saCols'), { 2023: null, 2024: D.sa8000[2024], 2025: D.sa8000[2025] }, { fmtv: (v) => v + ' sites' });
+  const sa = $('saCols'); const tgt = document.createElement('div'); tgt.className = 'ycol'; tgt.innerHTML = `<span class="v">40 target</span><div class="b" style="height:100%;background:transparent;border:2px dashed ${C.yellow}"></div><span class="y">2026</span>`; sa.appendChild(tgt);
+  sa.querySelectorAll('.ycol .b').forEach((b, i) => { if (i < 3) b.style.height = (([null, 13, 22][i] || 0) / 40 * 100) + '%'; });
+
+  // 07 structure
+  hbars($('divBars'), D.divisions.map((d) => ({ key: d[0], name: d[0], v: d[1], color: C.aux, tip: `<span class="k">${d[0]}</span>${d[1]} divisions` })));
+  const B = D.board[y]; $('boardN').textContent = B.total + ' members';
+  hbars($('boardBars'), [
+    { key: 'w', name: 'Women', v: B.women, ghost: prev ? D.board[prev].women : null, color: C.aux },
+    { key: 'm', name: 'Men', v: B.men, ghost: prev ? D.board[prev].men : null, color: C.mute },
+    { key: 'a1', name: 'Age 30 to 50', v: B.a3050, color: C.dust },
+    { key: 'a2', name: 'Age over 50', v: B.a50, color: C.dust }
+  ], { maxv: 11 });
+  table($('boardTable'), ['Body', '2023', '2024', '2025'], [
+    { cls: 'grp', c: ['Board of Directors, members', 10, 11, 11] }, { cls: 'sub', c: ['Women', 2, 3, 4] }, { cls: 'sub', c: ['Men', 8, 8, 7] }, { cls: 'sub', c: ['Age 30 to 50', 4, 4, 4] }, { cls: 'sub', c: ['Over 50', 6, 7, 7] },
+    { cls: 'grp', c: ['Supply Chain Committee, members', '—', 6, 6] }, { cls: 'sub', c: ['Women', '—', 2, 2] }, { cls: 'sub', c: ['Men', '—', 4, 4] }
+  ]);
+  $('groupKv').innerHTML = [['Turnover', fmt(D.group.turnover_k[y] / 1000, 1) + ' m€', 'economic value generated'], ['Employees', fmt(D.group.employees[y]), 'year end'], ['Divisions', y === 2025 ? '37' : 'n/r', y === 2025 ? '25 RTW · 6 IP · 3 shoes · 3 leather' : 'reported for 2025'], ['Brands', y === 2025 ? '100+' : 'n/r', 'international luxury brands'], ['Regions', '9', 'Italian regions, plus plants abroad']].map((k) => `<div><div class="k">${k[0]}</div><div class="v">${k[1]}</div><div class="s">${k[2]}</div></div>`).join('');
+
+  // 08 people
+  const P = D.people;
+  $('pTot').textContent = fmt(P.total[y]); $('pTot2').textContent = fmt(P.total[y]);
+  $('pWomen').textContent = pct(P.women[y], P.total[y]).toFixed(0) + '%';
+  $('pItaly').textContent = pct(P.country[0][1][y], P.total[y]).toFixed(0) + '%';
+  $('pTrain').textContent = P.trainAvg[y].toFixed(1); $('pInj').textContent = P.injRate[y].toFixed(2);
+  hbars($('pCountry'), P.country.map((c) => ({ key: c[0], name: c[0], v: c[1][y], ghost: prev ? c[1][prev] : null, color: c[0] === 'Italy' ? C.aux : C.dust, note: 'not yet in group', tip: `<span class="k">${c[0]}</span>${y}: ${fmt(c[1][y])} employees${prev ? '<br>' + prev + ': ' + fmt(c[1][prev]) : ''}` })), { maxv: Math.max(...P.country.flatMap((c) => YEARS.map((yy) => c[1][yy] || 0))) });
+  const gradeItems = [];
+  P.grade.forEach((g) => { gradeItems.push({ key: g[0] + 'w', name: g[0] + ' · women', v: g[1][y][1], ghost: prev ? g[1][prev][1] : null, color: C.aux }); gradeItems.push({ key: g[0] + 'm', name: g[0] + ' · men', v: g[1][y][0], ghost: prev ? g[1][prev][0] : null, color: C.dust }); });
+  hbars($('pGrade'), gradeItems, { maxv: Math.max(...P.grade.flatMap((g) => YEARS.flatMap((yy) => g[1][yy]))) });
+  stack($('pFlow'), [{ name: 'Hires, Italy', color: C.aux, byYear: P.hiresItaly }, { name: 'Exits, Italy', color: C.cremisi, byYear: P.exitsItaly }]);
+  hbars($('pPay'), P.payRatio.map((r) => ({ key: r[0], name: r[0], v: r[1][y], ghost: prev ? r[1][prev] : null, color: r[1][y] >= 1 ? C.aux : C.yellow, tip: `<span class="k">${r[0]}</span>women's average pay / men's, ${y}: ${r[1][y].toFixed(1)}` })), { fmtv: (v) => v.toFixed(1), maxv: 1.2 });
+  ycols($('pTrainCols'), P.trainAvg, { fmtv: (v) => v.toFixed(1) + ' h' });
+  ycols($('pInjCols'), P.injRate, { fmtv: (v) => v.toFixed(2) });
+  const ic = P.italyContract, itTot = ic.open[y] + ic.fixed[y] + ic.ngh[y];
+  $('pContract').innerHTML = [['Permanent contracts', Math.round(ic.open[y] / itTot * 100) + '%', fmt(ic.open[y]) + ' of ' + fmt(itTot) + ' in Italy'], ['Fixed-term', fmt(ic.fixed[y]), ic.ngh[y] ? 'plus ' + ic.ngh[y] + ' non-guaranteed hours' : 'no non-guaranteed-hours workers'], ['Part-time, women', fmt(P.partGender.women[y]), Math.round(P.partGender.women[y] / P.italyWomen[y] * 1000) / 10 + '% of women in Italy; ' + fmt(P.partGender.men[y]) + ' men, ' + Math.round(P.partGender.men[y] / P.italyMen[y] * 1000) / 10 + '%'], ['Non-employee workers', fmt(P.nonEmployee[y]), fmt(P.nonEmpDetail.temp[y]) + ' agency, ' + fmt(P.nonEmpDetail.interns[y]) + ' interns, ' + fmt(P.nonEmpDetail.contractors[y]) + ' contractors']].map((k) => `<div><div class="k">${k[0]}</div><div class="v">${k[1]}</div><div class="s">${k[2]}</div></div>`).join('');
+  table($('pTable'), ['People', '2023', '2024', '2025'], [
+    { cls: 'grp', c: ['Total employees at 31 December', fmt(P.total[2023]), fmt(P.total[2024]), fmt(P.total[2025])] }, { cls: 'sub', c: ['Women', fmt(P.women[2023]), fmt(P.women[2024]), fmt(P.women[2025])] }, { cls: 'sub', c: ['Men', fmt(P.men[2023]), fmt(P.men[2024]), fmt(P.men[2025])] }
+  ].concat(P.country.map((c) => ({ cls: 'sub', c: [c[0], fmt(c[1][2023]), fmt(c[1][2024]), fmt(c[1][2025])] }))).concat([
+    { cls: 'grp', c: ['Italy, open-ended contracts', fmt(ic.open[2023]), fmt(ic.open[2024]), fmt(ic.open[2025])] }, { cls: 'sub', c: ['Fixed-term', fmt(ic.fixed[2023]), fmt(ic.fixed[2024]), fmt(ic.fixed[2025])] }, { cls: 'sub', c: ['Non-guaranteed hours', fmt(ic.ngh[2023]), fmt(ic.ngh[2024]), fmt(ic.ngh[2025])] }, { cls: 'sub', c: ['Full-time', fmt(ic.full[2023]), fmt(ic.full[2024]), fmt(ic.full[2025])] }, { cls: 'sub', c: ['Part-time', fmt(ic.part[2023]), fmt(ic.part[2024]), fmt(ic.part[2025])] },
+    { cls: 'grp', c: ['Italy by grade (men / women)', '', '', ''] }
+  ]).concat(P.grade.map((g) => ({ cls: 'sub', c: [g[0], g[1][2023].join(' / '), g[1][2024].join(' / '), g[1][2025].join(' / ')] }))).concat([
+    { cls: 'grp', c: ['Italy, part-time (women / men)', P.partGender.women[2023] + ' / ' + P.partGender.men[2023], P.partGender.women[2024] + ' / ' + P.partGender.men[2024], P.partGender.women[2025] + ' / ' + P.partGender.men[2025]] },
+    { cls: 'grp', c: ['Non-employee workers', fmt(P.nonEmployee[2023]), fmt(P.nonEmployee[2024]), fmt(P.nonEmployee[2025])] }, { cls: 'sub', c: ['Temporary agency', P.nonEmpDetail.temp[2023], P.nonEmpDetail.temp[2024], P.nonEmpDetail.temp[2025]] }, { cls: 'sub', c: ['Interns', P.nonEmpDetail.interns[2023], P.nonEmpDetail.interns[2024], P.nonEmpDetail.interns[2025]] }, { cls: 'sub', c: ['Third-party collaborators', P.nonEmpDetail.contractors[2023], P.nonEmpDetail.contractors[2024], P.nonEmpDetail.contractors[2025]] },
+    { cls: 'grp', c: ['New hires, group', fmt(P.hiresTotal[2023]), fmt(P.hiresTotal[2024]), fmt(P.hiresTotal[2025])] }, { cls: 'sub', c: ['New hires, Italy', fmt(P.hiresItaly[2023]), fmt(P.hiresItaly[2024]), fmt(P.hiresItaly[2025])] }, { cls: 'sub', c: ['Hire rate, Italy, %', P.hireRateItaly[2023], P.hireRateItaly[2024], P.hireRateItaly[2025]] },
+    { cls: 'sub', c: ['Exits, Italy', fmt(P.exitsItaly[2023]), fmt(P.exitsItaly[2024]), fmt(P.exitsItaly[2025])] }, { cls: 'sub', c: ['Exit rate, Italy, %', P.exitRateItaly[2023], P.exitRateItaly[2024], P.exitRateItaly[2025]] },
+    { cls: 'grp', c: ['Training hours, total', fmt(P.trainHours[2023]), fmt(P.trainHours[2024]), fmt(P.trainHours[2025])] }, { cls: 'sub', c: ['Average hours per employee', P.trainAvg[2023], P.trainAvg[2024], P.trainAvg[2025]] }, { cls: 'sub', c: ['Employees under periodic performance review', P.perfReview[2023], P.perfReview[2024], P.perfReview[2025]] },
+    { cls: 'grp', c: ['Women\'s average pay / men\'s (Table 42)', '', '', ''] }
+  ]).concat(P.payRatio.map((r) => ({ cls: 'sub', c: [r[0], r[1][2023].toFixed(1), r[1][2024].toFixed(1), r[1][2025].toFixed(1)] }))).concat([
+    { c: ['Annual total remuneration ratio (highest paid / median)', P.remRatio[2023], P.remRatio[2024], P.remRatio[2025]] },
+    { cls: 'grp', c: ['Recordable injuries', P.injuries[2023], P.injuries[2024], P.injuries[2025]] }, { cls: 'sub', c: ['Hours worked', fmt(P.hours[2023]), fmt(P.hours[2024]), fmt(P.hours[2025])] }, { cls: 'sub', c: ['Injury rate per million hours', P.injRate[2023], P.injRate[2024], P.injRate[2025]] },
+    { c: ['Employees under ISO 45001-certified H&S system, %', P.iso45001[2023], P.iso45001[2024], P.iso45001[2025]] }
+  ]));
+
+  // 09 economic value
+  const E = D.ev;
+  $('evGen').textContent = fmt(E.gen[y] / 1000, 1); $('evDis').textContent = fmt(E.dis[y] / 1000, 1) + ' million'; $('evDis2').textContent = fmt(E.dis[y] / 1000, 1);
+  $('evPers').textContent = fmt(E.pers[y] / 1000, 1) + ' million'; $('evFin').textContent = fmt(E.fin[y] / 1000, 1) + ' million';
+  const m = (o) => Object.fromEntries(YEARS.map((yy) => [yy, o[yy] / 1000]));
+  stack($('evStack'), [{ name: 'Operating costs (suppliers)', color: C.mute, byYear: m(E.opcost) }, { name: 'Personnel', color: C.aux, byYear: m(E.pers) }, { name: 'Finance costs', color: C.cremisi, byYear: m(E.fin) }, { name: 'Public administration', color: C.acad, byYear: m(E.pa) }, { name: 'Community', color: C.yellow, byYear: m(E.comm) }], { fmtv: (v) => fmt(v, 1) });
+  hbars($('evBars'), [
+    { key: 'g', name: 'Generated', v: E.gen[y] / 1000, ghost: prev ? E.gen[prev] / 1000 : null, color: C.dust },
+    { key: 'd', name: 'Distributed', v: E.dis[y] / 1000, ghost: prev ? E.dis[prev] / 1000 : null, color: C.aux },
+    { key: 'r', name: E.ret[y] < 0 ? 'Retained (negative)' : 'Retained', v: Math.abs(E.ret[y]) / 1000, ghost: prev ? Math.abs(E.ret[prev]) / 1000 : null, color: E.ret[y] < 0 ? C.cremisi : C.yellow, tip: `<span class="k">Retained</span>${y}: ${fmt(E.ret[y] / 1000, 1)} million euros` }
+  ], { fmtv: (v) => fmt(v, 1), maxv: Math.max(...YEARS.map((yy) => E.gen[yy] / 1000)) });
+  hbars($('evCountry'), E.genCountry.map((c) => ({ key: c[0], name: c[0], v: c[1][y] == null ? null : c[1][y] / 1000, ghost: prev && c[1][prev] != null ? c[1][prev] / 1000 : null, color: c[0] === 'Italy' ? C.aux : C.dust, note: c[1][y] == null ? 'not yet in group' : '', tip: `<span class="k">${c[0]}</span>${y}: ${c[1][y] == null ? 'n/a' : fmt(c[1][y] / 1000, 2) + ' million generated'}` })), { fmtv: (v) => fmt(v, 2), maxv: E.gen[2023] / 1000 });
+  table($('evTable'), ['EUR thousand', '2023', '2024', '2025'], [
+    { cls: 'grp', c: ['Economic value generated', fmt(E.gen[2023]), fmt(E.gen[2024]), fmt(E.gen[2025])] }
+  ].concat(E.genCountry.map((c) => ({ cls: 'sub', c: ['of which ' + c[0], fmt(c[1][2023]), fmt(c[1][2024]), fmt(c[1][2025])] }))).concat([
+    { cls: 'grp', c: ['Economic value distributed', fmt(E.dis[2023]), fmt(E.dis[2024]), fmt(E.dis[2025])] },
+    { cls: 'sub', c: ['Operating costs (suppliers)', fmt(E.opcost[2023]), fmt(E.opcost[2024]), fmt(E.opcost[2025])] }, { cls: 'sub', c: ['Personnel costs', fmt(E.pers[2023]), fmt(E.pers[2024]), fmt(E.pers[2025])] }, { cls: 'sub', c: ['Finance costs (capital providers)', fmt(E.fin[2023]), fmt(E.fin[2024]), fmt(E.fin[2025])] }, { cls: 'sub', c: ['Public administration', fmt(E.pa[2023]), fmt(E.pa[2024]), fmt(E.pa[2025])] }, { cls: 'sub', c: ['Community and sponsorships', fmt(E.comm[2023]), fmt(E.comm[2024]), fmt(E.comm[2025])] },
+    { cls: 'grp', c: ['Economic value retained', fmt(E.ret[2023]), fmt(E.ret[2024]), fmt(E.ret[2025])] }
+  ]).concat(E.retCountry.map((c) => ({ cls: 'sub', c: ['of which ' + c[0], fmt(c[1][2023]), fmt(c[1][2024]), fmt(c[1][2025])] }))).concat([
+    { cls: 'grp', c: ['Financial assistance received from government', fmt(E.gov.total[2023]), fmt(E.gov.total[2024]), fmt(E.gov.total[2025])] }, { cls: 'sub', c: ['Tax relief and tax credits', fmt(E.gov.taxcredits[2023]), fmt(E.gov.taxcredits[2024]), fmt(E.gov.taxcredits[2025])] }, { cls: 'sub', c: ['Incentives', fmt(E.gov.incentives[2023]), fmt(E.gov.incentives[2024]), fmt(E.gov.incentives[2025])] }, { cls: 'sub', c: ['Grants', fmt(E.gov.grants[2023]), '—', '—'] }, { cls: 'sub', c: ['Subsidies', fmt(E.gov.subsidies[2023]), '—', '—'] }, { cls: 'sub', c: ['of which Italy', fmt(E.gov.italy[2023]), fmt(E.gov.italy[2024]), fmt(E.gov.italy[2025])] }
+  ]));
+  const G = E.gov;
+  $('govTot').textContent = fmt(G.total[y]); $('govPA').textContent = fmt(E.pa[y] / 1000, 1) + ' million';
+  hbars($('govBars'), [['taxcredits', 'Tax relief and tax credits', C.aux], ['incentives', 'Incentives', C.dust], ['grants', 'Grants', C.acad], ['subsidies', 'Subsidies', C.yellow], ['other', 'Other benefits', C.mute]].map((k) => ({ key: k[0], name: k[1], v: G[k[0]][y], ghost: prev ? G[k[0]][prev] : null, color: k[2] })), { maxv: Math.max(...YEARS.flatMap((yy) => ['taxcredits', 'incentives', 'grants', 'subsidies'].map((k) => G[k][yy]))) });
+
+  // 10 economic value by division
+  const BV = D.evBU, BU = Object.keys(BV.gen), buCol = { 'Ready-to-wear': C.aux, 'Footwear': C.dust, 'Leather goods': C.acad, 'Intermediate processing': C.yellow };
+  const negN = BU.filter((d) => BV.ret[d][y] < 0).length;
+  $('buNeg').textContent = ['none', 'one', 'two', 'three', 'all four'][negN];
+  $('buRtwShare').textContent = Math.round(BV.gen['Ready-to-wear'][y] / BU.reduce((t, d) => t + BV.gen[d][y], 0) * 100) + '%';
+  hbars($('buGen'), BU.map((d) => ({ key: d, name: d, v: BV.gen[d][y] / 1000, ghost: prev ? BV.gen[d][prev] / 1000 : null, color: buCol[d], tip: `<span class="k">${d}</span>${y}: ${fmt(BV.gen[d][y] / 1000, 1)} million generated, ${fmt(BV.dis[d][y] / 1000, 1)} distributed` })), { fmtv: (v) => fmt(v, 1), maxv: Math.max(...YEARS.map((yy) => BV.gen['Ready-to-wear'][yy] / 1000)) });
+  hbars($('buRet'), BU.map((d) => ({ key: d, name: d + (BV.ret[d][y] < 0 ? ' (loss)' : ''), v: Math.abs(BV.ret[d][y]) / 1000, ghost: prev ? Math.abs(BV.ret[d][prev]) / 1000 : null, color: BV.ret[d][y] < 0 ? C.cremisi : C.aux, tip: `<span class="k">${d}</span>${y}: ${fmt(BV.ret[d][y] / 1000, 1)} million retained` })), { fmtv: (v) => fmt(v, 1), maxv: Math.max(...YEARS.flatMap((yy) => BU.map((d) => Math.abs(BV.ret[d][yy]) / 1000))) });
+  stack($('buStack'), BU.map((d) => ({ name: d, color: buCol[d], byYear: m(BV.gen[d]) })), { fmtv: (v) => fmt(v, 1) });
+  table($('buTable'), ['EUR thousand', '2023', '2024', '2025'], [].concat(...[['Generated', BV.gen], ['Distributed', BV.dis], ['Retained', BV.ret]].map(([lab, o]) => [{ cls: 'grp', c: [lab, fmt(BU.reduce((t, d) => t + o[d][2023], 0)), fmt(BU.reduce((t, d) => t + o[d][2024], 0)), fmt(BU.reduce((t, d) => t + o[d][2025], 0))] }].concat(BU.map((d) => ({ cls: 'sub', c: [d, fmt(o[d][2023]), fmt(o[d][2024]), fmt(o[d][2025])] }))))));
+
+  // 11 supply chain
+  const SP = D.supply;
+  $('spAssessed').textContent = fmt(SP.assessed[y]); $('spAssessed2').textContent = fmt(SP.assessed[y]) + (y === 2025 ? ' of 1,167' : '');
+  $('spSig').textContent = SP.socSigPct[y] + '%';
+  ycols($('spCols'), SP.assessed);
+  hbars($('spBars'), [
+    { key: 'soc', name: 'Significant social impacts', v: SP.socSig[y], ghost: prev ? SP.socSig[prev] : null, color: C.cremisi, tip: `<span class="k">Social</span>${y}: ${fmt(SP.socSig[y])} suppliers, ${SP.socSigPct[y]}% of assessed` },
+    { key: 'env', name: 'Significant environmental impacts', v: SP.envSig[y], ghost: prev ? SP.envSig[prev] : null, color: C.dust, tip: `<span class="k">Environmental</span>${y}: ${fmt(SP.envSig[y])} suppliers, ${SP.envSigPct[y]}% of assessed` },
+    { key: 'ok', name: 'No significant finding', v: SP.assessed[y] - SP.socSig[y], ghost: prev ? SP.assessed[prev] - SP.socSig[prev] : null, color: C.mute, tip: `<span class="k">No significant social finding</span>${y}: ${fmt(SP.assessed[y] - SP.socSig[y])} suppliers` }
+  ], { maxv: Math.max(...YEARS.map((yy) => SP.assessed[yy])) });
+  const pc = (v) => v == null ? 'n/r' : v + '%';
+  $('spSpend').textContent = pc(SP.spendAssessed[y]); $('spSpendSig').textContent = pc(SP.spendSocSig[y]); $('spSpendEnv').textContent = pc(SP.spendEnvSig[y]);
+  $('spNew').innerHTML = [['New suppliers from acquisitions', SP.newSup[y] == null ? 'none' : fmt(SP.newSup[y]), y === 2025 ? 'no acquisitions in 2025' : 'already active when acquired'], ['Of which assessed', SP.newAssessed[y] == null ? '—' : fmt(SP.newAssessed[y]) + ' · ' + SP.newAssessedPct[y] + '%', 'social and environmental'], ['Spend on new suppliers', pc(SP.newSpend[y]), 'of processing spend'], ['Minor environmental non-compliances', y === 2025 ? fmt(SP.envMinor2025) : 'n/r', y === 2025 ? 'at low-impact suppliers' : 'reported for 2025 only']].map((k) => `<div><div class="k">${k[0]}</div><div class="v">${k[1]}</div><div class="s">${k[2]}</div></div>`).join('');
+  table($('spTable'), ['Processing suppliers', '2023', '2024', '2025'], [
+    { cls: 'grp', c: ['Assessed on social and environmental criteria', fmt(SP.assessed[2023]), fmt(SP.assessed[2024]), fmt(SP.assessed[2025])] },
+    { cls: 'sub', c: ['with significant social impacts', `${fmt(SP.socSig[2023])} (${SP.socSigPct[2023]}%)`, `${fmt(SP.socSig[2024])} (${SP.socSigPct[2024]}%)`, `${fmt(SP.socSig[2025])} (${SP.socSigPct[2025]}%)`] },
+    { cls: 'sub', c: ['with significant environmental impacts', `${SP.envSig[2023]} (${SP.envSigPct[2023]}%)`, `${SP.envSig[2024]} (${SP.envSigPct[2024]}%)`, `${SP.envSig[2025]} (${SP.envSigPct[2025]}%)`] },
+    { cls: 'grp', c: ['Share of processing spend assessed', pc(SP.spendAssessed[2023]), pc(SP.spendAssessed[2024]), pc(SP.spendAssessed[2025])] },
+    { cls: 'sub', c: ['on suppliers with significant social impacts', pc(SP.spendSocSig[2023]), pc(SP.spendSocSig[2024]), pc(SP.spendSocSig[2025])] },
+    { cls: 'sub', c: ['on suppliers with significant environmental impacts', pc(SP.spendEnvSig[2023]), pc(SP.spendEnvSig[2024]), pc(SP.spendEnvSig[2025])] },
+    { cls: 'grp', c: ['New suppliers from acquisitions', fmt(SP.newSup[2023]), fmt(SP.newSup[2024]), '—'] },
+    { cls: 'sub', c: ['of which assessed', `${SP.newAssessed[2023]} (${SP.newAssessedPct[2023]}%)`, `${SP.newAssessed[2024]} (${SP.newAssessedPct[2024]}%)`, '—'] },
+    { cls: 'sub', c: ['share of processing spend', pc(SP.newSpend[2023]), pc(SP.newSpend[2024]), '—'] }
+  ]);
+  if (!$('spCerts').innerHTML) {
+    const divs = ['Woven', 'Jersey and soft accessories', 'Knitwear', 'Denim', 'Intermediate processes'];
+    $('spCerts').innerHTML = `<table class="t"><thead><tr><th>Certification</th>${divs.map((d) => `<th style="text-align:left">${d}</th>`).join('')}<th>Certified suppliers</th></tr></thead><tbody>${SP.certs.map((c) => `<tr><td><b>${c[0]}</b><br><span class="nr">${c[1]}</span></td>${divs.map((d) => `<td style="text-align:left">${(c[2][d] || []).join('<br>') || '<span class="nr">—</span>'}</td>`).join('')}<td>${c[3] == null ? '<span class="nr">—</span>' : c[3]}</td></tr>`).join('')}</tbody></table>`;
+  }
+}
+
+function setYear(y) { if (y === year) return; year = y; render(); }
+
+// ---------- CHROME: state control (slider, step, play), card nav, index, rail, keys ----------
+const stepYear = (d) => setYear(YEARS[Math.max(0, Math.min(YEARS.length - 1, YEARS.indexOf(year) + d))]);
+YEARS.forEach((y) => { const t = document.createElement('span'); t.textContent = y; $('ticks').appendChild(t); });
+$('yearSlider').max = YEARS.length - 1;
+$('yearSlider').oninput = (e) => setYear(YEARS[Number(e.target.value)]);
+$('stepBack').onclick = () => stepYear(-1);
+$('stepFwd').onclick = () => stepYear(1);
+
+const film = $('film');
+const cards = [...document.querySelectorAll('.card')];
+let cur = 0;
+const goCard = (i) => { i = Math.max(0, Math.min(cards.length - 1, i)); film.scrollTo({ left: cards[i].offsetLeft, behavior: 'smooth' }); };
+const titles = [['00', 'Cover', 'index and the year control'], ['01', 'Emissions', 'Scope 1, 2, 3 and 11 Scope 3 categories'], ['02', 'Energy', '10 sources, renewable share'], ['03', 'Intensity', 'carbon, energy, turnover per head'], ['04', 'Water', 'sources, discharges, stressed areas'], ['05', 'Materials and waste', '39 waste streams by fate'], ['06', 'Targets', 'SBTi progress, SA8000, milestones'], ['07', 'Structure', 'divisions, board, group'], ['08', 'People', 'workforce, pay ratios, training, safety'], ['09', 'Economic value', 'generated, distributed, by country'], ['10', 'Economic value by division', 'RTW, footwear, leather goods, intermediate'], ['11', 'Supply chain', 'supplier assessments, spend coverage, certifications'], ['12', 'Method', 'sources, scope and caveats']];
+const mkIndex = (host, from) => titles.slice(from).forEach((t, j) => { const i = j + from; const b = document.createElement('button'); b.innerHTML = `<span class="k">${t[0]}</span><span class="t">${t[1]}</span><span class="s">${t[2]}</span>`; b.onclick = () => { closeModal(); goCard(i); }; host.appendChild(b); });
+mkIndex($('index'), 0);
+mkIndex($('coverIndex'), 1);
+// modal: index (from the card counter) and method (from ?)
+function openModal(which) { $('mIndex').style.display = which === 'index' ? '' : 'none'; $('mHelp').style.display = which === 'help' ? '' : 'none'; $('modal').classList.add('open'); }
+function closeModal() { $('modal').classList.remove('open'); }
+$('posBtn').onclick = () => openModal('index');
+$('helpBtn').onclick = () => openModal('help');
+$('modalClose').onclick = closeModal;
+$('modal').onclick = (e) => { if (e.target === $('modal')) closeModal(); };
+$('fsBtn').onclick = () => { if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen && document.documentElement.requestFullscreen(); };
+$('posMax').textContent = titles[cards.length - 1][0];
+$('prevCard').onclick = () => goCard(cur - 1);
+$('nextCard').onclick = () => goCard(cur + 1);
+function setCur(i) {
+  cur = i;
+  document.querySelectorAll('#index button').forEach((b, j) => b.classList.toggle('on', j === i));
+  $('posNow').textContent = titles[i][0];
+  $('prevCard').disabled = i === 0;
+  $('nextCard').disabled = i === cards.length - 1;
+}
+const io = new IntersectionObserver((es) => { es.forEach((e) => { if (e.isIntersecting) setCur(cards.indexOf(e.target)); }); }, { root: film, threshold: 0.55 });
+cards.forEach((c) => io.observe(c));
+setCur(0);
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'INPUT') return;
+  if (e.key === 'ArrowRight') goCard(cur + 1);
+  if (e.key === 'ArrowLeft') goCard(cur - 1);
+  if (e.key === 'ArrowUp') { e.preventDefault(); stepYear(1); }
+  if (e.key === 'ArrowDown') { e.preventDefault(); stepYear(-1); }
+  if (e.key === 'Escape') closeModal();
+});
+$('s2toggle').querySelectorAll('button').forEach((b) => b.onclick = () => { s2mode = b.dataset.m; $('s2toggle').querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === b)); render(); });
+$('wsToggle').querySelectorAll('button').forEach((b) => b.onclick = () => { wsFilter = b.dataset.f; render(); });
+render();
+</script>
+</body>
+</html>
