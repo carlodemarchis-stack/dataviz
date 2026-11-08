@@ -53,7 +53,7 @@
   .bar.top { top: 0; border-bottom: 1px solid var(--line); padding-top: calc(.6rem + env(safe-area-inset-top)); }
   .bar.bottom { bottom: 0; border-top: 1px solid var(--line); padding-bottom: calc(.6rem + env(safe-area-inset-bottom)); }
   .bar .ico { width: 2.1rem; height: 2.1rem; border: 1px solid var(--line); display: inline-flex; align-items: center; justify-content: center; font-size: .95rem; }
-  .bar .ico:hover, .bar .nav button:hover:not(:disabled), .bar .state button:hover:not(:disabled) { background: var(--black); color: var(--cream); }
+  .bar .ico:hover, .bar .nav button:hover:not(:disabled), .bar .years button:hover { background: var(--black); color: var(--cream); }
   .bar .nav .pos { cursor: pointer; }
   .bar .nav .pos:hover b { color: var(--aux); }
   /* modal: index and method */
@@ -86,30 +86,19 @@
   .bar .nav button:disabled { opacity: .3; cursor: default; }
   .bar .nav .pos { font-size: .72rem; letter-spacing: 2px; font-weight: 700; min-width: 4.6rem; text-align: center; color: var(--grey); }
   .bar .nav .pos b { color: var(--black); }
-  /* state control: year slider with step and play, the Season Tower pattern */
-  .bar .state { display: flex; align-items: center; gap: .6rem; border: 1px solid var(--black); padding: .25rem .5rem .25rem .8rem; }
-  .bar .state .lab { font-family: var(--serif); font-size: 1.25rem; line-height: 1; min-width: 3.2ch; letter-spacing: .02em; }
-  .bar .state .k { font-size: .62rem; letter-spacing: 2px; text-transform: uppercase; color: var(--grey); font-weight: 700; margin-right: .2rem; }
-  .bar .state button { padding: .2rem .45rem; font-size: .95rem; line-height: 1; }
-  .bar .state button:disabled { opacity: .3; cursor: default; }
-    .bar .state .trk { position: relative; width: clamp(7rem, 14vw, 13rem); height: 1.6rem; display: flex; align-items: center; }
-  .bar .state input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 2px; background: var(--mute); margin: 0; outline: none; }
-  .bar .state input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--aux); border: 2px solid var(--cream); cursor: pointer; }
-  .bar .state input[type=range]::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--aux); border: 2px solid var(--cream); cursor: pointer; }
-  .bar .state .ticks { position: absolute; left: 7px; right: 7px; top: 1.15rem; display: flex; justify-content: space-between; font-size: .58rem; letter-spacing: 1px; color: var(--grey); pointer-events: none; }
-  .bar .state .ticks span.on { color: var(--black); font-weight: 700; }
+  .bar .years { display: flex; border: 1px solid var(--black); }
+  .bar .years button { padding: .45rem 1.1rem; font-size: .8rem; letter-spacing: 2px; font-weight: 700; }
+  .bar .years button.on { background: var(--black); color: var(--cream); }
   @media (max-width: 820px) {
     .bar { gap: .5rem; padding-left: .8rem; padding-right: .8rem; }
     .bar .brand { font-size: .72rem; letter-spacing: .1em; } .bar .brand small { display: none; }
     .bar.bottom .spacer { display: none; }
-    .bar .state { flex: 1; min-width: 0; padding: .2rem .4rem .2rem .6rem; gap: .4rem; }
-    .bar .state .k { display: none; } .bar .state .lab { font-size: 1.1rem; }
-    .bar .state .trk { flex: 1; width: auto; min-width: 4rem; }
-    .bar .state button, .bar .nav button { padding: .35rem .6rem; min-width: 2.2rem; min-height: 2.2rem; }
+    .bar .years { flex: 1; }
+    .bar .years button { flex: 1; padding: .55rem 0; min-height: 2.3rem; }
+    .bar .nav button { padding: .35rem .6rem; min-width: 2.2rem; min-height: 2.2rem; }
     .bar .ico { width: 2.3rem; height: 2.3rem; flex: 0 0 auto; }
     .bar .nav .pos { min-width: 4rem; }
   }
-  @media (max-width: 420px) { .bar .state .ticks { display: none; } .bar .state .trk { height: 1.2rem; } }
 
   /* progress rail */
 
@@ -206,16 +195,7 @@
 <div class="bar bottom">
   <span class="hint">↑ ↓ year · ← → cards</span>
   <div class="spacer"></div>
-  <div class="state">
-    <span class="k">Report year</span>
-    <span class="lab" id="yearLab">—</span>
-    <button id="stepBack" title="Previous year (↓)">◂</button>
-    <div class="trk">
-      <input type="range" id="yearSlider" min="0" max="2" step="1" value="2" aria-label="Report year">
-      <div class="ticks" id="ticks"></div>
-    </div>
-    <button id="stepFwd" title="Next year (↑)">▸</button>
-  </div>
+  <div class="years" id="years" role="group" aria-label="Report year"></div>
   <button class="ico" id="helpBtn" title="Method and sources">?</button>
   <button class="ico" id="fsBtn" title="Full screen">⛶</button>
 </div>
@@ -228,7 +208,7 @@
     </div>
     <div id="mHelp">
       <h3>Method and sources</h3>
-      <p>Every number in this film comes from the text layer of the English PDF of the Gruppo Florence Sustainability Report 2025, 97 pages and 331,000 characters, read page by page. Nothing is interpolated or estimated; where the report gives no figure the card says so. The year slider is the single state: every card re-sorts to the selected year and shows the previous year as a ghost bar where it helps.</p>
+      <p>Every number in this film comes from the text layer of the English PDF of the Gruppo Florence Sustainability Report 2025, 97 pages and 331,000 characters, read page by page. Nothing is interpolated or estimated; where the report gives no figure the card says so. The year buttons at the bottom are the single state: every card re-sorts to the selected year and shows the previous year as a ghost bar where it helps.</p>
       <h4>The report</h4>
       <p>GRI Standards 2021 with reference; limited assurance by EY S.p.A. under ISAE 3000 Revised, with some indicators excluded; impact materiality only; CSRD reporting expected from FY2027. Published by Gruppo Florence in June 2026 on the Auxilium page of gruppoflorence.it.</p>
       <h4>Where each card comes from</h4>
@@ -827,12 +807,7 @@ function hideTip() { tipEl.style.display = 'none'; }
 // ---------- RENDER ----------
 function render() {
   document.querySelectorAll('.yr').forEach((e) => e.textContent = year);
-  const yi = YEARS.indexOf(year);
-  $('yearLab').textContent = year;
-  $('yearSlider').value = yi;
-  document.querySelectorAll('#ticks span').forEach((t, i) => t.classList.toggle('on', i === yi));
-  $('stepBack').disabled = yi === 0;
-  $('stepFwd').disabled = yi === YEARS.length - 1;
+  document.querySelectorAll('#years button').forEach((b) => b.classList.toggle('on', Number(b.dataset.y) === year));
   const y = year;
 
   // 01 emissions
@@ -1061,11 +1036,7 @@ function setYear(y) { if (y === year) return; year = y; render(); }
 
 // ---------- CHROME: state control (slider, step, play), card nav, index, rail, keys ----------
 const stepYear = (d) => setYear(YEARS[Math.max(0, Math.min(YEARS.length - 1, YEARS.indexOf(year) + d))]);
-YEARS.forEach((y) => { const t = document.createElement('span'); t.textContent = y; $('ticks').appendChild(t); });
-$('yearSlider').max = YEARS.length - 1;
-$('yearSlider').oninput = (e) => setYear(YEARS[Number(e.target.value)]);
-$('stepBack').onclick = () => stepYear(-1);
-$('stepFwd').onclick = () => stepYear(1);
+YEARS.forEach((y) => { const b = document.createElement('button'); b.textContent = y; b.dataset.y = y; b.onclick = () => setYear(y); $('years').appendChild(b); });
 
 const film = $('film');
 const cards = [...document.querySelectorAll('.card')];
@@ -1097,8 +1068,7 @@ const io = new IntersectionObserver((es) => { es.forEach((e) => { if (e.isInters
 cards.forEach((c) => io.observe(c));
 setCur(0);
 document.addEventListener('keydown', (e) => {
-  if (e.target.tagName === 'INPUT') return;
-  if (e.key === 'ArrowRight') goCard(cur + 1);
+    if (e.key === 'ArrowRight') goCard(cur + 1);
   if (e.key === 'ArrowLeft') goCard(cur - 1);
   if (e.key === 'ArrowUp') { e.preventDefault(); stepYear(1); }
   if (e.key === 'ArrowDown') { e.preventDefault(); stepYear(-1); }
