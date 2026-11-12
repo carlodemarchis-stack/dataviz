@@ -137,6 +137,14 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.9.0",
+          "date": "2026-11-12",
+          "notes": [
+            "Year-end Finals card on the draws page for both tours: each group of four drawn as a ring, every match a wedge from loser to winner",
+            "Live qualification maths (gold = through, grey = out), semi-final crossover into a gold Final hub, and a day bar to replay the week"
+          ]
+        },
+        {
           "version": "1.8.0",
           "date": "2026-09-14",
           "notes": [
