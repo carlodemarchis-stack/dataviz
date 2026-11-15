@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-15",
   "apps": [
     {
       "id": "f1",
@@ -8,6 +8,13 @@
       "color": "#00d7b6",
       "url": "https://f1.aguywithascarf.com/",
       "releases": [
+        {
+          "version": "1.12.2",
+          "date": "2026-11-15",
+          "notes": [
+            "Race replay: the São Paulo GP now runs over a satellite view of Interlagos, faded to black, so you can see the grandstands, the pit building and the lake the circuit wraps around (B turns it off)"
+          ]
+        },
         {
           "version": "1.12.1",
           "date": "2026-11-09",
