@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-18",
   "apps": [
     {
       "id": "f1",
@@ -143,6 +143,14 @@
       "color": "#f2c14e",
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
+        {
+          "version": "1.10.0",
+          "date": "2026-11-18",
+          "notes": [
+            "Season film (new page): Alexander Zverev's 2026, every ATP event and every match, flown venue to venue on a turning globe, with live counters for rank, wins, sets, games and prize money",
+            "Big beats for his Roland Garros and US Open titles, his first week as world No. 1 and the ATP Finals still in progress; play, pause, skip by event or click the calendar"
+          ]
+        },
         {
           "version": "1.9.0",
           "date": "2026-11-12",
