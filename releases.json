@@ -144,6 +144,13 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.4",
+          "date": "2026-11-18",
+          "notes": [
+            "Season film: sets land at the same steady pace in every match, so a straight-sets win is quick and a five-setter takes its time"
+          ]
+        },
+        {
           "version": "1.10.3",
           "date": "2026-11-18",
           "notes": [
