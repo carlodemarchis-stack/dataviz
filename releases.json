@@ -144,6 +144,14 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.8",
+          "date": "2026-11-18",
+          "notes": [
+            "Season film: titles on the calendar keep their surface colour with a gold frame and the cup",
+            "After a reload the film waits paused at the same moment, so Play starts picture and sound together"
+          ]
+        },
+        {
           "version": "1.10.7",
           "date": "2026-11-18",
           "notes": [
