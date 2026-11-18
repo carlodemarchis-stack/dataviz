@@ -144,6 +144,13 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.7",
+          "date": "2026-11-18",
+          "notes": [
+            "Season film: when the opponent wins, his match photo hands over cleanly to the bigger one on the result card, with no faded copy left behind"
+          ]
+        },
+        {
           "version": "1.10.6",
           "date": "2026-11-18",
           "notes": [
