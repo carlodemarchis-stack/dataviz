@@ -144,6 +144,13 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.5",
+          "date": "2026-11-18",
+          "notes": [
+            "Season film: in each match the opponent's name, flag and ranking sit right-aligned above his photo"
+          ]
+        },
+        {
           "version": "1.10.4",
           "date": "2026-11-18",
           "notes": [
