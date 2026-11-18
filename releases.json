@@ -144,6 +144,14 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.6",
+          "date": "2026-11-18",
+          "notes": [
+            "Season film: each new opponent arrives clean (no trace of the previous one), and when Zverev loses the winner's photo grows in place into the result card",
+            "City names always shown whole, as large as they fit; a 'Click for sound' hint when the browser holds the sound back after a reload"
+          ]
+        },
+        {
           "version": "1.10.5",
           "date": "2026-11-18",
           "notes": [
