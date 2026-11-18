@@ -144,6 +144,14 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.11.0",
+          "date": "2026-11-18",
+          "notes": [
+            "Season film now covers the whole ATP top 10: pick Zverev, Sinner, Alcaraz, Shelton, Medvedev, Cobolli, Fils, Tiafoe, Fritz or Jodar from the menu by the player's name",
+            "Every opponent with a photo, walkovers marked W/O, and the climb to world No. 1 told right: first time for Zverev, back on top for Sinner"
+          ]
+        },
+        {
           "version": "1.10.8",
           "date": "2026-11-18",
           "notes": [
