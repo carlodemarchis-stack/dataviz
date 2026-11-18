@@ -144,6 +144,13 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.10.3",
+          "date": "2026-11-18",
+          "notes": [
+            "Season film: the round (R32, QF, SF, F) now stands big between the two players, gold for finals; every opponent now has a photo, including Garin, Sonego, de Jong, Shang and the others outside the top 100"
+          ]
+        },
+        {
           "version": "1.10.2",
           "date": "2026-11-18",
           "notes": [
