@@ -144,6 +144,13 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.11.1",
+          "date": "2026-11-19",
+          "notes": [
+            "Season film: a Record button (red dot, or R) saves the film as a video with its sound, from the first frame to the last, in Chrome or Edge on a computer"
+          ]
+        },
+        {
           "version": "1.11.0",
           "date": "2026-11-18",
           "notes": [
