@@ -144,6 +144,13 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.11.2",
+          "date": "2026-11-19",
+          "notes": [
+            "Season film: after you hide the controls, a short hint says how to get them back — press H or Esc, or double-click (double-tap on a phone)"
+          ]
+        },
+        {
           "version": "1.11.1",
           "date": "2026-11-19",
           "notes": [
