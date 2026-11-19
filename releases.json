@@ -144,6 +144,14 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.12.1",
+          "date": "2026-11-19",
+          "notes": [
+            "Vertical film: each event's result card now lists its matches (round, opponent, score) over a small globe on the venue with the season's route so far",
+            "Player links forgive a stray character, so ?p=sinner. still opens Sinner's film"
+          ]
+        },
+        {
           "version": "1.12.0",
           "date": "2026-11-19",
           "notes": [
