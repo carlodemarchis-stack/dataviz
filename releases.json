@@ -144,6 +144,13 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.12.2",
+          "date": "2026-11-19",
+          "notes": [
+            "Vertical film: when a player is knocked out, the card keeps him faded on the left, stepping back as the winner grows on the right; the match list and globe stay on title cards, where they are his own run"
+          ]
+        },
+        {
           "version": "1.12.1",
           "date": "2026-11-19",
           "notes": [
