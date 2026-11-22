@@ -9,6 +9,15 @@
       "url": "https://f1.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.13.0",
+          "date": "2026-11-22",
+          "notes": [
+            "Race replay adds the Las Vegas GP: Verstappen's win by 0.639 s, Piastri from 17th to the podium, the safety car and 18 team radio clips; it opens on the newest race",
+            "Brazil replay now ends on the amended result (Lawson P7, Leclerc P8)",
+            "Cleaner overtakes in every replay: cars running nose to tail no longer swap places on position noise"
+          ]
+        },
+        {
           "version": "1.12.2",
           "date": "2026-11-15",
           "notes": [
