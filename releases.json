@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-22",
   "apps": [
     {
       "id": "f1",
@@ -345,6 +345,13 @@
       "color": "#2f9e58",
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
+        {
+          "version": "1.80.3",
+          "date": "2026-11-22",
+          "notes": [
+            "Season Tower, towers and rows: upcoming games line up by matchday, so the next matchday sits in the same row (or column) for every club, starting where the leader's points end; a game in hand sits right after the club's own points"
+          ]
+        },
         {
           "version": "1.80.2",
           "date": "2026-11-03",
