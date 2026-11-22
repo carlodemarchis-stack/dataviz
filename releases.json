@@ -9,6 +9,15 @@
       "url": "https://f1.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.13.2",
+          "date": "2026-11-22",
+          "notes": [
+            "Race replay: the cars on the circuit, the standings and the alerts now agree. A car whose position feed froze (Verstappen on lap 1 in Las Vegas, Leclerc eight times) is placed from the official timing instead of stopping on track",
+            "Lead alerts follow the standings: a leader's pit stop no longer hands the lead to the next car on track while the timing still has him first",
+            "Overtakes count only if the timing still shows them 15 s later"
+          ]
+        },
+        {
           "version": "1.13.1",
           "date": "2026-11-22",
           "notes": [
