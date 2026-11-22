@@ -9,6 +9,13 @@
       "url": "https://f1.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.13.1",
+          "date": "2026-11-22",
+          "notes": [
+            "Race replay: the Las Vegas GP now runs over a satellite view of the Strip, faded to black, with the Sphere inside the loop and the casinos along the main straight (B turns it off)"
+          ]
+        },
+        {
           "version": "1.13.0",
           "date": "2026-11-22",
           "notes": [
