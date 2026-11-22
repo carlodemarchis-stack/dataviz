@@ -371,6 +371,13 @@
       "url": "https://top5.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.80.4",
+          "date": "2026-11-22",
+          "notes": [
+            "Season Tower: the aligned upcoming games start at the matchday in progress, so a matchday most clubs have already played still opens the aligned slots for the clubs yet to play it (only older postponed games sit as games in hand)"
+          ]
+        },
+        {
           "version": "1.80.3",
           "date": "2026-11-22",
           "notes": [
