@@ -169,6 +169,13 @@
       "url": "https://tennis.aguywithascarf.com/",
       "releases": [
         {
+          "version": "1.12.4",
+          "date": "2026-11-23",
+          "notes": [
+            "Season films: prize money is the ATP's own US$ figure for each event, and qualifying matches are left out, so W–L and prize money match the ATP's numbers for tour main draws (team events still not counted)"
+          ]
+        },
+        {
           "version": "1.12.3",
           "date": "2026-11-23",
           "notes": [
